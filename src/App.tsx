@@ -9,7 +9,10 @@ function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <ModeToggle />
-      <h1 id="test">This is a failing test</h1>
+      <h1 id="test">
+        This is a yet another failing test. You should not see this on the live
+        server.
+      </h1>
       <h1 className="text-3xl font-bold underline">Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>

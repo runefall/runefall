@@ -17,6 +17,7 @@ jobs:
           build: npm run build
           start: npm run dev
   deploy:
+    needs: cypress-run
     runs-on: ubuntu-latest
     environment: Production
     steps:
