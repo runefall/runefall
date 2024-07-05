@@ -1,0 +1,16 @@
+.nav-search-container {
+  position: relative;
+  & > input {
+    padding: 4px;
+    padding-left: 29px;
+    color: black;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  & > svg {
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
