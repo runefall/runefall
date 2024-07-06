@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { FaMagnifyingGlass } from "react-icons/fa6";
-import "./NavSearchBar.css";
 
 export default function NavSearchBar() {
   const [search, setSearch] = useState("");
@@ -12,13 +11,16 @@ export default function NavSearchBar() {
   }
 
   return (
-    <div className="nav-search-container">
-      <FaMagnifyingGlass color="black" />
+    <div className="relative flex flex-1">
+      <FaMagnifyingGlass
+        className="absolute left-2 top-1/2 -translate-y-1/2"
+        color="black"
+      />
       <input
+        className="flex-1 pl-8 text-black"
         type="text"
         placeholder="Search"
         value={search}
-        id="nav-search-bar"
         onChange={(e) => setSearch(e.target.value)}
         onKeyDown={handleSearch}
       />
