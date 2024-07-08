@@ -1,27 +1,29 @@
-import { useState } from "react";
-
-import { ModeToggle } from "@/components/mode-toggle";
+import Footer from "@/components/Footer";
+import NavBar from "@/components/NavBar";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Route, Routes, useLocation } from "react-router-dom";
+
+import CardPage from "./pages/CardPage";
+import HomePage from "./pages/HomePage";
+import SearchPage from "./pages/SearchPage";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const location = useLocation();
+  const { pathname } = location;
 
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <ModeToggle />
-      <h1 id="test">This is a test.</h1>
-      <h1 className="text-3xl font-bold underline">Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <div className="flex min-h-screen flex-col">
+        {pathname !== "/" && <NavBar />}
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/search" element={<SearchPage />} />
+            <Route path="/card/:code" element={<CardPage />} />
+          </Routes>
+        </main>
+        <Footer />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </ThemeProvider>
   );
 }
