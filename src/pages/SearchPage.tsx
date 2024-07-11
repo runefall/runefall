@@ -2,17 +2,17 @@ import Card from "@/components/Card";
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-export default function SearchPage({ query } : { query: string }) {
+export default function SearchPage({ query }: { query: string }) {
   interface Card {
     id: string;
     type: string;
     attributes: {
       assets: {
-        gameAbsolutePath: string
+        gameAbsolutePath: string;
       }[];
       name: string;
       card_code: string;
-    }
+    };
   }
 
   const [cards, setCards] = useState([]);
@@ -20,14 +20,15 @@ export default function SearchPage({ query } : { query: string }) {
 
   useEffect(() => {
     navigate(`/search?query=${query}`);
-    const host = import.meta.env.PROD ? "https://runefall.netlify.app" : "http://localhost:3000";
-    
-    fetch(
-      `${host}/api/v1/cards/search?query=${query}`, {
+    const host = import.meta.env.PROD
+      ? "https://runefall.netlify.app"
+      : "http://localhost:3000";
+
+    fetch(`${host}/api/v1/cards/search?query=${query}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        "Accept": "application/json",
+        Accept: "application/json",
       },
     })
       .then((response) => response.json())
@@ -35,20 +36,20 @@ export default function SearchPage({ query } : { query: string }) {
   }, [query]);
 
   const noCardsElement = (
-    <div className="w-auto text-center m-8">No cards found with the specified search query.</div>
+    <div className="m-8 w-auto text-center">
+      No cards found with the specified search query.
+    </div>
   );
 
   return (
     <>
       {cards.length === 0 && noCardsElement}
-      <div className="grid gap-2 justify-center grid-cols-[repeat(auto-fill,minmax(200px,1fr))] justify-items-center m-4">
-        {
-          cards.map((card: Card, i) => (
-            <Link to={`/card/${card.attributes.card_code}`} key={i}>
-              <Card {...card} />
-            </Link>
-          ))
-        }
+      <div className="m-4 grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] justify-center justify-items-center gap-2">
+        {cards.map((card: Card, i) => (
+          <Link to={`/card/${card.attributes.card_code}`} key={i}>
+            <Card {...card} />
+          </Link>
+        ))}
       </div>
     </>
   );
