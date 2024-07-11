@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 
-export default function NavSearchBar() {
+export default function NavSearchBar({ queryHandler } : { queryHandler: (query: string) => void }) {
   const [search, setSearch] = useState("");
 
   function handleSearch(e: React.KeyboardEvent<HTMLInputElement>) {
     if (e.key === "Enter") {
-      console.log("Search for:", search);
+      queryHandler(search)
     }
   }
 

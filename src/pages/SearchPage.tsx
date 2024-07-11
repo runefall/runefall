@@ -1,8 +1,8 @@
 import Card from "@/components/Card";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
-export default function SearchPage() {
+export default function SearchPage({ query } : { query: string }) {
   interface Card {
     id: string;
     type: string;
@@ -16,13 +16,14 @@ export default function SearchPage() {
   }
 
   const [cards, setCards] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const queryParameters = new URLSearchParams(window.location.search);
+    navigate(`/search?query=${query}`);
     const host = import.meta.env.PROD ? "https://runefall.netlify.app" : "http://localhost:3000";
     
     fetch(
-      `${host}/api/v1/cards/search?query=${queryParameters.get("query")}`, {
+      `${host}/api/v1/cards/search?query=${query}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -31,7 +32,7 @@ export default function SearchPage() {
     })
       .then((response) => response.json())
       .then((json) => setCards(json.data));
-  }, []);
+  }, [query]);
 
 
   return (
