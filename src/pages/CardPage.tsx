@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Footer from "@/components/Footer"; // Already renders, figuring out if I need to add a declarions file later and adjust main rendering. not prio, just annoying to see
+//import Footer from "@/components/Footer"; // Already renders, figuring out if I need to add a declarions file later and adjust main rendering. not prio, just annoying to see
 import { cn } from "@/lib/utils";
 import "./CardPage.css";
-import React from "react";
+//import React from "react";
 
 interface Card {
   id: number;
