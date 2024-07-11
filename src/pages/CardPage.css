@@ -1,0 +1,24 @@
+.card-title {
+    @apply text-4xl font-bold mb-4;
+  }
+  
+  .card-container {
+    @apply flex gap-4;
+  }
+  
+  .card-image {
+    @apply w-80;
+  }
+  
+  .card-details {
+    @apply flex flex-col bg-gray-800 p-4 rounded-lg text-white;
+  }
+  
+  .button-group {
+    @apply flex flex-col gap-2;
+  }
+  
+  .action-button {
+    @apply bg-blue-500 p-2 rounded;
+  }
+  

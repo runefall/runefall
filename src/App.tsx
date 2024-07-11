@@ -6,6 +6,8 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import CardPage from "./pages/CardPage";
 import HomePage from "./pages/HomePage";
 import SearchPage from "./pages/SearchPage";
+import React from "react";
+
 
 function App() {
   const location = useLocation();
