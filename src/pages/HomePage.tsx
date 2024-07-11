@@ -16,7 +16,7 @@ export default function HomePage() {
   return (
     <div className="flex h-screen flex-col items-center justify-center bg-gradient-to-b from-blue-900 to-blue-700 p-5">
       <h1
-        data-test-id="slogan"
+        data-test-id="home-slogan"
         className="mb-8 text-center text-4xl text-white"
       >
         <b className="font-bold">Runefall</b> is a powerful{" "}
@@ -29,6 +29,7 @@ export default function HomePage() {
         />
         <Input
           ref={searchBar}
+          data-test-id="home-search-bar"
           className="h-16 w-full rounded-none pl-12 text-xl"
           type="text"
           value={search}
