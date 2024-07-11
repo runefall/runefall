@@ -34,16 +34,22 @@ export default function SearchPage({ query } : { query: string }) {
       .then((json) => setCards(json.data));
   }, [query]);
 
+  const noCardsElement = (
+    <div className="w-auto text-center m-8">No cards found with the specified search query.</div>
+  );
 
   return (
-    <div className="grid gap-2 justify-center grid-cols-[repeat(auto-fill,minmax(200px,1fr))] justify-items-center m-4">
-      {
-        cards.map((card: Card, i) => (
-          <Link to={`/card/${card.attributes.card_code}`} key={i}>
-            <Card {...card} />
-          </Link>
-        ))
-      }
-    </div>
+    <>
+      {cards.length === 0 && noCardsElement}
+      <div className="grid gap-2 justify-center grid-cols-[repeat(auto-fill,minmax(200px,1fr))] justify-items-center m-4">
+        {
+          cards.map((card: Card, i) => (
+            <Link to={`/card/${card.attributes.card_code}`} key={i}>
+              <Card {...card} />
+            </Link>
+          ))
+        }
+      </div>
+    </>
   );
 }
