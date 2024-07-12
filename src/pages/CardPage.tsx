@@ -16,7 +16,7 @@ export default function CardPage() {
   useEffect(() => {
     async function fetchCard() {
       try {
-        const response = await fetch(`http://127.0.0.1:3000/api/v1/cards/${code}`); // Swap to https://runefall-69209e0b8bce.herokuapp.com"/api/v1/cards/${code} when working
+        const response = await fetch(`http://127.0.0.1:3000/api/v1/cards/${code}`); // Swap to https://runefall-69209e0b8bce.herokuapp.com/api/v1/cards/${code} when working
         const data: CardResponse = await response.json();
         setCard(data.data.attributes);
       } catch (error) {
@@ -35,12 +35,14 @@ export default function CardPage() {
   return (
     <div className="flex flex-col items-center p-4 bg-gray-900 min-h-screen">
       <div className="card-container bg-gray-800 p-6 rounded-lg shadow-md flex flex-col md:flex-row relative max-w-screen-lg mx-auto">
-        <img
-          src={card.assets[0].game_absolute_path}
-          alt={card.name}
-          className="card-image absolute md:-left-40 top-0 md:top-auto md:transform md:translate-y-[-5%] md:translate-x-[-20%]"
-        />
-        <div className="card-details md:ml-4.5 mt-4 md:mt-0 max-w-sm">
+        <div className="md:hidden mb-4">
+          <img
+            src={card.assets[0].game_absolute_path}
+            alt={card.name}
+            className="card-image mx-auto"
+          />
+        </div>
+        <div className="card-details max-w-sm mx-auto md:ml-4.5 mt-4 md:mt-0">
           <div className="mb-4 w-full flex items-center border-t border-gray-700 pt-4">
             <span className="card-cost rounded-full">{card.cost}</span>
             <h2 className="text-xl mx-4">{card.name}</h2>
@@ -79,6 +81,13 @@ export default function CardPage() {
               ))}
             </div>
           </div>
+        </div>
+        <div className="hidden md:block">
+          <img
+            src={card.assets[0].game_absolute_path}
+            alt={card.name}
+            className="card-image absolute md:-left-40 top-0 md:top-auto md:transform md:translate-y-[-5%] md:translate-x-[-20%]"
+          />
         </div>
       </div>
       {card.associated_cards.length > 0 && (
