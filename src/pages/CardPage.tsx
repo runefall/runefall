@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./CardPage.css";
-import { CardAttributes, Card } from "@/types/types";
+import { CardAttributes } from "@/types/types";
 
 interface CardResponse {
   data: {
@@ -55,7 +55,7 @@ export default function CardPage() {
           </div>
           <div className="mb-4 w-full border-t border-gray-700 pt-4">
             <p>{card.description_raw}</p>
-            {card.levelup_description && <p>Level Up: {card.levelup_description_raw}</p>}
+            {card.levelup_description_raw && <p>Level Up: {card.levelup_description_raw}</p>}
             <p>{card.flavor_text}</p>
           </div>
           <div className="mb-4 w-full flex border-t border-gray-700 pt-4">
@@ -96,7 +96,7 @@ export default function CardPage() {
           <div className="related-cards mt-8 w-full">
             <h3 className="related-cards-title">RELATED CARDS</h3>
             <div className="flex gap-4 overflow-x-auto">
-              {card.associated_cards.map((associatedCard: Card) => (
+              {card.associated_cards.map((associatedCard) => (
                 <div key={associatedCard.card_code} className="related-card">
                   <img
                     src={associatedCard.assets[0].game_absolute_path}
