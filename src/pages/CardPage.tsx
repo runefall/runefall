@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./CardPage.css";
-import { CardAttributes, Card } from "@/types";
+import { CardAttributes, Card } from "@/types/types";
 
 interface CardResponse {
   data: {
