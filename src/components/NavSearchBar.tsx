@@ -13,6 +13,7 @@ export default function NavSearchBar() {
         color="black"
       />
       <input
+        data-test-id="nav-search-bar-input"
         className="flex-1 pl-8 text-black"
         type="text"
         placeholder="Search"

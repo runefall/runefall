@@ -26,7 +26,7 @@ export default function SearchPage() {
   return (
     <>
       {cards.length === 0 ? (
-        <div className="m-8 w-auto text-center">
+        <div data-test-id="no-cards" className="m-8 w-auto text-center">
           No cards found with the specified search query.
         </div>
       ) : (
