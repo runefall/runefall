@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { FaMagnifyingGlass } from "react-icons/fa6";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 
 export default function NavSearchBar() {
-  const [search, setSearch] = useState("");
+  const [searchParams] = useSearchParams();
+  const query = searchParams.get("query");
+  const [search, setSearch] = useState(query || "");
+
   const navigate = useNavigate();
 
   return (
