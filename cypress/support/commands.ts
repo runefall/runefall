@@ -35,3 +35,13 @@
 //     }
 //   }
 // }
+
+declare namespace Cypress {
+  interface Chainable<Subject> {
+    getTestId(dataTestSelector: string): Chainable<Subject>;
+  }
+}
+
+Cypress.Commands.add("getTestId", (dataTestSelector) => {
+  return cy.get(`[data-test-id="${dataTestSelector}"]`);
+});
