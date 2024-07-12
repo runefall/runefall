@@ -1,13 +1,11 @@
+import { BrowserRouter } from "react-router-dom";
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
-import { ThemeProvider } from "@/components/theme-provider";
+import ThemeProvider from "@/components/ThemeProvider";
 import { Route, Routes, useLocation } from "react-router-dom";
-
 import CardPage from "./pages/CardPage";
 import HomePage from "./pages/HomePage";
 import SearchPage from "./pages/SearchPage";
-import React from "react";
-
 
 function App() {
   const location = useLocation();
