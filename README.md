@@ -1,4 +1,39 @@
-# React + TypeScript + Vite
+# Runefall
+
+## Instructions
+
+The first step after cloning, switching branch, etc is always
+
+```
+npm install
+```
+
+### Run in development mode
+
+```
+npm run dev
+```
+
+### Run in preview mode
+
+```
+npm run build
+npm run preview
+```
+
+### Run test suite
+
+```
+npm run dev
+```
+
+Then in a new terminal
+
+```
+npm run e2e
+```
+
+<!-- # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -27,4 +62,4 @@ export default {
 
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list -->
