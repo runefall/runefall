@@ -1,6 +1,7 @@
-const HOST = import.meta.env.PROD
-  ? "https://runefall-69209e0b8bce.herokuapp.com"
-  : "http://localhost:3000";
+// const HOST = import.meta.env.PROD
+//   ? "https://runefall-69209e0b8bce.herokuapp.com"
+//   : "http://localhost:3000";
+const HOST = "https://runefall-69209e0b8bce.herokuapp.com";
 
 export function queryCard(query: string) {
   return fetch(`${HOST}/api/v1/cards/search?query=${query}`).then((res) => {
