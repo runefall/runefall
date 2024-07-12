@@ -13,7 +13,7 @@ export default function Card(props: {
   if (imgSrc) {
     return (
       <div className="max-w-[350px] p-3">
-        <img src={imgSrc} alt={`Image of the ${cardName} card.`} />
+        <img src={imgSrc} alt={`${cardName} card`} />
       </div>
     );
   }

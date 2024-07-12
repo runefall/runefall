@@ -1,18 +1,10 @@
 import { useState } from "react";
 import { FaMagnifyingGlass } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
-export default function NavSearchBar({
-  queryHandler,
-}: {
-  queryHandler: (query: string) => void;
-}) {
+export default function NavSearchBar() {
   const [search, setSearch] = useState("");
-
-  function handleSearch(e: React.KeyboardEvent<HTMLInputElement>) {
-    if (e.key === "Enter") {
-      queryHandler(search);
-    }
-  }
+  const navigate = useNavigate();
 
   return (
     <div className="relative flex flex-1">
@@ -26,7 +18,9 @@ export default function NavSearchBar({
         placeholder="Search"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-        onKeyDown={handleSearch}
+        onKeyDown={(e) => {
+          if (e.key === "Enter") navigate(`/search?query=${search}`);
+        }}
       />
     </div>
   );
