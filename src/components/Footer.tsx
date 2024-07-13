@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="main-footer bg-gray-700 text-white">
-      <div className="max-w-screen-xl p-8">
-        <section className="mb-8 flex items-end justify-between">
-          <section className="flex flex-col">
+    <footer className="flex justify-center bg-gray-700 text-white">
+      <div className="max-w-screen-xl flex-1 p-8">
+        <section className="mb-8 flex flex-col-reverse md:flex-row md:items-end md:justify-between">
+          <section className="flex flex-col items-center md:items-start">
             <h3 className="text-xl font-bold">Links</h3>
             <Link to="/about" className="hover:underline">
               About Us
@@ -23,9 +23,13 @@ export default function Footer() {
               Backend Repo
             </Link>
           </section>
-          <section>
-            <h2 className="text-end text-3xl font-bold">RUNEFALL</h2>
-            <div>a powerful Legends of Runeterra card search</div>
+          <section className="mb-4 md:mb-0">
+            <h2 className="text-center text-3xl font-bold md:text-end">
+              RUNEFALL
+            </h2>
+            <div className="text-center md:text-end">
+              a powerful Legends of Runeterra card search
+            </div>
           </section>
         </section>
         <section className="flex flex-col gap-4 text-center text-gray-500">

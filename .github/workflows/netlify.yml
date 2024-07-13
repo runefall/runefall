@@ -18,7 +18,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6 # use the explicit version number
         with:
-          build: npm run build
+          # build: npm run build
           start: npm run dev
   deploy:
     needs: cypress-run

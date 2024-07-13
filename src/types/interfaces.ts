@@ -1,11 +1,37 @@
 export interface Card {
   id: string;
   type: string;
-  attributes: {
-    assets: {
-      gameAbsolutePath: string;
-    }[];
-    name: string;
-    card_code: string;
-  };
+  attributes: CardAttributes;
+}
+
+export interface CardAttributes {
+  name: string;
+  card_code: string;
+  description: string;
+  description_raw: string;
+  levelup_description: string;
+  levelup_description_raw: string;
+  flavor_text: string;
+  artist_name: string;
+  attack: number;
+  cost: number;
+  health: number;
+  spell_speed: string;
+  rarity: string;
+  supertype: string;
+  card_type: string;
+  collectible: boolean;
+  set: string;
+  associated_card_refs: string[];
+  regions: string[];
+  region_refs: string[];
+  keywords: string[];
+  keyword_refs: string[];
+  formats: string[];
+  format_refs: string[];
+  assets: {
+    gameAbsolutePath: string;
+    fullAbsolutePath: string;
+  }[];
+  associated_cards: CardAttributes[];
 }

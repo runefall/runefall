@@ -23,7 +23,7 @@ describe("template spec", () => {
     cy.getTestId("no-cards").should("exist");
 
     cy.getTestId("nav-search-bar-input").clear().type("draven").type("{enter}");
-    cy.url().should("include", `${baseUrl}/search?query=draven`);
+    cy.url().should("eq", `${baseUrl}/search?query=draven`);
     cy.getTestId("search-card").should("have.length", 4);
   });
 });

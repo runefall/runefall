@@ -1,4 +1,4 @@
-export default function Card(props: {
+export default function CardImage(props: {
   attributes: {
     assets: {
       gameAbsolutePath: string;
