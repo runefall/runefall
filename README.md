@@ -1,65 +1,80 @@
+
 # Runefall
 
-## Instructions
+Runefall is an advanced card search tool designed for the Legends of Runeterra card game, inspired by Scryfall. It facilitates easy card searches and detailed card views, enhancing the deck-building experience for Legends of Runeterra players.
+## Tech Stack
 
-The first step after cloning, switching branch, etc is always
+**Client:** Typescript, React, React Router, TailwindCSS, ShadCN
 
-```
-npm install
-```
+**Server:** Ruby, Ruby on Rails
 
-### Run in development mode
+## Screenshots
 
-```
-npm run dev
-```
+![image](https://github.com/user-attachments/assets/c797003c-501b-4ed7-b16b-c0cbe0a1f0ee)
 
-### Run in preview mode
+## Features
 
-```
-npm run build
-npm run preview
-```
+- Light/dark mode toggle
+- Card search functionality
+- Detailed card views
+- Responsive design
+- Continuous Integration & Continuous Deployment
+- End-to-end testing
 
-### Run test suite
+## Demo
 
-```
-npm run dev
-```
+[Runefall Demo](https://runefall.netlify.app/)
 
-Then in a new terminal
 
-```
-npm run e2e
-```
+## Run Locally
 
-<!-- # React + TypeScript + Vite
+Clone the repository and navigate to the project directory
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
+```bash
+  git clone git@github.com:runefall/runefall.git
+  cd runefall
+  npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list -->
+To run in development mode
+
+```bash
+  npm run dev
+```
+
+To run in preview mode
+
+```bash
+  npm run build
+  npm run preview
+```
+
+
+## Running Tests
+
+```bash
+  npm run e2e
+```
+
+
+## Lessons Learned
+
+During the development of Runefall, the primary challenge encountered was handling CORS issues. As this project integrated both frontend and backend components, it was the backend team's first exposure to CORS. This experience provided valuable insights into the security advantages of CORS and its necessity.
+
+Using TailwindCSS proved to be highly beneficial. Its utility-first approach allowed for inline styling akin to Bootstrap while offering more granular control. This facilitated faster development without compromising control over the design.
+
+Additionally, backend developers were given the opportunity to work on the frontend and learn React. This experience broadened their understanding of data flow from the server to the client side.
+## License
+
+This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/)
+
+
+## Authors
+
+- Billy Wallace - [@wallacebilly1](https://www.github.com/wallacebilly1)
+- Charles Kwang - [@KojinKuro](https://www.github.com/KojinKuro)
+- Jared Hobson - [@JaredMHobson](https://www.github.com/JaredMHobson)
+- Neil Hendren - [@NeilTheSeal](https://www.github.com/NeilTheSeal)
+- Theotis McCray - [@Virulencies](https://www.github.com/Virulencies)
+
+
