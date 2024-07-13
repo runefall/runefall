@@ -49,6 +49,7 @@ To run in preview mode
   npm run preview
 ```
 
+**Note:** You must have this repository running in the background for this project to work locally in development mode: [Runefall Backend](https://github.com/runefall/runefall-backend).
 
 ## Running Tests
 
