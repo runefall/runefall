@@ -15,13 +15,11 @@ export function querySearch(query: string) {
 }
 
 export function getCard(code: string) {
-  return fetch(`${HOST}/api/v1/cards/${code}`)
-    .then((res) => {
-      if (!res.ok) {
-        throw Error(`"${code} could not get get from the server`);
-      } else {
-        return res.json();
-      }
-    })
-    .then((data) => data.data.attributes);
+  return fetch(`${HOST}/api/v1/cards/${code}`).then((res) => {
+    if (!res.ok) {
+      throw Error(`"${code} could not get get from the server`);
+    } else {
+      return res.json();
+    }
+  });
 }

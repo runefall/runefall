@@ -11,7 +11,7 @@ export default function CardPage() {
 
   useEffect(() => {
     if (!code) return;
-    else getCard(code).then(setCard);
+    else getCard(code).then((data) => setCard(data.data.attributes));
   }, [code]);
 
   return (

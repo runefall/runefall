@@ -27,20 +27,21 @@ describe("template spec", () => {
     );
 
     cy.getTestId("home-search-bar").focused().type("draven").type("{enter}");
-    cy.url().should("include", `${baseUrl}/search?query=draven`);
+    cy.url().should("eq", `${baseUrl}/search?query=draven`);
     cy.getTestId("nav-search-bar-input").should("have.value", "draven");
 
     cy.visit("/");
     cy.getTestId("home-search-bar")
       .type("Draven's Biggest Fan")
       .type("{enter}");
-    cy.url().should(
-      "include",
-      `${baseUrl}/search?query=Draven%27s%20Biggest%20Fan`,
-    );
+    cy.url().should("eq", `${baseUrl}/search?query=Draven%27s%20Biggest%20Fan`);
     cy.getTestId("nav-search-bar-input").should(
       "have.value",
       "Draven's Biggest Fan",
     );
+
+    // some misc tests for the header
+    cy.getTestId("nav-logo").click();
+    cy.url().should("eq", `${baseUrl}/`);
   });
 });

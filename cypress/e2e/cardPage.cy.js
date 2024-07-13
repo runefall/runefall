@@ -1,42 +1,104 @@
 describe("CardPage component", () => {
-    const baseUrl = Cypress.config("baseUrl");
-  
-    it("displays the card details properly", () => {
-      const cardCode = "01NX020";
-  
-      cy.visit(`/card/${cardCode}`);
-  
-      cy.get(".card-title").should("not.exist");
-      cy.get(".card-details").should("exist");
-  
-      cy.get(".card-cost").should("exist");
-      cy.get(".card-details h2").should("exist");
-      cy.get(".card-details p").should("exist");
-  
-      cy.get(".card-details").within(() => {
-        cy.get(".card-cost").should("have.class", "rounded-full"); // This isnt working, though. 
-          cy.get("h2").contains("Draven");
-          cy.get("p").first().contains("Unit / Champion / Set1");
-          cy.get("p").eq(1).contains("Keywords: Quick Attack");
-          cy.get("p").eq(2).contains("When I'm summoned or strike: Create a Spinning Axe in hand.");
-          cy.get("p").eq(3).contains("Level Up: I've struck with 2+ total Spinning Axes.");
-          cy.get("p").eq(4).contains("You want an autograph? Get in line, pal.");
-  
-        cy.get("h3").contains("Attack: 3");
-        cy.get("h3").contains("Health: 3");
-  
-        cy.get("p").contains("Artist: SIXMOREVODKA");
-  
-        cy.get("p").contains("Card Code: 01NX020");
-  
-        cy.get("h3").contains("Modes");
-      });
-  
-      // Related Cards
-      cy.get(".related-cards-title").should("exist").contains("RELATED CARDS");
-      cy.get(".related-cards").within(() => {
-        cy.get(".related-card").should("have.length.greaterThan", 0);
-      });
-    });
+  const baseUrl = Cypress.config("baseUrl");
+
+  beforeEach(() => {
+    cy.intercept("http://localhost:3000/api/v1/cards/01NX020", {
+      method: "GET",
+      fixture: "01NX020.json",
+    }).as("getDravenCard");
+
+    cy.intercept("http://localhost:3000/api/v1/cards/01NX020T1", {
+      method: "GET",
+      fixture: "01NX020T1.json",
+    }).as("getSpinningAxeCard");
   });
-  
+
+  it("displays the card details properly", () => {
+    cy.visit(`/card/01NX020`);
+
+    // Test card works
+    cy.getTestId("card-full")
+      .find("img")
+      .should("have.attr", "src")
+      .should(
+        "include",
+        "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020.png",
+      );
+    cy.getTestId("card-full").contains("Draven");
+    cy.getTestId("card-cost").contains("3");
+    cy.getTestId("card-full").contains("Unit / Champion / Foundations");
+    cy.getTestId("card-full").contains("Keywords: Quick Attack");
+    cy.getTestId("card-full").contains(
+      "When I'm summoned or strike: Create a Spinning Axe in hand.",
+    );
+    cy.getTestId("card-full").contains(
+      "Level Up: I've struck with 2+ total Spinning Axes.",
+    );
+    cy.getTestId("card-full").contains(
+      "You want an autograph? Get in line, pal.",
+    );
+    cy.getTestId("card-stats").contains("3 | 3");
+    cy.getTestId("card-full").contains("Illustration by SIXMOREVODKA");
+    cy.getTestId("card-full").contains("Card Code: 01NX020");
+
+    cy.getTestId("format-legality").should("have.length", 3);
+    cy.getTestId("format-legality").first().contains("Not Legal");
+    cy.getTestId("format-legality").last().contains("Legal");
+
+    // Test that associated cards works
+    cy.getTestId("associated-card").should("have.length", 3);
+    cy.getTestId("associated-card")
+      .first()
+      .should("have.attr", "src")
+      .should(
+        "include",
+        "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020T1.png",
+      );
+    cy.getTestId("associated-card")
+      .last()
+      .should("have.attr", "src")
+      .should(
+        "include",
+        "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020T2.png",
+      );
+
+    cy.getTestId("associated-card").first().click();
+    cy.url().should("eq", `${baseUrl}/card/01NX020T1`);
+
+    // Test the associated card that was navigated to
+    cy.getTestId("card-full")
+      .find("img")
+      .should("have.attr", "src")
+      .should(
+        "include",
+        "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020T1.png",
+      );
+
+    cy.getTestId("card-full").contains("Spinning Axe");
+    cy.getTestId("card-cost").contains("0");
+    cy.getTestId("card-full").contains("Spell - Burst / None / Foundations");
+    cy.getTestId("card-full").contains("Keywords: Burst");
+    cy.getTestId("card-full").contains(
+      "To play, discard 1. Give an ally +1|+0 this round.",
+    );
+    cy.getTestId("card-full").contains(
+      `"Yeah, his brother'd win one-on-one, but you see those axes spiraling... it's art, it is. Art." - Arena regular`,
+    );
+    cy.getTestId("card-stats").should("not.exist");
+    cy.getTestId("card-full").contains("Illustration by SIXMOREVODKA");
+    cy.getTestId("card-full").contains("Card Code: 01NX020T1");
+
+    cy.getTestId("format-legality").should("have.length", 3);
+    cy.getTestId("format-legality").first().contains("Legal");
+    cy.getTestId("format-legality").last().contains("Not Legal");
+
+    cy.getTestId("associated-card").should("have.length", 1);
+    cy.getTestId("associated-card")
+      .first()
+      .should("have.attr", "src")
+      .should(
+        "include",
+        "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020.png",
+      );
+  });
+});

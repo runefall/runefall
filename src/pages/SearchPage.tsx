@@ -6,7 +6,7 @@ import { Link, useSearchParams } from "react-router-dom";
 
 export default function SearchPage() {
   const [searchParams] = useSearchParams();
-  const [cards, setCards] = useState([]);
+  const [cards, setCards] = useState<CardType[]>([]);
 
   useEffect(() => {
     const query = searchParams.get("query");
@@ -17,11 +17,15 @@ export default function SearchPage() {
     });
   }, [searchParams]);
 
-  const cardElements = cards.map((card: CardType, i) => (
-    <Link to={`/card/${card.attributes.card_code}`} key={i}>
-      <CardSearchImage {...card} />
-    </Link>
-  ));
+  const cardElements = cards
+    .sort((card1, card2) =>
+      card1.attributes.name.localeCompare(card2.attributes.name),
+    )
+    .map((card, index) => (
+      <Link to={`/card/${card.attributes.card_code}`} key={index}>
+        <CardSearchImage {...card} />
+      </Link>
+    ));
 
   return (
     <>

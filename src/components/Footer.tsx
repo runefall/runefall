@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="main-footer bg-gray-700 text-white">
-      <div className="max-w-screen-xl p-8">
+    <footer className="flex justify-center bg-gray-700 text-white">
+      <div className="max-w-screen-xl flex-1 p-8">
         <section className="mb-8 flex items-end justify-between">
           <section className="flex flex-col">
             <h3 className="text-xl font-bold">Links</h3>
