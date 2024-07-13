@@ -1,5 +1,5 @@
+import ModeToggle from "@/components/ModeToggle";
 import NavSearchBar from "@/components/NavSearchBar";
-import { ModeToggle } from "@/components/mode-toggle";
 import { Link } from "react-router-dom";
 
 export default function NavBar() {

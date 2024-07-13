@@ -1,6 +1,6 @@
-import Card from "@/components/Card";
+import CardSearchImage from "@/components/CardImage";
 import { Card as CardType } from "@/types/interfaces";
-import { queryCard } from "@/utils/apiCalls";
+import { querySearch } from "@/utils/apiCalls";
 import { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 
@@ -12,14 +12,14 @@ export default function SearchPage() {
     const query = searchParams.get("query");
     if (!query) return;
 
-    queryCard(query).then((data) => {
+    querySearch(query).then((data) => {
       setCards(data.data);
     });
   }, [searchParams]);
 
   const cardElements = cards.map((card: CardType, i) => (
     <Link to={`/card/${card.attributes.card_code}`} key={i}>
-      <Card {...card} />
+      <CardSearchImage {...card} />
     </Link>
   ));
 
