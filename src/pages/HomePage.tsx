@@ -35,8 +35,9 @@ export default function HomePage() {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           onKeyDown={(e) => {
-            if (e.code == "Enter")
+            if (e.key === "Enter") {
               navigate(`/search?query=${encodeURIComponent(search.trim())}`);
+            }
           }}
         />
       </div>
