@@ -14,7 +14,7 @@ export default function CardAssociated({
       src={card.assets[0].gameAbsolutePath}
       alt={card.name}
       data-test-id="associated-card"
-      className="h-auto w-48 rounded-lg drop-shadow-lg"
+      className="h-auto w-48 rounded-lg drop-shadow-lg hover:cursor-pointer"
       onClick={() => navigate(`/card/${card.card_code}`)}
     />
   ));
