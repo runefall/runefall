@@ -32,8 +32,8 @@
       ],
       "assets": [
         {
-          "gameAbsolutePath": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020T1.png",
-          "fullAbsolutePath": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020T1-full.png"
+          "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020T1.png",
+          "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020T1-full.png"
         }
       ],
       "associated_cards": [
@@ -68,8 +68,8 @@
           ],
           "assets": [
             {
-              "gameAbsolutePath": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020.png",
-              "fullAbsolutePath": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020-full.png"
+              "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020.png",
+              "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020-full.png"
             }
           ],
           "created_at": "2024-07-03T22:56:43.994Z",
