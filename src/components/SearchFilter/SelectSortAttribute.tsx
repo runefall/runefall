@@ -8,18 +8,22 @@ import {
 import { SortAttribute } from "@/types/types";
 
 export default function SelectSortAttribute({
+  className = "w-[180px]",
   sortAttribute,
-  setSortAttribute,
+  setFilterState,
 }: {
+  className?: string;
   sortAttribute: SortAttribute;
-  setSortAttribute: React.Dispatch<SortAttribute>;
+  setFilterState: (action: { type: string; value: string }) => void;
 }) {
   return (
     <Select
       value={sortAttribute}
-      onValueChange={(value: SortAttribute) => setSortAttribute(value)}
+      onValueChange={(value: SortAttribute) =>
+        setFilterState({ type: "sortAttribute", value })
+      }
     >
-      <SelectTrigger className="w-[180px]">
+      <SelectTrigger className={className}>
         <SelectValue placeholder="Search Attribute" />
       </SelectTrigger>
       <SelectContent>

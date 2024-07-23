@@ -8,18 +8,22 @@ import {
 import { SortDirection } from "@/types/types";
 
 export default function SelectSortDirection({
+  className = "w-[180px]",
   sortDirection,
-  setSortDirection,
+  setFilterState,
 }: {
+  className?: string;
   sortDirection: SortDirection;
-  setSortDirection: React.Dispatch<SortDirection>;
+  setFilterState: (action: { type: string; value: string }) => void;
 }) {
   return (
     <Select
       value={sortDirection}
-      onValueChange={(value: SortDirection) => setSortDirection(value)}
+      onValueChange={(value: SortDirection) =>
+        setFilterState({ type: "sortDirection", value })
+      }
     >
-      <SelectTrigger className="w-[180px]">
+      <SelectTrigger className={className}>
         <SelectValue placeholder="Display Mode" />
       </SelectTrigger>
       <SelectContent>

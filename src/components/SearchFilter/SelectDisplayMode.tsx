@@ -8,18 +8,22 @@ import {
 import { DisplayMode } from "@/types/types";
 
 export default function SelectDisplayMode({
+  className = "w-[180px]",
   displayMode,
-  setDisplayMode,
+  setFilterState,
 }: {
+  className?: string;
   displayMode: DisplayMode;
-  setDisplayMode: React.Dispatch<DisplayMode>;
+  setFilterState: (action: { type: string; value: string }) => void;
 }) {
   return (
     <Select
       value={displayMode}
-      onValueChange={(value: DisplayMode) => setDisplayMode(value)}
+      onValueChange={(value: DisplayMode) =>
+        setFilterState({ type: "displayMode", value })
+      }
     >
-      <SelectTrigger className="w-[180px]">
+      <SelectTrigger className={className}>
         <SelectValue placeholder="Search Attribute" />
       </SelectTrigger>
       <SelectContent>

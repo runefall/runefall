@@ -1,4 +1,4 @@
-import { Rarity } from "./types";
+import { DisplayMode, Rarity, SortAttribute, SortDirection } from "./types";
 
 export interface Card {
   id: string;
@@ -36,4 +36,10 @@ export interface CardAttributes {
     full_absolute_path: string;
   }[];
   associated_cards: CardAttributes[];
+}
+
+export interface FilterState {
+  displayMode: DisplayMode;
+  sortAttribute: SortAttribute;
+  sortDirection: SortDirection;
 }
