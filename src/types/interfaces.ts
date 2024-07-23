@@ -32,8 +32,8 @@ export interface CardAttributes {
   formats: string[] | null;
   format_refs: string[];
   assets: {
-    gameAbsolutePath: string;
-    fullAbsolutePath: string;
+    game_absolute_path: string;
+    full_absolute_path: string;
   }[];
   associated_cards: CardAttributes[];
 }
