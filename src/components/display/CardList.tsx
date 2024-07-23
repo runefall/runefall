@@ -24,7 +24,11 @@ export default function CardList({ cards }: { cards: CardType[] }) {
         <td>{attack}</td>
         <td>{card_type}</td>
         <td>{rarity.at(0)?.toUpperCase() + rarity.slice(1).toLowerCase()}</td>
-        <td>{region_refs.join(", ")}</td>
+        <td>
+          {region_refs
+            .map((region) => region.split(/(?<!^)(?=[A-Z])/).join(" "))
+            .join(", ")}
+        </td>
         <td>{artist_name}</td>
         <td>{getSetString(set)}</td>
       </tr>
@@ -32,8 +36,8 @@ export default function CardList({ cards }: { cards: CardType[] }) {
   });
 
   return (
-    <table className="[&_td]:px-4 [&_th]:px-4 [&_tr:not(:first-child):nth-child(even)]:bg-secondary">
-      <tr>
+    <table className="w-full max-w-7xl [&_td]:px-2 [&_th]:p-2 [&_tr:not(:first-child):nth-child(even)]:bg-primary-foreground">
+      <tr className="">
         <th>Card Code</th>
         <th>Name</th>
         <th>Cost</th>

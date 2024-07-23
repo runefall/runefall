@@ -107,7 +107,7 @@ export default function SearchPage() {
 
   return (
     <>
-      <div className="bg-primary-foreground p-2">
+      <div className="border-b border-border bg-secondary p-2">
         <div className="flex max-w-7xl items-center justify-center gap-4">
           <Select
             value={displayMode}

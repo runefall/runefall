@@ -40,7 +40,11 @@ export default function CardDisplay({
         </div>
       );
     case "list":
-      return <CardList cards={cards} />;
+      return (
+        <div className="flex justify-center">
+          <CardList cards={cards} />
+        </div>
+      );
     case "full":
       return (
         <div>
