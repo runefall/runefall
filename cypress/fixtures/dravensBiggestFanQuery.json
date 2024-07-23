@@ -33,8 +33,8 @@
         ],
         "assets": [
           {
-            "gameAbsolutePath": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX035.png",
-            "fullAbsolutePath": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX035-full.png"
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX035.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX035-full.png"
           }
         ],
         "associated_cards": [
@@ -69,8 +69,8 @@
             ],
             "assets": [
               {
-                "gameAbsolutePath": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020.png",
-                "fullAbsolutePath": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020-full.png"
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020-full.png"
               }
             ],
             "created_at": "2024-07-03T22:37:16.351Z",
@@ -113,8 +113,8 @@
         ],
         "assets": [
           {
-            "gameAbsolutePath": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01FR018.png",
-            "fullAbsolutePath": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01FR018-full.png"
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01FR018.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01FR018-full.png"
           }
         ],
         "associated_cards": []
@@ -153,8 +153,8 @@
         ],
         "assets": [
           {
-            "gameAbsolutePath": "http://dd.b.pvp.net/5_6_0/set2/en_us/img/cards/02DE004.png",
-            "fullAbsolutePath": "http://dd.b.pvp.net/5_6_0/set2/en_us/img/cards/02DE004-full.png"
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set2/en_us/img/cards/02DE004.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set2/en_us/img/cards/02DE004-full.png"
           }
         ],
         "associated_cards": []
@@ -190,8 +190,8 @@
         "format_refs": ["client_Formats_Eternal_name"],
         "assets": [
           {
-            "gameAbsolutePath": "http://dd.b.pvp.net/5_6_0/set3/en_us/img/cards/03MT221.png",
-            "fullAbsolutePath": "http://dd.b.pvp.net/5_6_0/set3/en_us/img/cards/03MT221-full.png"
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set3/en_us/img/cards/03MT221.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set3/en_us/img/cards/03MT221-full.png"
           }
         ],
         "associated_cards": []
@@ -230,8 +230,8 @@
         ],
         "assets": [
           {
-            "gameAbsolutePath": "http://dd.b.pvp.net/5_6_0/set4/en_us/img/cards/04FR019T1.png",
-            "fullAbsolutePath": "http://dd.b.pvp.net/5_6_0/set4/en_us/img/cards/04FR019T1-full.png"
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set4/en_us/img/cards/04FR019T1.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set4/en_us/img/cards/04FR019T1-full.png"
           }
         ],
         "associated_cards": []
@@ -270,8 +270,8 @@
         ],
         "assets": [
           {
-            "gameAbsolutePath": "http://dd.b.pvp.net/5_6_0/set4/en_us/img/cards/04FR019.png",
-            "fullAbsolutePath": "http://dd.b.pvp.net/5_6_0/set4/en_us/img/cards/04FR019-full.png"
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set4/en_us/img/cards/04FR019.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set4/en_us/img/cards/04FR019-full.png"
           }
         ],
         "associated_cards": [
@@ -306,8 +306,8 @@
             ],
             "assets": [
               {
-                "gameAbsolutePath": "http://dd.b.pvp.net/5_6_0/set4/en_us/img/cards/04FR019T1.png",
-                "fullAbsolutePath": "http://dd.b.pvp.net/5_6_0/set4/en_us/img/cards/04FR019T1-full.png"
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set4/en_us/img/cards/04FR019T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set4/en_us/img/cards/04FR019T1-full.png"
               }
             ],
             "created_at": "2024-07-03T22:37:18.335Z",
@@ -350,8 +350,8 @@
         ],
         "assets": [
           {
-            "gameAbsolutePath": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO023.png",
-            "fullAbsolutePath": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO023-full.png"
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO023.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO023-full.png"
           }
         ],
         "associated_cards": [
@@ -386,8 +386,8 @@
             ],
             "assets": [
               {
-                "gameAbsolutePath": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO023T1.png",
-                "fullAbsolutePath": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO023T1-full.png"
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO023T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO023T1-full.png"
               }
             ],
             "created_at": "2024-07-03T22:37:19.824Z",
@@ -425,8 +425,8 @@
             ],
             "assets": [
               {
-                "gameAbsolutePath": "http://dd.b.pvp.net/5_6_0/set2/en_us/img/cards/02IO003T1.png",
-                "fullAbsolutePath": "http://dd.b.pvp.net/5_6_0/set2/en_us/img/cards/02IO003T1-full.png"
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set2/en_us/img/cards/02IO003T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set2/en_us/img/cards/02IO003T1-full.png"
               }
             ],
             "created_at": "2024-07-03T22:37:17.335Z",
@@ -469,8 +469,8 @@
         ],
         "assets": [
           {
-            "gameAbsolutePath": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO023T3.png",
-            "fullAbsolutePath": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO023T3-full.png"
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO023T3.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO023T3-full.png"
           }
         ],
         "associated_cards": [
@@ -505,8 +505,8 @@
             ],
             "assets": [
               {
-                "gameAbsolutePath": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO023T1.png",
-                "fullAbsolutePath": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO023T1-full.png"
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO023T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO023T1-full.png"
               }
             ],
             "created_at": "2024-07-03T22:37:19.824Z",
@@ -544,8 +544,8 @@
             ],
             "assets": [
               {
-                "gameAbsolutePath": "http://dd.b.pvp.net/5_6_0/set2/en_us/img/cards/02IO003T1.png",
-                "fullAbsolutePath": "http://dd.b.pvp.net/5_6_0/set2/en_us/img/cards/02IO003T1-full.png"
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set2/en_us/img/cards/02IO003T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set2/en_us/img/cards/02IO003T1-full.png"
               }
             ],
             "created_at": "2024-07-03T22:37:17.335Z",
@@ -588,8 +588,8 @@
         ],
         "assets": [
           {
-            "gameAbsolutePath": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO025.png",
-            "fullAbsolutePath": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO025-full.png"
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO025.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO025-full.png"
           }
         ],
         "associated_cards": [
@@ -624,8 +624,8 @@
             ],
             "assets": [
               {
-                "gameAbsolutePath": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01IO013.png",
-                "fullAbsolutePath": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01IO013-full.png"
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01IO013.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01IO013-full.png"
               }
             ],
             "created_at": "2024-07-03T22:37:16.291Z",
@@ -665,8 +665,8 @@
         "format_refs": ["client_Formats_Eternal_name"],
         "assets": [
           {
-            "gameAbsolutePath": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06PZ014.png",
-            "fullAbsolutePath": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06PZ014-full.png"
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06PZ014.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06PZ014-full.png"
           }
         ],
         "associated_cards": []
@@ -705,8 +705,8 @@
         ],
         "assets": [
           {
-            "gameAbsolutePath": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SH043.png",
-            "fullAbsolutePath": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SH043-full.png"
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SH043.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SH043-full.png"
           }
         ],
         "associated_cards": [
@@ -749,8 +749,8 @@
             ],
             "assets": [
               {
-                "gameAbsolutePath": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SH013T6.png",
-                "fullAbsolutePath": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SH013T6-full.png"
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SH013T6.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SH013T6-full.png"
               }
             ],
             "created_at": "2024-07-03T22:37:20.300Z",
@@ -788,8 +788,8 @@
             ],
             "assets": [
               {
-                "gameAbsolutePath": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SH043T2.png",
-                "fullAbsolutePath": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SH043T2-full.png"
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SH043T2.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SH043T2-full.png"
               }
             ],
             "created_at": "2024-07-03T22:37:20.326Z",
@@ -832,8 +832,8 @@
         ],
         "assets": [
           {
-            "gameAbsolutePath": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SH043T2.png",
-            "fullAbsolutePath": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SH043T2-full.png"
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SH043T2.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SH043T2-full.png"
           }
         ],
         "associated_cards": [
@@ -868,8 +868,8 @@
             ],
             "assets": [
               {
-                "gameAbsolutePath": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SH043.png",
-                "fullAbsolutePath": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SH043-full.png"
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SH043.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SH043-full.png"
               }
             ],
             "created_at": "2024-07-03T22:37:20.325Z",
@@ -915,8 +915,8 @@
             ],
             "assets": [
               {
-                "gameAbsolutePath": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SH013T6.png",
-                "fullAbsolutePath": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SH013T6-full.png"
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SH013T6.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SH013T6-full.png"
               }
             ],
             "created_at": "2024-07-03T22:37:20.300Z",
