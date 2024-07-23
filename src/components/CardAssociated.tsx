@@ -11,7 +11,7 @@ export default function CardAssociated({
   const associatedCardElements = associatedCards.map((card) => (
     <img
       key={card.card_code}
-      src={card.assets[0].gameAbsolutePath}
+      src={card.assets[0].game_absolute_path}
       alt={card.name}
       data-test-id="associated-card"
       className="h-auto w-48 rounded-lg drop-shadow-lg hover:cursor-pointer"

@@ -23,7 +23,7 @@ export default function SearchPage() {
     )
     .map((card, index) => (
       <Link to={`/card/${card.attributes.card_code}`} key={index}>
-        <CardSearchImage {...card} />
+        <CardSearchImage card={card} />
       </Link>
     ));
 
