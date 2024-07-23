@@ -1,3 +1,5 @@
+import { Rarity } from "./types";
+
 export interface Card {
   id: string;
   type: string;
@@ -17,7 +19,7 @@ export interface CardAttributes {
   cost: number;
   health: number;
   spell_speed: string;
-  rarity: string;
+  rarity: Rarity;
   supertype: string;
   card_type: string;
   collectible: boolean;

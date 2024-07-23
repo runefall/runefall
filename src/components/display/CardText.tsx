@@ -16,17 +16,19 @@ export default function CardText({ card }: { card: CardAttributes }) {
         </span>{" "}
         {card.name}
       </p>
+      {/* clean up this code later */}
       <p>{`${card.card_type}${card.spell_speed && ` - ${card.spell_speed}`} / ${card.rarity[0] + card.rarity.slice(1).toLowerCase()} / ${getSetString(card.set)}`}</p>
       {card.keywords.length !== 0 && (
         <p>Keywords: {card.keywords.join(", ")}</p>
       )}
-      <div className="[&>*:not(:first-child)]:mt-4">
-        {card.description_raw && <p>{card.description_raw}</p>}
-        {card.levelup_description_raw && (
-          <p>Level Up: {card.levelup_description_raw}</p>
-        )}
-        <p className="italic">{card.flavor_text}</p>
-      </div>
+      {(card.description_raw || card.levelup_description_raw) && (
+        <div className="[&>*:not(:first-child)]:mt-4">
+          {card.description_raw && <p>{card.description_raw}</p>}
+          {card.levelup_description_raw && (
+            <p>Level Up: {card.levelup_description_raw}</p>
+          )}
+        </div>
+      )}
       {card.card_type === "Unit" && (
         <p data-test-id="card-stats">
           {card.attack} | {card.health}
