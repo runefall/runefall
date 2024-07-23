@@ -11,7 +11,7 @@ export default function CardFull({ card }: { card: CardAttributes }) {
       data-test-id="card-full"
     >
       <img
-        src={card.assets[0].gameAbsolutePath}
+        src={card.assets[0].game_absolute_path}
         alt={card.name}
         className="h-auto w-full max-w-xs drop-shadow-2xl md:absolute md:left-[calc(-20rem+20px)] md:top-4"
       />

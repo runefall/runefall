@@ -1,20 +1,12 @@
-export default function CardImage(props: {
-  attributes: {
-    assets: {
-      gameAbsolutePath: string;
-    }[];
-    name: string;
-  };
-}) {
-  const attrs = props.attributes;
-  const cardName = attrs.name;
-  const imgSrc = attrs.assets[0].gameAbsolutePath;
+import { Card as CardType } from "@/types/interfaces";
 
-  if (imgSrc) {
-    return (
-      <div className="max-w-[350px] p-3" data-test-id="search-card">
-        <img src={imgSrc} alt={`${cardName} card`} />
-      </div>
-    );
-  }
+export default function CardImage({ card }: { card: CardType }) {
+  return (
+    <div className="max-w-[350px] p-3" data-test-id="search-card">
+      <img
+        src={card.attributes.assets[0].game_absolute_path}
+        alt={`${card.attributes.name} card`}
+      />
+    </div>
+  );
 }
