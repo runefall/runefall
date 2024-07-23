@@ -1,11 +1,5 @@
 import CardDisplay from "@/components/display/CardDisplay";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import SearchFilter from "@/components/SearchFilter/SearchFilter";
 import { Card as CardType } from "@/types/interfaces";
 import {
   DisplayMode,
@@ -107,60 +101,14 @@ export default function SearchPage() {
 
   return (
     <>
-      <div className="border-b border-border bg-secondary p-2">
-        <div className="flex max-w-7xl items-center justify-center gap-4">
-          <Select
-            value={displayMode}
-            onValueChange={(value: DisplayMode) => setDisplayMode(value)}
-          >
-            <SelectTrigger className="w-[180px]">
-              <SelectValue placeholder="Search Attribute" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="image">Image Only</SelectItem>
-              <SelectItem value="text">Text Only</SelectItem>
-              <SelectItem value="list">List Mode</SelectItem>
-              <SelectItem value="full">Full Display</SelectItem>
-            </SelectContent>
-          </Select>
-          {"filtered by"}
-          <Select
-            value={sortAttribute}
-            onValueChange={(value: SortAttribute) => setSortAttribute(value)}
-          >
-            <SelectTrigger className="w-[180px]">
-              <SelectValue placeholder="Search Attribute" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="card_code">Card Code</SelectItem>
-              <SelectItem value="name">Name</SelectItem>
-              <SelectItem value="cost">Cost</SelectItem>
-              <SelectItem value="health">Health</SelectItem>
-              <SelectItem value="attack">Attack</SelectItem>
-              <SelectItem value="card_type">Type</SelectItem>
-              <SelectItem value="rarity">Rarity</SelectItem>
-              <SelectItem value="region">Region</SelectItem>
-              <SelectItem value="artist_name">Artist Name</SelectItem>
-              <SelectItem value="set">Set</SelectItem>
-            </SelectContent>
-          </Select>
-          {":"}
-          <Select
-            value={sortDirection}
-            onValueChange={(value: SortDirection) => setSortDirection(value)}
-          >
-            <SelectTrigger className="w-[180px]">
-              <SelectValue placeholder="Display Mode" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="auto">Auto</SelectItem>
-              <SelectItem value="ascending">Ascending</SelectItem>
-              <SelectItem value="descending">Descending</SelectItem>
-            </SelectContent>
-          </Select>
-        </div>
-      </div>
-
+      <SearchFilter
+        displayMode={displayMode}
+        setDisplayMode={setDisplayMode}
+        sortAttribute={sortAttribute}
+        setSortAttribute={setSortAttribute}
+        sortDirection={sortDirection}
+        setSortDirection={setSortDirection}
+      />
       {cards.length === 0 ? (
         <div data-test-id="no-cards" className="m-8 w-auto text-center">
           No cards found with the specified search query.
