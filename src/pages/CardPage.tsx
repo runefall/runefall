@@ -1,5 +1,5 @@
 import CardAssociated from "@/components/CardAssociated";
-import CardFull from "@/components/CardFull";
+import CardFull from "@/components/display/CardFull";
 import { CardAttributes } from "@/types/interfaces";
 import { getCard } from "@/utils/apiCalls";
 import { useEffect, useState } from "react";

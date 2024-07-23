@@ -27,7 +27,7 @@ export interface CardAttributes {
   region_refs: string[];
   keywords: string[];
   keyword_refs: string[];
-  formats: string[];
+  formats: string[] | null;
   format_refs: string[];
   assets: {
     gameAbsolutePath: string;
