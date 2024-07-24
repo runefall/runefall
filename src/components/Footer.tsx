@@ -10,6 +10,9 @@ export default function Footer() {
             <Link to="/about" className="hover:underline">
               About Us
             </Link>
+            <Link to="/syntax" className="hover:underline">
+              Syntax
+            </Link>
             <Link
               to="https://github.com/runefall/runefall"
               className="hover:underline"
