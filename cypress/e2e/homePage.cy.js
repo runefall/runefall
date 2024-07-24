@@ -30,6 +30,12 @@ describe("template spec", () => {
     cy.url().should("eq", `${baseUrl}/search?query=draven`);
     cy.getTestId("nav-search-bar-input").should("have.value", "draven");
 
+    // some misc tests for the header
+    cy.getTestId("nav-logo").click();
+    cy.url().should("eq", `${baseUrl}/`);
+  });
+
+  it("should auto navigate to correct page if only one result", () => {
     cy.visit("/");
     cy.getTestId("home-search-bar")
       .type("Draven's Biggest Fan")
@@ -39,9 +45,5 @@ describe("template spec", () => {
       "have.value",
       "Draven's Biggest Fan",
     );
-
-    // some misc tests for the header
-    cy.getTestId("nav-logo").click();
-    cy.url().should("eq", `${baseUrl}/`);
   });
 });
