@@ -35,3 +35,8 @@ export interface CardAttributes {
   }[];
   associated_cards: CardAttributes[];
 }
+
+export interface Error {
+  name: string;
+  message: string;
+}

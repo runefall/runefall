@@ -3,17 +3,23 @@ import { Card as CardType } from "@/types/interfaces";
 import { querySearch } from "@/utils/apiCalls";
 import { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
+import { useErrorBoundary } from "react-error-boundary";
+
 
 export default function SearchPage() {
   const [searchParams] = useSearchParams();
   const [cards, setCards] = useState<CardType[]>([]);
+  const {showBoundary} = useErrorBoundary()
 
   useEffect(() => {
     const query = searchParams.get("query");
     if (!query) return;
 
-    querySearch(query).then((data) => {
+    querySearch(query)
+    .then((data) => {
       setCards(data.data);
+    }).catch((error) => {
+      showBoundary(error)
     });
   }, [searchParams]);
 

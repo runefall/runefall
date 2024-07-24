@@ -6,6 +6,7 @@ import CardPage from "./pages/CardPage";
 import HomePage from "./pages/HomePage";
 import SearchPage from "./pages/SearchPage";
 
+
 function App() {
   const location = useLocation();
   const { pathname } = location;
