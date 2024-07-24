@@ -5,6 +5,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import CardPage from "./pages/CardPage";
 import HomePage from "./pages/HomePage";
 import SearchPage from "./pages/SearchPage";
+import AboutPage from "./pages/AboutPage";
 
 function App() {
   const location = useLocation();
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/search" element={<SearchPage />} />
             <Route path="/card/:code" element={<CardPage />} />
+            <Route path="/about" element={<AboutPage />} />
           </Routes>
         </main>
         <Footer />
