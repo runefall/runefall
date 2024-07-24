@@ -9,9 +9,9 @@ export default function FallBackPage({ error }: { error: Error }) {
   const { resetBoundary } = useErrorBoundary();
   const navigate = useNavigate();
 
-  useEffect(() => {
-    navigate("/error");
-  }, [navigate]);
+  // useEffect(() => {
+  //   navigate("/error");
+  // }, [navigate]);
 
   const handleReset = () => {
     resetBoundary();
