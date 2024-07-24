@@ -6,7 +6,7 @@ export function querySearch(query: string) {
   console.log(HOST);
 
   return fetch(`${HOST}/api/v1/cards/search?query=${query}`).then((res) => {
-    if (!res.ok) {
+    if (!res.ok && res.status !== 400) {
       throw Error(`"${query}" failed from the server`);
     } else {
       return res.json();
