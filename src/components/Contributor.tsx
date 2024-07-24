@@ -1,17 +1,30 @@
-export default function Contributor(props) {
+export default function Contributor({
+  img,
+  github,
+  name,
+  linkedin,
+}: {
+  img: string;
+  github: string;
+  name: string;
+  linkedin: string;
+}) {
   return (
-    <div className="flex p-4">
-      <img src={props.img} className="w-20 h-20 rounded" />
-      <div className="flex-col px-2 ">
-        <h2 className="font-bold">{props.name}</h2>
-        <a href={props.github} className="flex">
+    <div className="flex w-full justify-center">
+      <div className="flex w-[250px] gap-2">
+        <img src={img} className="h-[100px] w-[100px] rounded" />
+
+        <div className="flex flex-col justify-between">
+          <h2 className="font-bold">{name}</h2>
+          <a href={github} className="flex">
             <img src="../contributors/images/github.png" />
             <p className="mx-auto">GitHub</p>
-         </a>
-          <a href={props.linkedin} className="flex">
+          </a>
+          <a href={linkedin} className="flex">
             <img src="../contributors/images/linkedin.png" />
             <p className="m-auto">LinkedIn</p>
-         </a>
+          </a>
+        </div>
       </div>
     </div>
   );
