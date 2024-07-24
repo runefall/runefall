@@ -34,7 +34,7 @@ export default function SelectSortAttribute({
         <SelectItem value="attack">Attack</SelectItem>
         <SelectItem value="card_type">Type</SelectItem>
         <SelectItem value="rarity">Rarity</SelectItem>
-        <SelectItem value="region">Region</SelectItem>
+        <SelectItem value="region_refs">Region</SelectItem>
         <SelectItem value="artist_name">Artist Name</SelectItem>
         <SelectItem value="set">Set</SelectItem>
       </SelectContent>

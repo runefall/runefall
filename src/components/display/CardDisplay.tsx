@@ -41,7 +41,7 @@ export default function CardDisplay({
       );
     case "list":
       return (
-        <div className="flex justify-center">
+        <div className="flex overflow-x-scroll lg:justify-center">
           <CardList cards={cards} />
         </div>
       );
@@ -49,13 +49,12 @@ export default function CardDisplay({
       return (
         <div>
           {cards.map((card, index) => (
-            <Link
-              to={`/card/${card.attributes.card_code}`}
+            <div
               key={index}
               className="relative flex w-full flex-col items-center border-b border-border p-12"
             >
               <CardFull card={card.attributes} />
-            </Link>
+            </div>
           ))}
         </div>
       );

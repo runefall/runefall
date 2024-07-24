@@ -21,7 +21,7 @@ export default function SearchFilter({
   return (
     <div className="border-b border-border bg-secondary [&>*]:p-2">
       {/* desktop view */}
-      <div className="hidden max-w-7xl items-center justify-center gap-4 md:flex">
+      <div className="hidden items-center justify-center gap-4 md:flex">
         <SelectDisplayMode
           displayMode={filterState.displayMode}
           setFilterState={setFilterState}
