@@ -26,7 +26,7 @@ export default function FallBackPage({ error }: { error: Error }) {
         role="alert"
       >
         <div className="shadow-center-md rounded-lg p-6 text-center max-w-lg dark:shadow-dark-center-md">
-          <TbFaceIdError size={"7rem"} className="mx-auto mb-4" />
+          <TbFaceIdError size={"7rem"} className="text-muted-foreground mx-auto mb-4 dark:text-dark-muted-foreground" />
           <h1 className="text-xl font-semibold mb-2">Something Went Wrong:</h1>
           <p className="mb-4">{error.message}</p>
           <button
