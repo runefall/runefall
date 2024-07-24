@@ -5,7 +5,8 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import CardPage from "./pages/CardPage";
 import HomePage from "./pages/HomePage";
 import SearchPage from "./pages/SearchPage";
-
+import { ErrorBoundary } from "react-error-boundary";
+import FallBackPage from "./pages/FallBackPage.tsx";
 
 function App() {
   const location = useLocation();
@@ -13,17 +14,19 @@ function App() {
 
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className="flex min-h-screen flex-col">
-        {pathname !== "/" && <NavBar />}
-        <main className="flex-1">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/search" element={<SearchPage />} />
-            <Route path="/card/:code" element={<CardPage />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
+      <ErrorBoundary FallbackComponent={FallBackPage}>
+        <div className="flex min-h-screen flex-col">
+          {pathname !== "/" && <NavBar />}
+          <main className="flex-1">
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/search" element={<SearchPage />} />
+              <Route path="/card/:code" element={<CardPage />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
+      </ErrorBoundary>
     </ThemeProvider>
   );
 }
