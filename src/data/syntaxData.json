@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Searching by name",
+    "description": "You can search for cards by name with 'name:' or by simply entering the words you want to find. By default, each word will be treated as a separate search token. Enclosing the string in quotes will cause it to be treated as a single token.",
+    "examples": [
+      "Draven",
+      "name:Shot",
+      "\"Pale Casecade\""
+    ]
+  },
+  {
+    "title": "Searching by region",
+    "description": "Use 'region:' or 'r:' to search by region. You can use the full name of the region or various short forms, such as the official 2-character codes (BW, DE, FR, IO, MT, NX, PZ, SI) or other abbreviated versions ('Targon', 'P&Z', 'Isles').",
+    "examples": [
+      "region:Targon",
+      "r:DE",
+      "\"region: P&Z\""
+    ]
+  }
+]
