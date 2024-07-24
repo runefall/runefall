@@ -34,7 +34,7 @@ describe("template spec", () => {
     cy.getTestId("home-search-bar")
       .type("Draven's Biggest Fan")
       .type("{enter}");
-    cy.url().should("eq", `${baseUrl}/search?query=Draven%27s%20Biggest%20Fan`);
+    cy.url().should("eq", `${baseUrl}/card/01NX035`);
     cy.getTestId("nav-search-bar-input").should(
       "have.value",
       "Draven's Biggest Fan",

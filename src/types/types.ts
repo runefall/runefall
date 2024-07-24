@@ -1,4 +1,4 @@
-export type DisplayMode = "image" | "text" | "full" | "list";
+export type SortMode = "image" | "text" | "full" | "list";
 
 export type SortAttribute =
   | "name"

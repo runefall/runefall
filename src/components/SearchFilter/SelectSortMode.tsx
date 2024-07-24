@@ -5,38 +5,38 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { DisplayMode } from "@/types/types";
+import { SortMode } from "@/types/types";
 
-export default function SelectDisplayMode({
+export default function SelectSortMode({
   className = "w-[180px]",
-  displayMode,
+  sortMode,
   setFilterState,
 }: {
   className?: string;
-  displayMode: DisplayMode;
+  sortMode: SortMode;
   setFilterState: (action: { type: string; value: string }) => void;
 }) {
   return (
     <Select
-      value={displayMode}
-      onValueChange={(value: DisplayMode) =>
+      value={sortMode}
+      onValueChange={(value: SortMode) =>
         setFilterState({ type: "sortMode", value })
       }
     >
-      <SelectTrigger className={className} data-test-id="select-display">
+      <SelectTrigger className={className} data-test-id="select-mode">
         <SelectValue placeholder="Search Attribute" />
       </SelectTrigger>
       <SelectContent>
-        <SelectItem data-test-id="select-display-image" value="image">
+        <SelectItem data-test-id="select-mode-image" value="image">
           Image Only
         </SelectItem>
-        <SelectItem data-test-id="select-display-text" value="text">
+        <SelectItem data-test-id="select-mode-text" value="text">
           Text Only
         </SelectItem>
-        <SelectItem data-test-id="select-display-list" value="list">
+        <SelectItem data-test-id="select-mode-list" value="list">
           List Mode
         </SelectItem>
-        <SelectItem data-test-id="select-display-full" value="full">
+        <SelectItem data-test-id="select-mode-full" value="full">
           Full Display
         </SelectItem>
       </SelectContent>

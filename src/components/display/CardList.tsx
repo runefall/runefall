@@ -16,7 +16,7 @@ export default function CardList({ cards }: { cards: CardType[] }) {
       card_code,
     } = card.attributes;
     return (
-      <tr>
+      <tr data-test-id="card-list-item">
         <td>{card_code}</td>
         <td>{name}</td>
         <td>{cost}</td>

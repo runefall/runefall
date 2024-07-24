@@ -1,4 +1,4 @@
-import { DisplayMode, Rarity, SortAttribute, SortDirection } from "./types";
+import { Rarity, SortAttribute, SortDirection, SortMode } from "./types";
 
 export interface Card {
   id: string;
@@ -39,7 +39,7 @@ export interface CardAttributes {
 }
 
 export interface FilterState {
-  displayMode: DisplayMode;
+  sortMode: SortMode;
   sortAttribute: SortAttribute;
   sortDirection: SortDirection;
 }

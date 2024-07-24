@@ -1,12 +1,7 @@
 import CardDisplay from "@/components/display/CardDisplay";
 import SearchFilter from "@/components/SearchFilter/SearchFilter";
 import { Card as CardType, FilterState } from "@/types/interfaces";
-import {
-  DisplayMode,
-  Rarity,
-  SortAttribute,
-  SortDirection,
-} from "@/types/types";
+import { Rarity, SortAttribute, SortDirection, SortMode } from "@/types/types";
 import { querySearch } from "@/utils/apiCalls";
 import { useEffect, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
@@ -15,19 +10,19 @@ export default function SearchPage() {
   const [searchParams] = useSearchParams();
   const [cards, setCards] = useState<CardType[]>([]);
   const [filterState, setFilterState] = useState<FilterState>({
-    displayMode: "image",
+    sortMode: "image",
     sortAttribute: "name",
     sortDirection: "auto",
   });
   const navigate = useNavigate();
-  const { displayMode, sortAttribute, sortDirection } = filterState;
+  const { sortMode, sortAttribute, sortDirection } = filterState;
 
   function handleFilterState(action: { type: string; value: string }) {
     switch (action.type) {
-      case "displayMode":
+      case "sortMode":
         setFilterState((prevState) => ({
           ...prevState,
-          displayMode: action.value as DisplayMode,
+          sortMode: action.value as SortMode,
         }));
         break;
       case "sortDirection":
@@ -136,7 +131,7 @@ export default function SearchPage() {
           No cards found with the specified search query.
         </div>
       ) : (
-        <CardDisplay cards={cardsSorted} mode={displayMode} />
+        <CardDisplay cards={cardsSorted} mode={sortMode} />
       )}
     </>
   );

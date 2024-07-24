@@ -1,16 +1,16 @@
 import { Button } from "@/components/ui/button";
-import { DisplayMode, SortAttribute, SortDirection } from "@/types/types";
+import { SortAttribute, SortDirection, SortMode } from "@/types/types";
 import { useState } from "react";
-import SelectDisplayMode from "./SelectDisplayMode";
 import SelectSortAttribute from "./SelectSortAttribute";
 import SelectSortDirection from "./SelectSortDirection";
+import SelectSortMode from "./SelectSortMode";
 
 export default function SearchFilter({
   filterState,
   setFilterState,
 }: {
   filterState: {
-    displayMode: DisplayMode;
+    sortMode: SortMode;
     sortAttribute: SortAttribute;
     sortDirection: SortDirection;
   };
@@ -22,8 +22,8 @@ export default function SearchFilter({
     <div className="border-b border-border bg-secondary [&>*]:p-2">
       {/* desktop view */}
       <div className="hidden items-center justify-center gap-4 md:flex">
-        <SelectDisplayMode
-          displayMode={filterState.displayMode}
+        <SelectSortMode
+          sortMode={filterState.sortMode}
           setFilterState={setFilterState}
         />
         {"filtered by"}
@@ -50,9 +50,9 @@ export default function SearchFilter({
           <div className="flex w-full flex-col items-center justify-center gap-4 [&>*]:grid [&>*]:w-full [&>*]:grid-cols-[1fr_4fr] [&>*]:items-center [&>*]:gap-4 [&>*]:text-end">
             <div>
               <div>Display As</div>
-              <SelectDisplayMode
+              <SelectSortMode
                 className="flex-1"
-                displayMode={filterState.displayMode}
+                sortMode={filterState.sortMode}
                 setFilterState={setFilterState}
               />
             </div>
