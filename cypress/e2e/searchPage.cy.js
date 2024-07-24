@@ -17,13 +17,31 @@ describe("template spec", () => {
     cy.visit("/search?query=draven");
     cy.get("header").should("exist").should("have.length", 1);
     cy.get("footer").should("exist").should("have.length", 1);
-    cy.getTestId("search-card").should("have.length", 4);
+    cy.getTestId("image-card").should("have.length", 4);
 
     cy.visit("/search?query=asd");
     cy.getTestId("no-cards").should("exist");
 
     cy.getTestId("nav-search-bar-input").clear().type("draven").type("{enter}");
     cy.url().should("eq", `${baseUrl}/search?query=draven`);
-    cy.getTestId("search-card").should("have.length", 4);
+    cy.getTestId("image-card").should("have.length", 4);
+  });
+
+  it("should display text format properly", () => {
+    cy.visit("/search?query=draven");
+    cy.getTestId("select-display").click();
+    cy.getTestId("select-display-text").click();
+  });
+
+  it("should display list format properly", () => {
+    cy.visit("/search?query=draven");
+    cy.getTestId("select-display").click();
+    cy.getTestId("select-display-list").click();
+  });
+
+  it("should display full format properly", () => {
+    cy.visit("/search?query=draven");
+    cy.getTestId("select-display").click();
+    cy.getTestId("select-display-full").click();
   });
 });

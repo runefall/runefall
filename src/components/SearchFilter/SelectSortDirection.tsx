@@ -23,13 +23,22 @@ export default function SelectSortDirection({
         setFilterState({ type: "sortDirection", value })
       }
     >
-      <SelectTrigger className={className}>
-        <SelectValue placeholder="Display Mode" />
+      <SelectTrigger data-test-id="select-direction" className={className}>
+        <SelectValue placeholder="Sort Direction" />
       </SelectTrigger>
       <SelectContent>
-        <SelectItem value="auto">Auto</SelectItem>
-        <SelectItem value="ascending">Ascending</SelectItem>
-        <SelectItem value="descending">Descending</SelectItem>
+        <SelectItem data-test-id="select-direction-auto" value="auto">
+          Auto
+        </SelectItem>
+        <SelectItem data-test-id="select-direction-ascending" value="ascending">
+          Ascending
+        </SelectItem>
+        <SelectItem
+          data-test-id="select-direction-descending"
+          value="descending"
+        >
+          Descending
+        </SelectItem>
       </SelectContent>
     </Select>
   );

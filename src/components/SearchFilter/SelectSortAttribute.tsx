@@ -23,20 +23,46 @@ export default function SelectSortAttribute({
         setFilterState({ type: "sortAttribute", value })
       }
     >
-      <SelectTrigger className={className}>
-        <SelectValue placeholder="Search Attribute" />
+      <SelectTrigger className={className} data-test-id="select-attribute">
+        <SelectValue placeholder="Sort Attribute" />
       </SelectTrigger>
       <SelectContent>
-        <SelectItem value="card_code">Card Code</SelectItem>
-        <SelectItem value="name">Name</SelectItem>
-        <SelectItem value="cost">Cost</SelectItem>
-        <SelectItem value="health">Health</SelectItem>
-        <SelectItem value="attack">Attack</SelectItem>
-        <SelectItem value="card_type">Type</SelectItem>
-        <SelectItem value="rarity">Rarity</SelectItem>
-        <SelectItem value="region_refs">Region</SelectItem>
-        <SelectItem value="artist_name">Artist Name</SelectItem>
-        <SelectItem value="set">Set</SelectItem>
+        <SelectItem data-test-id="select-attribute-card-code" value="card_code">
+          Card Code
+        </SelectItem>
+        <SelectItem data-test-id="select-attribute-name" value="name">
+          Name
+        </SelectItem>
+        <SelectItem data-test-id="select-attribute-cost" value="cost">
+          Cost
+        </SelectItem>
+        <SelectItem data-test-id="select-attribute-health" value="health">
+          Health
+        </SelectItem>
+        <SelectItem data-test-id="select-attribute-attack" value="attack">
+          Attack
+        </SelectItem>
+        <SelectItem data-test-id="select-attribute-card-type" value="card_type">
+          Type
+        </SelectItem>
+        <SelectItem data-test-id="select-attribute-rarity" value="rarity">
+          Rarity
+        </SelectItem>
+        <SelectItem
+          data-test-id="select-attribute-region-refs"
+          value="region_refs"
+        >
+          Region
+        </SelectItem>
+        <SelectItem
+          data-test-id="select-attribute-artist-name"
+          value="artist_name"
+        >
+          Artist Name
+        </SelectItem>
+        <SelectItem data-test-id="select-attribute-set" value="set">
+          Set
+        </SelectItem>
       </SelectContent>
     </Select>
   );

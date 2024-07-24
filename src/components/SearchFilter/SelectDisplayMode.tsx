@@ -20,17 +20,25 @@ export default function SelectDisplayMode({
     <Select
       value={displayMode}
       onValueChange={(value: DisplayMode) =>
-        setFilterState({ type: "displayMode", value })
+        setFilterState({ type: "sortMode", value })
       }
     >
-      <SelectTrigger className={className}>
+      <SelectTrigger className={className} data-test-id="select-display">
         <SelectValue placeholder="Search Attribute" />
       </SelectTrigger>
       <SelectContent>
-        <SelectItem value="image">Image Only</SelectItem>
-        <SelectItem value="text">Text Only</SelectItem>
-        <SelectItem value="list">List Mode</SelectItem>
-        <SelectItem value="full">Full Display</SelectItem>
+        <SelectItem data-test-id="select-display-image" value="image">
+          Image Only
+        </SelectItem>
+        <SelectItem data-test-id="select-display-text" value="text">
+          Text Only
+        </SelectItem>
+        <SelectItem data-test-id="select-display-list" value="list">
+          List Mode
+        </SelectItem>
+        <SelectItem data-test-id="select-display-full" value="full">
+          Full Display
+        </SelectItem>
       </SelectContent>
     </Select>
   );
