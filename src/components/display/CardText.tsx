@@ -4,7 +4,7 @@ import { getSetString } from "@/utils/sets";
 export default function CardText({ card }: { card: CardAttributes }) {
   return (
     <div
-      className="relative flex w-full flex-col items-center rounded-2xl border border-border bg-card py-2 shadow-md [&>*:not(:first-child)]:border-t [&>*]:w-full [&>*]:p-2 [&>*]:px-6"
+      className="relative flex w-full max-w-sm flex-col items-center rounded-2xl border border-border bg-card py-2 shadow-md [&>*:not(:first-child)]:border-t [&>*]:w-full [&>*]:p-2 [&>*]:px-6"
       data-test-id="card-text"
     >
       <p className="flex items-center gap-2">

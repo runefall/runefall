@@ -32,7 +32,7 @@ export default function CardDisplay({
             <Link
               to={`/card/${card.attributes.card_code}`}
               key={index}
-              className="w-full"
+              className="flex w-full justify-center"
             >
               <CardText card={card.attributes} />
             </Link>
