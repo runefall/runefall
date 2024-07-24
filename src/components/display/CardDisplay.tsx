@@ -1,5 +1,5 @@
 import { Card as CardType } from "@/types/interfaces";
-import { DisplayMode } from "@/types/types";
+import { SortMode } from "@/types/types";
 import { Link } from "react-router-dom";
 import CardFull from "./CardFull";
 import CardImage from "./CardImage";
@@ -10,7 +10,7 @@ export default function CardDisplay({
   mode,
   cards,
 }: {
-  mode: DisplayMode;
+  mode: SortMode;
   cards: CardType[];
 }) {
   switch (mode) {
