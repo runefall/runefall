@@ -4,13 +4,13 @@ import { Card as CardType, FilterState } from "@/types/interfaces";
 import { Rarity, SortAttribute, SortDirection, SortMode } from "@/types/types";
 import { querySearch } from "@/utils/apiCalls";
 import { useEffect, useState } from "react";
-import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { useErrorBoundary } from "react-error-boundary";
-        
+import { useNavigate, useSearchParams } from "react-router-dom";
+
 export default function SearchPage() {
   const [searchParams] = useSearchParams();
   const [cards, setCards] = useState<CardType[]>([]);
-  const {showBoundary} = useErrorBoundary()
+  const { showBoundary } = useErrorBoundary();
   const [filterState, setFilterState] = useState<FilterState>({
     sortMode: "image",
     sortAttribute: "name",
@@ -47,11 +47,11 @@ export default function SearchPage() {
     if (!query) return;
 
     setCards([]);
-    querySearch(query).then((data: { data: CardType[] }) => {
-      setCards(data.data);
-    }).catch((error) => {
-      showBoundary(error)
-    });
+    querySearch(query)
+      .then((data: { data: CardType[] }) => {
+        setCards(data.data);
+      })
+      .catch(showBoundary);
   }, [searchParams]);
 
   if (cards.length === 1) {

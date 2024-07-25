@@ -1,14 +1,16 @@
-describe("FallBackPage", () => {
+describe("fallBackPage", () => {
+  const baseUrl = Cypress.config("baseUrl");
+
   beforeEach(() => {
     cy.intercept(
       "http://localhost:3000/api/v1/cards/search?query=Draven%27s%20Biggest%20Fan",
       {
-        forceNetworkError: true
+        forceNetworkError: true,
       },
     ).as("failed");
 
-    cy.on('uncaught:exception', (err) => {
-      if (err.message.includes('Failed to fetch')) {
+    cy.on("uncaught:exception", (err) => {
+      if (err.message.includes("Failed to fetch")) {
         return false;
       }
       return true;
@@ -16,13 +18,17 @@ describe("FallBackPage", () => {
   });
 
   it("should go to an error page if there is an error detected", () => {
-    cy.visit("http://localhost:5173");
-    cy.get('.relative > .flex').type("Draven's Biggest Fan").type("{enter}");
-    cy.url().should('contain', '/error')
-    cy.get('.shadow-center-md > .text-xl').should('contain', 'Something Went Wrong:')
-    cy.get('.text-4xl').should('contain', 'RUNEFALL')
-    cy.get('.bg-gray-700 > .max-w-screen-xl').should('exist')
-    cy.get('.bg-primary').click()
-    cy.url().should('contain', '/' )
+    cy.visit("/");
+    cy.getTestId("home-search-bar")
+      .type("Draven's Biggest Fan")
+      .type("{enter}");
+    cy.url().should("eq", `${baseUrl}/error`);
+    cy.getTestId("error-message").should("contain", "Something Went Wrong:");
+
+    cy.get("header").should("exist").should("have.length", 1);
+    cy.get("footer").should("exist").should("have.length", 1);
+
+    cy.getTestId("error-reset-button").click();
+    cy.url().should("eq", `${baseUrl}/`);
   });
 });
