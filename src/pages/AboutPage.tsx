@@ -1,4 +1,4 @@
-import data from "../../public/contributors/data";
+import data from "../data/contributors";
 import Contributor from "../components/Contributor";
 
 export default function AboutPage() {

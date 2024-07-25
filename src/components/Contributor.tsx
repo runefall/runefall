@@ -17,11 +17,11 @@ export default function Contributor({
         <div className="flex flex-col justify-between">
           <h2 className="font-bold">{name}</h2>
           <a href={github} className="flex">
-            <img src="../contributors/images/github.png" />
+            <img src="images/github.png" />
             <p className="mx-auto">GitHub</p>
           </a>
           <a href={linkedin} className="flex">
-            <img src="../contributors/images/linkedin.png" />
+            <img src="images/linkedin.png" />
             <p className="m-auto">LinkedIn</p>
           </a>
         </div>
