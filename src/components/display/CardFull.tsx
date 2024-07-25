@@ -1,13 +1,12 @@
 import FormatLegality from "@/components/FormatLegality";
+import { formats } from "@/data/formats";
 import { CardAttributes } from "@/types/interfaces";
 import { getSetString } from "@/utils/sets";
-
-const formats = ["Standard", "Eternal", "Commons Only"];
 
 export default function CardFull({ card }: { card: CardAttributes }) {
   return (
     <div
-      className="relative flex w-full max-w-sm flex-col items-center gap-4 border-border md:left-[calc(10rem-10px)]"
+      className="relative flex w-full max-w-sm flex-col items-center md:left-[calc(10rem-10px)]"
       data-test-id="card-full"
     >
       <img
@@ -49,7 +48,7 @@ export default function CardFull({ card }: { card: CardAttributes }) {
             {formats.map((format) => (
               <FormatLegality
                 key={format}
-                valid={card.formats.includes(format)}
+                valid={card.formats?.includes(format) || false}
                 format={format}
               />
             ))}

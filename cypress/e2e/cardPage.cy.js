@@ -70,7 +70,7 @@ describe("CardPage component", () => {
       .find("img")
       .should("have.attr", "src")
       .should(
-        "include",
+        "eq",
         "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020T1.png",
       );
 
