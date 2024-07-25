@@ -14,6 +14,11 @@ describe("template spec", () => {
       method: "GET",
       fixture: "dravenQuery.json",
     }).as("getDravenQuery");
+
+    cy.intercept("http://localhost:3000/api/v1/cards/01NX035", {
+      method: "GET",
+      fixture: "01NX035.json",
+    });
   });
 
   it("This checks to make sure the homepage displays properly", () => {
