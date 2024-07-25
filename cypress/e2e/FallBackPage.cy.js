@@ -1,4 +1,4 @@
-describe("template spec", () => {
+describe("FallBackPage", () => {
   beforeEach(() => {
     cy.intercept(
       "http://localhost:3000/api/v1/cards/search?query=Draven%27s%20Biggest%20Fan",
@@ -15,7 +15,7 @@ describe("template spec", () => {
     });
   });
 
-  it("passes", () => {
+  it("should go to an error page if there is an error detected", () => {
     cy.visit("http://localhost:5173");
     cy.get('.relative > .flex').type("Draven's Biggest Fan").type("{enter}");
     cy.url().should('contain', '/error')
