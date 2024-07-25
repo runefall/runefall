@@ -1,3 +1,5 @@
+import { Rarity, SortAttribute, SortDirection, SortMode } from "./types";
+
 export interface Card {
   id: string;
   type: string;
@@ -17,7 +19,7 @@ export interface CardAttributes {
   cost: number;
   health: number;
   spell_speed: string;
-  rarity: string;
+  rarity: Rarity;
   supertype: string;
   card_type: string;
   collectible: boolean;
@@ -27,7 +29,7 @@ export interface CardAttributes {
   region_refs: string[];
   keywords: string[];
   keyword_refs: string[];
-  formats: string[];
+  formats: string[] | null;
   format_refs: string[];
   assets: {
     game_absolute_path: string;
@@ -39,4 +41,10 @@ export interface CardAttributes {
 export interface Error {
   name: string;
   message: string;
+}
+
+export interface FilterState {
+  sortMode: SortMode;
+  sortAttribute: SortAttribute;
+  sortDirection: SortDirection;
 }

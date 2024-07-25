@@ -24,6 +24,7 @@ module.exports = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        shadow: "hsl(var(--shadow))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -53,8 +54,8 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
         spacing: {
-          '4.5': '16px',
-        }
+          4.5: "16px",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -74,10 +75,6 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-      },
-      boxShadow: {
-        'center-md': '0 0 15px 5px rgba(0, 0, 0, 0.25)',
-        'dark-center-md': '0 0 15px 5px rgba(255, 255, 255, 0.25)', 
       },
     },
   },
