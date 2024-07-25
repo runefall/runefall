@@ -5,13 +5,15 @@ import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 import { TbFaceIdError } from "react-icons/tb";
 
-export default function FallBackPage({ error }: { error: Error }) {
+export default function FallBackPage({ error }: { error: Error | null }) {
   const { resetBoundary } = useErrorBoundary();
   const navigate = useNavigate();
 
   useEffect(() => {
-    navigate("/error");
-  }, [navigate]);
+    if (!error) {
+      navigate("/");
+    }
+  }, [error, navigate]);
 
   const handleReset = () => {
     resetBoundary();
@@ -28,7 +30,7 @@ export default function FallBackPage({ error }: { error: Error }) {
         <div className="shadow-center-md rounded-lg p-6 text-center max-w-lg dark:shadow-dark-center-md">
           <TbFaceIdError size={"7rem"} className="text-muted-foreground mx-auto mb-4 dark:text-dark-muted-foreground" />
           <h1 className="text-xl font-semibold mb-2">Something Went Wrong:</h1>
-          <p className="mb-4">{error.message}</p>
+          <p className="mb-4">{error ? error.message : "Unknown error"}</p>
           <button
             onClick={handleReset}
             className="bg-primary text-primary-foreground py-2 px-4 rounded hover:bg-primary-600 focus:outline-none dark:bg-dark-primary dark:text-dark-primary-foreground dark:hover:bg-dark-primary-600"
@@ -41,4 +43,3 @@ export default function FallBackPage({ error }: { error: Error }) {
     </div>
   );
 }
-
