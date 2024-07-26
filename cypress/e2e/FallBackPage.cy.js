@@ -7,7 +7,11 @@ describe("fallBackPage", () => {
       {
         forceNetworkError: true,
       },
-    ).as("failed");
+    ).as("failedSearch");
+
+    cy.intercept("http://localhost:3000/api/v1/cards/01NX020", {
+      forceNetworkError: true,
+    }).as("failedDetail");
 
     cy.on("uncaught:exception", (err) => {
       if (err.message.includes("Failed to fetch")) {
@@ -17,13 +21,23 @@ describe("fallBackPage", () => {
     });
   });
 
-  it("should go to an error page if there is an error detected", () => {
+  it("should go to an error page for failed search network request", () => {
     cy.visit("/");
     cy.getTestId("home-search-bar")
       .type("Draven's Biggest Fan")
       .type("{enter}");
-    cy.url().should("eq", `${baseUrl}/error`);
-    cy.getTestId("error-message").should("contain", "Something Went Wrong:");
+    cy.getTestId("error-message").should("exist").should("have.length", 1);
+
+    cy.get("header").should("exist").should("have.length", 1);
+    cy.get("footer").should("exist").should("have.length", 1);
+
+    cy.getTestId("error-reset-button").click();
+    cy.url().should("eq", `${baseUrl}/`);
+  });
+
+  it("should go to an error page for failed card detail page network request", () => {
+    cy.visit("/card/01NX020");
+    cy.getTestId("error-message").should("exist").should("have.length", 1);
 
     cy.get("header").should("exist").should("have.length", 1);
     cy.get("footer").should("exist").should("have.length", 1);

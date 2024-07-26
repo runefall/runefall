@@ -1,12 +1,12 @@
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 import ThemeProvider from "@/components/ThemeProvider";
+import { ErrorBoundary } from "react-error-boundary";
 import { Route, Routes, useLocation } from "react-router-dom";
 import CardPage from "./pages/CardPage";
+import FallBackPage from "./pages/FallBackPage.tsx";
 import HomePage from "./pages/HomePage";
 import SearchPage from "./pages/SearchPage";
-import { ErrorBoundary } from "react-error-boundary";
-import FallBackPage from "./pages/FallBackPage.tsx";
 
 function App() {
   const location = useLocation();
