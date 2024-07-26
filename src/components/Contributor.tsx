@@ -10,7 +10,7 @@ export default function Contributor({
   linkedin: string;
 }) {
   return (
-    <div className="flex w-full ">
+    <div className="flex w-full">
       <div className="flex w-[250px] gap-2">
         <img src={img} className="h-[100px] w-[100px] rounded" />
 
