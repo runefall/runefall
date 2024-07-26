@@ -11,11 +11,11 @@ export default function Contributor({
 }) {
   return (
     <div className="flex w-full">
-      <div className="flex w-[250px] gap-2">
+      <div className="flex w-[275px] gap-2">
         <img src={img} className="h-[100px] w-[100px] rounded" />
 
         <div className="flex flex-col justify-between">
-          <h2 className="font-bold">{name}</h2>
+          <h2 className="text-xl font-bold">{name}</h2>
           <a href={github} className="flex">
             <img src="images/github.png" />
             <p className="mx-auto">GitHub</p>
