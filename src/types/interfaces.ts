@@ -38,6 +38,11 @@ export interface CardAttributes {
   associated_cards: CardAttributes[];
 }
 
+export interface Error {
+  name: string;
+  message: string;
+}
+
 export interface FilterState {
   sortMode: SortMode;
   sortAttribute: SortAttribute;
