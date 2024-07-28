@@ -3,6 +3,7 @@ import NavBar from "@/components/NavBar";
 import ThemeProvider from "@/components/ThemeProvider";
 import { ErrorBoundary } from "react-error-boundary";
 import { Route, Routes, useLocation } from "react-router-dom";
+import AboutPage from "./pages/AboutPage";
 import CardPage from "./pages/CardPage";
 import FallBackPage from "./pages/FallBackPage.tsx";
 import HomePage from "./pages/HomePage";
@@ -22,6 +23,7 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/search" element={<SearchPage />} />
               <Route path="/card/:code" element={<CardPage />} />
+              <Route path="/about" element={<AboutPage />} />
             </Routes>
           </main>
           <Footer />
