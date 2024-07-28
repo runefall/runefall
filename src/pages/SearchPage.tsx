@@ -1,50 +1,56 @@
 import CardDisplay from "@/components/display/CardDisplay";
 import SearchFilter from "@/components/SearchFilter/SearchFilter";
 import { Card as CardType, FilterState } from "@/types/interfaces";
-import { Rarity, SortAttribute, SortDirection, SortMode } from "@/types/types";
+import { Rarity } from "@/types/types";
 import { querySearch } from "@/utils/apiCalls";
 import { useEffect, useState } from "react";
 import { useErrorBoundary } from "react-error-boundary";
 import { useNavigate, useSearchParams } from "react-router-dom";
 
 export default function SearchPage() {
-  const [searchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const [cards, setCards] = useState<CardType[]>([]);
-  const { showBoundary } = useErrorBoundary();
   const [filterState, setFilterState] = useState<FilterState>({
     sortMode: "image",
     sortAttribute: "name",
     sortDirection: "auto",
   });
   const navigate = useNavigate();
+  const { showBoundary } = useErrorBoundary();
   const { sortMode, sortAttribute, sortDirection } = filterState;
 
   function handleFilterState(action: { type: string; value: string }) {
     switch (action.type) {
       case "sortMode":
-        setFilterState((prevState) => ({
-          ...prevState,
-          sortMode: action.value as SortMode,
-        }));
-        break;
-      case "sortDirection":
-        setFilterState((prevState) => ({
-          ...prevState,
-          sortDirection: action.value as SortDirection,
-        }));
+        searchParams.set("mode", action.value);
+        setSearchParams(searchParams);
         break;
       case "sortAttribute":
-        setFilterState((prevState) => ({
-          ...prevState,
-          sortAttribute: action.value as SortAttribute,
-        }));
+        searchParams.set("attribute", action.value);
+        setSearchParams(searchParams);
         break;
+      case "sortDirection":
+        searchParams.set("direction", action.value);
+        setSearchParams(searchParams);
     }
   }
 
   useEffect(() => {
     const query = searchParams.get("query");
     if (!query) return;
+
+    setFilterState((prevState) => {
+      const sortModeParam = searchParams.get("mode");
+      const sortAttributeParam = searchParams.get("attribute");
+      const sortDirectionParam = searchParams.get("direction");
+
+      return {
+        ...prevState,
+        sortMode: sortModeParam ? sortModeParam : "image",
+        sortAttribute: sortAttributeParam ? sortAttributeParam : "name",
+        sortDirection: sortDirectionParam ? sortDirectionParam : "auto",
+      } as FilterState;
+    });
 
     setCards([]);
     querySearch(query)
