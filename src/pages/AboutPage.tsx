@@ -64,7 +64,7 @@ export default function AboutPage() {
         </p>
       </section>
 
-      <section data-test-id="contributors">
+      <section data-test-id="about-contributors">
         <div className="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-8">
           {contributors}
         </div>
