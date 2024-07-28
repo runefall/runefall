@@ -2,7 +2,7 @@ import { Card as CardType } from "@/types/interfaces";
 import { getSetString } from "@/utils/sets";
 
 export default function CardList({ cards }: { cards: CardType[] }) {
-  const cardElements = cards.map((card) => {
+  const cardElements = cards.map((card, index) => {
     const {
       name,
       set,
@@ -16,7 +16,7 @@ export default function CardList({ cards }: { cards: CardType[] }) {
       card_code,
     } = card.attributes;
     return (
-      <tr data-test-id="card-list-item">
+      <tr data-test-id="card-list-item" key={index}>
         <td>{card_code}</td>
         <td>{name}</td>
         <td>{cost}</td>
@@ -37,19 +37,21 @@ export default function CardList({ cards }: { cards: CardType[] }) {
 
   return (
     <table className="w-full max-w-7xl [&_td]:px-2 [&_th]:p-2 [&_tr:not(:first-child):nth-child(even)]:bg-primary-foreground">
-      <tr className="">
-        <th>Card Code</th>
-        <th>Name</th>
-        <th>Cost</th>
-        <th>Health</th>
-        <th>Attack</th>
-        <th>Type</th>
-        <th>Rarity</th>
-        <th>Region</th>
-        <th>Artist</th>
-        <th>Set</th>
-      </tr>
-      {cardElements}
+      <thead>
+        <tr>
+          <th>Card Code</th>
+          <th>Name</th>
+          <th>Cost</th>
+          <th>Health</th>
+          <th>Attack</th>
+          <th>Type</th>
+          <th>Rarity</th>
+          <th>Region</th>
+          <th>Artist</th>
+          <th>Set</th>
+        </tr>
+      </thead>
+      <tbody>{cardElements}</tbody>
     </table>
   );
 }
