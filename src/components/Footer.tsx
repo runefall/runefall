@@ -5,27 +5,38 @@ export default function Footer() {
     <footer className="flex justify-center bg-gray-700 text-white">
       <div className="max-w-screen-xl flex-1 p-8">
         <section className="mb-8 flex flex-col-reverse md:flex-row md:items-end md:justify-between">
-          <section className="flex flex-col items-center md:items-start">
-            <h3 className="text-xl font-bold">Links</h3>
-            <Link to="/sets" className="hover:underline">
-              Set List
-            </Link>
-            <Link to="/about" className="hover:underline">
-              About Us
-            </Link>
-            <Link
-              to="https://github.com/runefall/runefall"
-              className="hover:underline"
-            >
-              Frontend Repo
-            </Link>
-            <Link
-              to="https://github.com/runefall/runefall-backend"
-              className="hover:underline"
-            >
-              Backend Repo
-            </Link>
-          </section>
+          <div className="flex flex-col gap-8 md:flex-row md:gap-12">
+            <section className="flex flex-col items-center md:items-start">
+              <h3 className="text-xl font-bold uppercase">Cards</h3>
+              <Link to="/syntax" className="hover:underline">
+                Syntax Guide
+              </Link>
+              <Link to="/sets" className="hover:underline">
+                All Sets
+              </Link>
+              <Link to="/random" className="hover:underline">
+                Random
+              </Link>
+            </section>
+            <section className="flex flex-col items-center md:items-start">
+              <h3 className="text-xl font-bold uppercase">More</h3>
+              <Link to="/about" className="hover:underline">
+                About Us
+              </Link>
+              <Link
+                to="https://github.com/runefall/runefall"
+                className="hover:underline"
+              >
+                Frontend Repo
+              </Link>
+              <Link
+                to="https://github.com/runefall/runefall-backend"
+                className="hover:underline"
+              >
+                Backend Repo
+              </Link>
+            </section>
+          </div>
           <section className="mb-4 md:mb-0">
             <h2 className="text-center text-3xl font-bold md:text-end">
               RUNEFALL
