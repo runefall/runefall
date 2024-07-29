@@ -3,7 +3,7 @@ import syntaxData from '@/data/syntaxData.json';
 
 export default function SyntaxPage() {
   return (
-    <div className="container mx-auto p-8 bg-white text-gray-900" >
+    <div className="container max-w-full mx-auto p-8 bg-white text-gray-900" >
       <h1 className="text-3xl font-bold mb-8 text-center">Runefall Search Syntax </h1>
       <p className="mb-8 text-center">
         Runefall includes a large set of keywords and expressions you can use to filter Legends of Runeterra cards.
