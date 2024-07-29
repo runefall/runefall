@@ -7,6 +7,8 @@ import { querySearch } from "@/utils/apiCalls";
 import { useEffect, useState } from "react";
 import { useErrorBoundary } from "react-error-boundary";
 import { useNavigate, useSearchParams } from "react-router-dom";
+import { Button } from '@/components/ui/button';
+
 
 export default function SearchPage() {
   const [searchParams] = useSearchParams();
@@ -181,12 +183,12 @@ export default function SearchPage() {
         </InfiniteScroll>
       )}
       {showTopButton && (
-        <button 
+        <Button
           onClick={scrollToTop} 
-          className="fixed bottom-4 right-4 p-2 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-700 transition duration-300"
+          className="fixed bottom-4 right-4 p-2"
         >
           Back to Top
-        </button>
+        </Button>
       )}
     </>
   );
