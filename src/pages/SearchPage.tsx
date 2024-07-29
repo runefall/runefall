@@ -1,3 +1,4 @@
+import InfiniteScroll from 'react-infinite-scroll-component';
 import CardDisplay from "@/components/display/CardDisplay";
 import SearchFilter from "@/components/SearchFilter/SearchFilter";
 import { Card as CardType, FilterState } from "@/types/interfaces";
@@ -16,6 +17,9 @@ export default function SearchPage() {
     sortAttribute: "name",
     sortDirection: "auto",
   });
+  const [displayedCards, setDisplayedCards] = useState<CardType[]>([]);
+  const [hasMore, setHasMore] = useState(true);
+  const [showTopButton, setShowTopButton] = useState(false);
   const navigate = useNavigate();
   const { sortMode, sortAttribute, sortDirection } = filterState;
 
@@ -50,17 +54,44 @@ export default function SearchPage() {
     querySearch(query)
       .then((data: { data: CardType[] }) => {
         setCards(data.data);
+        setDisplayedCards(data.data.slice(0, 20)); // Initially display the first 20 cards
+        setHasMore(data.data.length > 20);
       })
       .catch(showBoundary);
   }, [searchParams]);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleScroll = () => {
+    if (window.scrollY > 200) {
+      setShowTopButton(true);
+    } else {
+      setShowTopButton(false);
+    }
+  };
+
+  const fetchMoreData = () => {
+    const currentLength = displayedCards.length;
+    const newLength = currentLength + 20;
+    const newCards = cards.slice(0, newLength);
+    setDisplayedCards(newCards);
+    setHasMore(newLength < cards.length);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   if (cards.length === 1) {
     const { card_code } = cards[0].attributes;
     navigate(`/card/${card_code}`);
   }
 
-  let cardsSorted = cards.sort((card1, card2) =>
-    card1.attributes.name.localeCompare(card2.attributes.name),
+  let cardsSorted = displayedCards.sort((card1, card2) =>
+    card1.attributes.name.localeCompare(card2.attributes.name)
   );
   switch (sortAttribute) {
     case "name":
@@ -69,19 +100,19 @@ export default function SearchPage() {
     case "artist_name":
     case "card_code":
     default:
-      cardsSorted = cards.sort((card1, card2) =>
+      cardsSorted = displayedCards.sort((card1, card2) =>
         card1.attributes[sortAttribute].localeCompare(
-          card2.attributes[sortAttribute],
-        ),
+          card2.attributes[sortAttribute]
+        )
       );
 
       if (sortDirection === "descending") cardsSorted = cardsSorted.reverse();
       break;
     case "region_refs":
-      cardsSorted = cards.sort((card1, card2) =>
+      cardsSorted = displayedCards.sort((card1, card2) =>
         card1.attributes[sortAttribute]
           .join(", ")
-          .localeCompare(card2.attributes[sortAttribute].join(", ")),
+          .localeCompare(card2.attributes[sortAttribute].join(", "))
       );
 
       if (sortDirection === "descending") cardsSorted = cardsSorted.reverse();
@@ -89,15 +120,15 @@ export default function SearchPage() {
     case "attack":
     case "cost":
     case "health":
-      cardsSorted = cards.sort(
+      cardsSorted = displayedCards.sort(
         (card1, card2) =>
-          card1.attributes[sortAttribute] - card2.attributes[sortAttribute],
+          card1.attributes[sortAttribute] - card2.attributes[sortAttribute]
       );
 
       if (sortDirection === "descending") cardsSorted = cardsSorted.reverse();
       break;
     case "rarity":
-      cardsSorted = cards.sort((card1, card2) => {
+      cardsSorted = displayedCards.sort((card1, card2) => {
         function calculateRarity(rarity: Rarity) {
           switch (rarity.toUpperCase()) {
             default:
@@ -135,7 +166,27 @@ export default function SearchPage() {
           No cards found with the specified search query.
         </div>
       ) : (
-        <CardDisplay cards={cardsSorted} mode={sortMode} />
+        <InfiniteScroll
+          dataLength={displayedCards.length}
+          next={fetchMoreData}
+          hasMore={hasMore}
+          loader={<h4>Loading...</h4>}
+          endMessage={
+            <p style={{ textAlign: 'center' }}>
+              <b>Yay! You have seen it all</b>
+            </p>
+          }
+        >
+          <CardDisplay cards={cardsSorted} mode={sortMode} />
+        </InfiniteScroll>
+      )}
+      {showTopButton && (
+        <button 
+          onClick={scrollToTop} 
+          className="fixed bottom-4 right-4 p-2 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-700 transition duration-300"
+        >
+          Back to Top
+        </button>
       )}
     </>
   );
