@@ -43,6 +43,8 @@ describe("template spec", () => {
     cy.getTestId("card-text").should("have.length", 4);
     cy.getTestId("no-cards").should("not.exist");
 
+    cy.location("search").should("eq", "?query=draven&mode=text");
+
     cy.visit("/search?query=asd");
     cy.getTestId("no-cards").should("exist");
     cy.getTestId("card-text").should("not.exist");
@@ -55,6 +57,8 @@ describe("template spec", () => {
     cy.getTestId("card-list-item").should("have.length", 4);
     cy.getTestId("no-cards").should("not.exist");
 
+    cy.location("search").should("eq", "?query=draven&mode=list");
+
     cy.visit("/search?query=asd");
     cy.getTestId("no-cards").should("exist");
     cy.getTestId("card-list-item").should("not.exist");
@@ -66,6 +70,8 @@ describe("template spec", () => {
     cy.getTestId("select-mode-full").click();
     cy.getTestId("card-full").should("have.length", 4);
     cy.getTestId("no-cards").should("not.exist");
+
+    cy.location("search").should("eq", "?query=draven&mode=full");
 
     cy.visit("/search?query=asd");
     cy.getTestId("no-cards").should("exist");
@@ -84,59 +90,142 @@ describe("template spec", () => {
     cy.getTestId("select-direction-descending").click();
     cy.getTestId("card-list-item").first().contains("01NX020T2");
     cy.getTestId("card-list-item").last().contains("01NX020");
+    cy.location("search").should(
+      "eq",
+      "?query=draven&mode=list&direction=descending",
+    );
 
     // rest back to default
     cy.getTestId("select-direction").click();
     cy.getTestId("select-direction-auto").click();
+    cy.location("search").should(
+      "eq",
+      "?query=draven&mode=list&direction=auto",
+    );
 
     cy.getTestId("select-attribute").click();
     cy.getTestId("select-attribute-card-code").click();
     cy.getTestId("card-list-item").first().contains("01NX020");
     cy.getTestId("card-list-item").last().contains("01NX035");
+    cy.location("search").should(
+      "eq",
+      "?query=draven&mode=list&direction=auto&attribute=card_code",
+    );
 
     cy.getTestId("select-attribute").click();
     cy.getTestId("select-attribute-name").click();
     cy.getTestId("card-list-item").first().contains("01NX020");
     cy.getTestId("card-list-item").last().contains("01NX020T2");
+    cy.location("search").should(
+      "eq",
+      "?query=draven&mode=list&direction=auto&attribute=name",
+    );
 
     cy.getTestId("select-attribute").click();
     cy.getTestId("select-attribute-cost").click();
     cy.getTestId("card-list-item").first().contains("01NX035");
     cy.getTestId("card-list-item").last().contains("01NX020T2");
+    cy.location("search").should(
+      "eq",
+      "?query=draven&mode=list&direction=auto&attribute=cost",
+    );
 
     cy.getTestId("select-attribute").click();
     cy.getTestId("select-attribute-health").click();
     cy.getTestId("card-list-item").first().contains("01NX020T2");
     cy.getTestId("card-list-item").last().contains("01NX020T3");
+    cy.location("search").should(
+      "eq",
+      "?query=draven&mode=list&direction=auto&attribute=health",
+    );
 
     cy.getTestId("select-attribute").click();
     cy.getTestId("select-attribute-attack").click();
     cy.getTestId("card-list-item").first().contains("01NX020T2");
     cy.getTestId("card-list-item").last().contains("01NX020T3");
+    cy.location("search").should(
+      "eq",
+      "?query=draven&mode=list&direction=auto&attribute=attack",
+    );
 
     cy.getTestId("select-attribute").click();
     cy.getTestId("select-attribute-card-type").click();
     cy.getTestId("card-list-item").first().contains("01NX020T2");
     cy.getTestId("card-list-item").last().contains("01NX035");
+    cy.location("search").should(
+      "eq",
+      "?query=draven&mode=list&direction=auto&attribute=card_type",
+    );
 
     cy.getTestId("select-attribute").click();
     cy.getTestId("select-attribute-rarity").click();
     cy.getTestId("card-list-item").first().contains("01NX020T3");
     cy.getTestId("card-list-item").last().contains("01NX020");
+    cy.location("search").should(
+      "eq",
+      "?query=draven&mode=list&direction=auto&attribute=rarity",
+    );
 
     cy.getTestId("select-attribute").click();
     cy.getTestId("select-attribute-region-refs").click();
-    cy.getTestId("card-list-item").first().contains("01NX020T3");
+    cy.getTestId("card-list-item").first().contains("01NX020");
     cy.getTestId("card-list-item").last().contains("01NX020T2");
+    cy.location("search").should(
+      "eq",
+      "?query=draven&mode=list&direction=auto&attribute=region_refs",
+    );
 
     cy.getTestId("select-attribute").click();
     cy.getTestId("select-attribute-artist-name").click();
     cy.getTestId("card-list-item").first().contains("01NX020T2");
     cy.getTestId("card-list-item").last().contains("01NX035");
+    cy.location("search").should(
+      "eq",
+      "?query=draven&mode=list&direction=auto&attribute=artist_name",
+    );
 
     cy.getTestId("select-attribute").click();
     cy.getTestId("select-attribute-set").click();
+    cy.getTestId("card-list-item").first().contains("01NX020");
+    cy.getTestId("card-list-item").last().contains("01NX020T2");
+    cy.location("search").should(
+      "eq",
+      "?query=draven&mode=list&direction=auto&attribute=set",
+    );
+  });
+
+  it("should be able to set display modes from URL", () => {
+    cy.visit(
+      "/search?query=draven&mode=list&attribute=attack&direction=descending",
+    );
+    cy.getTestId("card-list-item").should("have.length", 4);
     cy.getTestId("card-list-item").first().contains("01NX020T3");
     cy.getTestId("card-list-item").last().contains("01NX020T2");
+
+    cy.visit(
+      "/search?query=draven&mode=text&attribute=artist_name&direction=ascending",
+    );
+    cy.getTestId("card-text").should("have.length", 4);
+    cy.getTestId("card-text").first().contains("Draven's Whirling Death");
+    cy.getTestId("card-text").last().contains("Draven's Biggest Fan");
+
+    cy.visit("/search?query=draven&mode=asd&attribute=asd&direction=asd");
+    cy.getTestId("card-image").should("have.length", 4);
+    cy.getTestId("card-image")
+      .find("img")
+      .first()
+      .should("have.attr", "src")
+      .should(
+        "include",
+        "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020.png",
+      );
+    cy.getTestId("card-image")
+      .find("img")
+      .last()
+      .should("have.attr", "src")
+      .should(
+        "include",
+        "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020T2.png",
+      );
   });
 });

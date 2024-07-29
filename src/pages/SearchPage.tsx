@@ -3,6 +3,11 @@ import SearchFilter from "@/components/SearchFilter/SearchFilter";
 import { Card as CardType, FilterState } from "@/types/interfaces";
 import { Rarity } from "@/types/types";
 import { querySearch } from "@/utils/apiCalls";
+import {
+  isSortAttributeType,
+  isSortDirectionType,
+  isSortModeType,
+} from "@/utils/isType";
 import { useEffect, useState } from "react";
 import { useErrorBoundary } from "react-error-boundary";
 import { useNavigate, useSearchParams } from "react-router-dom";
@@ -40,15 +45,19 @@ export default function SearchPage() {
     if (!query) return;
 
     setFilterState((prevState) => {
-      const sortModeParam = searchParams.get("mode");
-      const sortAttributeParam = searchParams.get("attribute");
-      const sortDirectionParam = searchParams.get("direction");
+      const sortModeParam = searchParams.get("mode") || "";
+      const sortAttributeParam = searchParams.get("attribute") || "";
+      const sortDirectionParam = searchParams.get("direction") || "";
 
       return {
         ...prevState,
-        sortMode: sortModeParam ? sortModeParam : "image",
-        sortAttribute: sortAttributeParam ? sortAttributeParam : "name",
-        sortDirection: sortDirectionParam ? sortDirectionParam : "auto",
+        sortMode: isSortModeType(sortModeParam) ? sortModeParam : "image",
+        sortAttribute: isSortAttributeType(sortAttributeParam)
+          ? sortAttributeParam
+          : "name",
+        sortDirection: isSortDirectionType(sortDirectionParam)
+          ? sortDirectionParam
+          : "auto",
       } as FilterState;
     });
 
