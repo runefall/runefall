@@ -1,17 +1,21 @@
 import CardDisplay from "@/components/display/CardDisplay";
 import SearchFilter from "@/components/SearchFilter/SearchFilter";
 import { Card as CardType, FilterState } from "@/types/interfaces";
-import { Rarity, SortAttribute, SortDirection, SortMode } from "@/types/types";
 import { querySearch } from "@/utils/apiCalls";
+import {
+  isSortAttributeType,
+  isSortDirectionType,
+  isSortModeType,
+} from "@/utils/isType";
+import { calculateRarity } from "@/utils/rarity";
 import { useEffect, useState } from "react";
 import { useErrorBoundary } from "react-error-boundary";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import BackToTopButton from "@/components/ui/BackToTopButton";
 
 export default function SearchPage() {
-  const [searchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const [cards, setCards] = useState<CardType[]>([]);
-  const { showBoundary } = useErrorBoundary();
   const [filterState, setFilterState] = useState<FilterState>({
     sortMode: "image",
     sortAttribute: "name",
@@ -21,34 +25,44 @@ export default function SearchPage() {
   const [hasMore, setHasMore] = useState(true);
   const [showTopButton, setShowTopButton] = useState(false);
   const navigate = useNavigate();
+  const { showBoundary } = useErrorBoundary();
   const { sortMode, sortAttribute, sortDirection } = filterState;
 
   function handleFilterState(action: { type: string; value: string }) {
     switch (action.type) {
       case "sortMode":
-        setFilterState((prevState) => ({
-          ...prevState,
-          sortMode: action.value as SortMode,
-        }));
-        break;
-      case "sortDirection":
-        setFilterState((prevState) => ({
-          ...prevState,
-          sortDirection: action.value as SortDirection,
-        }));
+        searchParams.set("mode", action.value);
         break;
       case "sortAttribute":
-        setFilterState((prevState) => ({
-          ...prevState,
-          sortAttribute: action.value as SortAttribute,
-        }));
+        searchParams.set("attribute", action.value);
         break;
+      case "sortDirection":
+        searchParams.set("direction", action.value);
     }
+    searchParams.sort();
+    setSearchParams(searchParams);
   }
 
   useEffect(() => {
     const query = searchParams.get("query");
     if (!query) return;
+
+    setFilterState((prevState) => {
+      const sortModeParam = searchParams.get("mode") || "";
+      const sortAttributeParam = searchParams.get("attribute") || "";
+      const sortDirectionParam = searchParams.get("direction") || "";
+
+      return {
+        ...prevState,
+        sortMode: isSortModeType(sortModeParam) ? sortModeParam : "image",
+        sortAttribute: isSortAttributeType(sortAttributeParam)
+          ? sortAttributeParam
+          : "name",
+        sortDirection: isSortDirectionType(sortDirectionParam)
+          ? sortDirectionParam
+          : "auto",
+      } as FilterState;
+    });
 
     setCards([]);
     querySearch(query)
@@ -124,28 +138,11 @@ export default function SearchPage() {
       if (sortDirection === "descending") cardsSorted = cardsSorted.reverse();
       break;
     case "rarity":
-      cardsSorted = displayedCards.sort((card1, card2) => {
-        function calculateRarity(rarity: Rarity) {
-          switch (rarity.toUpperCase()) {
-            default:
-            case "NONE":
-              return 0;
-            case "COMMON":
-              return 1;
-            case "RARE":
-              return 2;
-            case "EPIC":
-              return 3;
-            case "CHAMPION":
-              return 4;
-          }
-        }
-
-        return (
+      cardsSorted = cards.sort(
+        (card1, card2) =>
           calculateRarity(card1.attributes.rarity) -
-          calculateRarity(card2.attributes.rarity)
-        );
-      });
+          calculateRarity(card2.attributes.rarity),
+      );
 
       if (sortDirection === "descending") cardsSorted = cardsSorted.reverse();
       break;
