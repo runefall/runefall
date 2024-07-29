@@ -1,4 +1,3 @@
-import InfiniteScroll from 'react-infinite-scroll-component';
 import CardDisplay from "@/components/display/CardDisplay";
 import SearchFilter from "@/components/SearchFilter/SearchFilter";
 import { Card as CardType, FilterState } from "@/types/interfaces";
@@ -7,8 +6,7 @@ import { querySearch } from "@/utils/apiCalls";
 import { useEffect, useState } from "react";
 import { useErrorBoundary } from "react-error-boundary";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import { Button } from '@/components/ui/button';
-
+import BackToTopButton from "@/components/ui/BackToTopButton";
 
 export default function SearchPage() {
   const [searchParams] = useSearchParams();
@@ -81,10 +79,6 @@ export default function SearchPage() {
     const newCards = cards.slice(0, newLength);
     setDisplayedCards(newCards);
     setHasMore(newLength < cards.length);
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   if (cards.length === 1) {
@@ -168,29 +162,14 @@ export default function SearchPage() {
           No cards found with the specified search query.
         </div>
       ) : (
-        <InfiniteScroll
-          dataLength={displayedCards.length}
-          next={fetchMoreData}
+        <CardDisplay
+          cards={cardsSorted}
+          mode={sortMode}
+          fetchMoreData={fetchMoreData}
           hasMore={hasMore}
-          loader={<h4>Loading...</h4>}
-          endMessage={
-            <p style={{ textAlign: 'center' }}>
-              <b>Yay! You have seen it all</b>
-            </p>
-          }
-        >
-          <CardDisplay cards={cardsSorted} mode={sortMode} />
-        </InfiniteScroll>
+        />
       )}
-      {showTopButton && (
-        <Button
-          data-test-id="back-to-top-button"
-          onClick={scrollToTop} 
-          className="fixed bottom-4 right-4 p-2"
-        >
-          Back to Top
-        </Button>
-      )}
+      <BackToTopButton show={showTopButton} />
     </>
   );
 }
