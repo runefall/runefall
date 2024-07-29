@@ -27,11 +27,6 @@ export default function CardDisplay({
           next={fetchMoreData}
           hasMore={hasMore}
           loader={<h4>Loading...</h4>}
-          endMessage={
-            <p style={{ textAlign: 'center' }}>
-              <b>Yay! You have seen it all</b>
-            </p>
-          }
         >
           <div className="m-4 grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] justify-center justify-items-center gap-4">
             {cards.map((card, index) => (
@@ -49,11 +44,6 @@ export default function CardDisplay({
           next={fetchMoreData}
           hasMore={hasMore}
           loader={<h4>Loading...</h4>}
-          endMessage={
-            <p style={{ textAlign: 'center' }}>
-              <b>Yay! You have seen it all</b>
-            </p>
-          }
         >
           <div className="m-4 grid grid-cols-[repeat(auto-fill,minmax(350px,1fr))] justify-center justify-items-center gap-2 gap-x-4 gap-y-8">
             {cards.map((card, index) => (
@@ -81,11 +71,6 @@ export default function CardDisplay({
           next={fetchMoreData}
           hasMore={hasMore}
           loader={<h4>Loading...</h4>}
-          endMessage={
-            <p style={{ textAlign: 'center' }}>
-              <b>Yay! You have seen it all</b>
-            </p>
-          }
         >
           <div>
             {cards.map((card, index) => (
