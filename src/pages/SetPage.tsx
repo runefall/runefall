@@ -4,34 +4,36 @@ import { useNavigate } from "react-router-dom";
 export default function SetPage() {
   const navigate = useNavigate();
 
-  const cardElements = data.sets.map((set, index) => {
-    const { name, nameRef } = set;
-    return (
-      <tr
-        data-test-id="card-list-item"
-        className="cursor-pointer hover:underline"
-        key={index}
-        onClick={() => {
-          const encodedText = encodeURI(`set:${nameRef}`);
-          navigate(`/search?query=${encodedText}`);
-        }}
-      >
-        <td className="flex justify-center">
-          <img
-            src={`/sets/${nameRef.toLowerCase()}.png`}
-            alt={`${name} icon`}
-            className="w-12"
-          />
-        </td>
-        <td>{name}</td>
-        <td className="text-center">{nameRef}</td>
-      </tr>
-    );
-  });
+  const cardElements = data.sets
+    .sort((set1, set2) => set1.nameRef.localeCompare(set2.nameRef))
+    .map((set, index) => {
+      const { name, nameRef } = set;
+      return (
+        <tr
+          data-test-id="card-list-item"
+          key={index}
+          className="cursor-pointer"
+          onClick={() => {
+            const encodedText = encodeURI(`set:${nameRef}`);
+            navigate(`/search?query=${encodedText}`);
+          }}
+        >
+          <td className="flex justify-center">
+            <img
+              src={`/sets/${nameRef.toLowerCase()}.png`}
+              alt={`${name} icon`}
+              className="w-12"
+            />
+          </td>
+          <td className="hover:underline">{name}</td>
+          <td className="text-center hover:underline">{nameRef}</td>
+        </tr>
+      );
+    });
 
   return (
     <div className="flex justify-center">
-      <table className="w-full max-w-7xl [&_td]:px-2 [&_th]:p-2 [&_tr:not(:first-child):nth-child(even)]:bg-primary-foreground">
+      <table className="w-full max-w-7xl [&_td]:py-2 [&_th]:p-2 [&_tr:not(:first-child):nth-child(even)]:bg-primary-foreground">
         <thead>
           <tr>
             <th>Icon</th>

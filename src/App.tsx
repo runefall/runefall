@@ -25,7 +25,7 @@ function App() {
               <Route path="/search" element={<SearchPage />} />
               <Route path="/card/:code" element={<CardPage />} />
               <Route path="/about" element={<AboutPage />} />
-              <Route path="/set" element={<SetPage />} />
+              <Route path="/sets" element={<SetPage />} />
             </Routes>
           </main>
           <Footer />

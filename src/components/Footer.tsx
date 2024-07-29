@@ -7,6 +7,9 @@ export default function Footer() {
         <section className="mb-8 flex flex-col-reverse md:flex-row md:items-end md:justify-between">
           <section className="flex flex-col items-center md:items-start">
             <h3 className="text-xl font-bold">Links</h3>
+            <Link to="/sets" className="hover:underline">
+              Set List
+            </Link>
             <Link to="/about" className="hover:underline">
               About Us
             </Link>
