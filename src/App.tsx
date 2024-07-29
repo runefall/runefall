@@ -8,6 +8,7 @@ import CardPage from "./pages/CardPage";
 import FallBackPage from "./pages/FallBackPage.tsx";
 import HomePage from "./pages/HomePage";
 import SearchPage from "./pages/SearchPage";
+import SetPage from "./pages/SetPage.tsx";
 
 function App() {
   const location = useLocation();
@@ -24,6 +25,7 @@ function App() {
               <Route path="/search" element={<SearchPage />} />
               <Route path="/card/:code" element={<CardPage />} />
               <Route path="/about" element={<AboutPage />} />
+              <Route path="/set" element={<SetPage />} />
             </Routes>
           </main>
           <Footer />

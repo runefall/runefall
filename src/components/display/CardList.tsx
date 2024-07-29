@@ -11,7 +11,7 @@ export default function CardList({ cards }: { cards: CardType[] }) {
       health,
       card_type,
       rarity,
-      region_refs,
+      regions,
       artist_name,
       card_code,
     } = card.attributes;
@@ -24,11 +24,7 @@ export default function CardList({ cards }: { cards: CardType[] }) {
         <td>{attack}</td>
         <td>{card_type}</td>
         <td>{rarity.at(0)?.toUpperCase() + rarity.slice(1).toLowerCase()}</td>
-        <td>
-          {region_refs
-            .map((region) => region.split(/(?<!^)(?=[A-Z])/).join(" "))
-            .join(", ")}
-        </td>
+        <td>{regions.join(", ")}</td>
         <td>{artist_name}</td>
         <td>{getSetString(set)}</td>
       </tr>
