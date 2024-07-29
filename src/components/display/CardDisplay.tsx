@@ -34,7 +34,7 @@ export default function CardDisplay({
         data-test-id="no-cards"
         className="flex min-h-[500px] flex-1 items-center justify-center"
       >
-        <div className="flex max-w-lg flex-col items-center gap-4 rounded-lg p-6 text-center shadow-[0_0_15px_5px] shadow-shadow">
+        <div className="m-4 flex max-w-lg flex-col items-center gap-4 rounded-lg p-6 text-center shadow-[0_0_15px_5px] shadow-shadow">
           <TbDeviceIpadQuestion
             size="150px"
             className="text-muted-foreground"
