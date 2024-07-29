@@ -19,7 +19,7 @@ function App() {
       <ErrorBoundary FallbackComponent={FallBackPage}>
         <div className="flex min-h-screen flex-col">
           {pathname !== "/" && <NavBar />}
-          <main className="flex-1">
+          <main className="flex flex-1 flex-col">
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/search" element={<SearchPage />} />
