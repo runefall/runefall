@@ -145,17 +145,18 @@ describe("template spec", () => {
     cy.getTestId("card-list-item").last().contains("01NX020T2");
   });
   it('should display "Back to Top" button after scrolling down and scroll back to top when clicked', () => {
-    cy.visit("/search?query=dar");
+    cy.visit("/search?query=dar")
     cy.getTestId('back-to-top-button').should('not.exist');
 
-    cy.scrollTo('bottom', { duration: 400 });
-
-    cy.getTestId('back-to-top-button').should('be.visible');
-
-    cy.getTestId('back-to-top-button').click();
-
-    cy.window().its('scrollY').should('equal', 0);
-
-    cy.getTestId('back-to-top-button').should('not.exist');
-  }); 
+    cy.scrollTo('bottom', { duration: 1000 }).then(() => {
+      cy.scrollTo('bottom', { duration: 1000 }).then(() => {
+        cy.scrollTo('bottom', { duration: 1000 });
+        cy.getTestId('back-to-top-button').should('be.visible');
+        cy.getTestId('back-to-top-button').click();
+        cy.window().its('scrollY').should('equal', 0);
+        cy.getTestId('back-to-top-button').should('not.exist');
+      });
+    });
+  });
 });
+
