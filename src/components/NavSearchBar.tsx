@@ -1,13 +1,12 @@
 import { useState } from "react";
 import { FaMagnifyingGlass } from "react-icons/fa6";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
 
 export default function NavSearchBar() {
-  const [searchParams] = useSearchParams();
-  const query = searchParams.get("query");
-  const [search, setSearch] = useState(query || "");
-
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [search, setSearch] = useState(searchParams.get("query") || "");
   const navigate = useNavigate();
+  const location = useLocation();
 
   return (
     <div className="relative flex flex-1">
@@ -23,7 +22,15 @@ export default function NavSearchBar() {
         value={search}
         onChange={(e) => setSearch(e.target.value)}
         onKeyDown={(e) => {
-          if (e.key === "Enter") navigate(`/search?query=${search}`);
+          if (e.key === "Enter") {
+            if (location.pathname === "/search") {
+              searchParams.set("query", search);
+              searchParams.sort();
+              setSearchParams(searchParams);
+            } else {
+              navigate(`/search?query=${search}`);
+            }
+          }
         }}
       />
     </div>
