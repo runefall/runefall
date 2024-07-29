@@ -43,7 +43,7 @@ describe("template spec", () => {
     cy.getTestId("card-text").should("have.length", 4);
     cy.getTestId("no-cards").should("not.exist");
 
-    cy.location("search").should("eq", "?query=draven&mode=text");
+    cy.location("search").should("eq", "?mode=text&query=draven");
 
     cy.visit("/search?query=asd");
     cy.getTestId("no-cards").should("exist");
@@ -57,7 +57,7 @@ describe("template spec", () => {
     cy.getTestId("card-list-item").should("have.length", 4);
     cy.getTestId("no-cards").should("not.exist");
 
-    cy.location("search").should("eq", "?query=draven&mode=list");
+    cy.location("search").should("eq", "?mode=list&query=draven");
 
     cy.visit("/search?query=asd");
     cy.getTestId("no-cards").should("exist");
@@ -71,7 +71,7 @@ describe("template spec", () => {
     cy.getTestId("card-full").should("have.length", 4);
     cy.getTestId("no-cards").should("not.exist");
 
-    cy.location("search").should("eq", "?query=draven&mode=full");
+    cy.location("search").should("eq", "?mode=full&query=draven");
 
     cy.visit("/search?query=asd");
     cy.getTestId("no-cards").should("exist");
@@ -92,7 +92,7 @@ describe("template spec", () => {
     cy.getTestId("card-list-item").last().contains("01NX020");
     cy.location("search").should(
       "eq",
-      "?query=draven&mode=list&direction=descending",
+      "?direction=descending&mode=list&query=draven",
     );
 
     // rest back to default
@@ -100,7 +100,7 @@ describe("template spec", () => {
     cy.getTestId("select-direction-auto").click();
     cy.location("search").should(
       "eq",
-      "?query=draven&mode=list&direction=auto",
+      "?direction=auto&mode=list&query=draven",
     );
 
     cy.getTestId("select-attribute").click();
@@ -109,7 +109,7 @@ describe("template spec", () => {
     cy.getTestId("card-list-item").last().contains("01NX035");
     cy.location("search").should(
       "eq",
-      "?query=draven&mode=list&direction=auto&attribute=card_code",
+      "?attribute=card_code&direction=auto&mode=list&query=draven",
     );
 
     cy.getTestId("select-attribute").click();
@@ -118,7 +118,7 @@ describe("template spec", () => {
     cy.getTestId("card-list-item").last().contains("01NX020T2");
     cy.location("search").should(
       "eq",
-      "?query=draven&mode=list&direction=auto&attribute=name",
+      "?attribute=name&direction=auto&mode=list&query=draven",
     );
 
     cy.getTestId("select-attribute").click();
@@ -127,7 +127,7 @@ describe("template spec", () => {
     cy.getTestId("card-list-item").last().contains("01NX020T2");
     cy.location("search").should(
       "eq",
-      "?query=draven&mode=list&direction=auto&attribute=cost",
+      "?attribute=cost&direction=auto&mode=list&query=draven",
     );
 
     cy.getTestId("select-attribute").click();
@@ -136,7 +136,7 @@ describe("template spec", () => {
     cy.getTestId("card-list-item").last().contains("01NX020T3");
     cy.location("search").should(
       "eq",
-      "?query=draven&mode=list&direction=auto&attribute=health",
+      "?attribute=health&direction=auto&mode=list&query=draven",
     );
 
     cy.getTestId("select-attribute").click();
@@ -145,7 +145,7 @@ describe("template spec", () => {
     cy.getTestId("card-list-item").last().contains("01NX020T3");
     cy.location("search").should(
       "eq",
-      "?query=draven&mode=list&direction=auto&attribute=attack",
+      "?attribute=attack&direction=auto&mode=list&query=draven",
     );
 
     cy.getTestId("select-attribute").click();
@@ -154,7 +154,7 @@ describe("template spec", () => {
     cy.getTestId("card-list-item").last().contains("01NX035");
     cy.location("search").should(
       "eq",
-      "?query=draven&mode=list&direction=auto&attribute=card_type",
+      "?attribute=card_type&direction=auto&mode=list&query=draven",
     );
 
     cy.getTestId("select-attribute").click();
@@ -163,7 +163,7 @@ describe("template spec", () => {
     cy.getTestId("card-list-item").last().contains("01NX020");
     cy.location("search").should(
       "eq",
-      "?query=draven&mode=list&direction=auto&attribute=rarity",
+      "?attribute=rarity&direction=auto&mode=list&query=draven",
     );
 
     cy.getTestId("select-attribute").click();
@@ -172,7 +172,7 @@ describe("template spec", () => {
     cy.getTestId("card-list-item").last().contains("01NX020T2");
     cy.location("search").should(
       "eq",
-      "?query=draven&mode=list&direction=auto&attribute=region_refs",
+      "?attribute=region_refs&direction=auto&mode=list&query=draven",
     );
 
     cy.getTestId("select-attribute").click();
@@ -181,7 +181,7 @@ describe("template spec", () => {
     cy.getTestId("card-list-item").last().contains("01NX035");
     cy.location("search").should(
       "eq",
-      "?query=draven&mode=list&direction=auto&attribute=artist_name",
+      "?attribute=artist_name&direction=auto&mode=list&query=draven",
     );
 
     cy.getTestId("select-attribute").click();
@@ -190,7 +190,7 @@ describe("template spec", () => {
     cy.getTestId("card-list-item").last().contains("01NX020T2");
     cy.location("search").should(
       "eq",
-      "?query=draven&mode=list&direction=auto&attribute=set",
+      "?attribute=set&direction=auto&mode=list&query=draven",
     );
   });
 
@@ -227,5 +227,29 @@ describe("template spec", () => {
         "include",
         "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020T2.png",
       );
+  });
+
+  it("should use the same parameters when searching within search", () => {
+    cy.visit(
+      "/search?query=asd&mode=list&attribute=attack&direction=descending",
+    );
+    cy.getTestId("no-cards").should("exist");
+    cy.getTestId("card-list-item").should("not.exist");
+
+    cy.getTestId("nav-search-bar-input").clear().type("draven").type("{enter}");
+    cy.location("search").should(
+      "eq",
+      "?attribute=attack&direction=descending&mode=list&query=draven",
+    );
+    cy.getTestId("card-list-item").should("have.length", 4);
+    cy.getTestId("card-list-item").first().contains("01NX020T3");
+    cy.getTestId("card-list-item").last().contains("01NX020T2");
+    cy.getTestId("no-cards").should("not.exist");
+  });
+
+  it("should reset to default when searching from different page", () => {
+    cy.visit("/about");
+    cy.getTestId("nav-search-bar-input").type("draven").type("{enter}");
+    cy.url().should("eq", `${baseUrl}/search?query=draven`);
   });
 });

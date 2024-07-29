@@ -1,13 +1,13 @@
 import CardDisplay from "@/components/display/CardDisplay";
 import SearchFilter from "@/components/SearchFilter/SearchFilter";
 import { Card as CardType, FilterState } from "@/types/interfaces";
-import { Rarity } from "@/types/types";
 import { querySearch } from "@/utils/apiCalls";
 import {
   isSortAttributeType,
   isSortDirectionType,
   isSortModeType,
 } from "@/utils/isType";
+import { calculateRarity } from "@/utils/rarity";
 import { useEffect, useState } from "react";
 import { useErrorBoundary } from "react-error-boundary";
 import { useNavigate, useSearchParams } from "react-router-dom";
@@ -28,16 +28,15 @@ export default function SearchPage() {
     switch (action.type) {
       case "sortMode":
         searchParams.set("mode", action.value);
-        setSearchParams(searchParams);
         break;
       case "sortAttribute":
         searchParams.set("attribute", action.value);
-        setSearchParams(searchParams);
         break;
       case "sortDirection":
         searchParams.set("direction", action.value);
-        setSearchParams(searchParams);
     }
+    searchParams.sort();
+    setSearchParams(searchParams);
   }
 
   useEffect(() => {
@@ -112,28 +111,11 @@ export default function SearchPage() {
       if (sortDirection === "descending") cardsSorted = cardsSorted.reverse();
       break;
     case "rarity":
-      cardsSorted = cards.sort((card1, card2) => {
-        function calculateRarity(rarity: Rarity) {
-          switch (rarity.toUpperCase()) {
-            default:
-            case "NONE":
-              return 0;
-            case "COMMON":
-              return 1;
-            case "RARE":
-              return 2;
-            case "EPIC":
-              return 3;
-            case "CHAMPION":
-              return 4;
-          }
-        }
-
-        return (
+      cardsSorted = cards.sort(
+        (card1, card2) =>
           calculateRarity(card1.attributes.rarity) -
-          calculateRarity(card2.attributes.rarity)
-        );
-      });
+          calculateRarity(card2.attributes.rarity),
+      );
 
       if (sortDirection === "descending") cardsSorted = cardsSorted.reverse();
       break;

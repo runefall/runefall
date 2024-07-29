@@ -25,6 +25,7 @@ export default function NavSearchBar() {
           if (e.key === "Enter") {
             if (location.pathname === "/search") {
               searchParams.set("query", search);
+              searchParams.sort();
               setSearchParams(searchParams);
             } else {
               navigate(`/search?query=${search}`);
