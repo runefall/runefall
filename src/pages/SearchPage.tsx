@@ -184,6 +184,7 @@ export default function SearchPage() {
       )}
       {showTopButton && (
         <Button
+          data-test-id="back-to-top-button"
           onClick={scrollToTop} 
           className="fixed bottom-4 right-4 p-2"
         >

@@ -11,6 +11,11 @@ describe("template spec", () => {
       method: "GET",
       fixture: "asdQuery.json",
     }).as("getTestQuery");
+
+    cy.intercept("http://localhost:3000/api/v1/cards/search?query=dar", {
+      method: "GET",
+      fixture: "darQuery.json",
+    }).as("getLargeResult");
   });
 
   it("should have a working header search bar", () => {
@@ -139,4 +144,18 @@ describe("template spec", () => {
     cy.getTestId("card-list-item").first().contains("01NX020T3");
     cy.getTestId("card-list-item").last().contains("01NX020T2");
   });
+  it('should display "Back to Top" button after scrolling down and scroll back to top when clicked', () => {
+    cy.visit("/search?query=dar");
+    cy.getTestId('back-to-top-button').should('not.exist');
+
+    cy.scrollTo('bottom');
+
+    cy.getTestId('back-to-top-button').should('be.visible');
+
+    cy.getTestId('back-to-top-button').click();
+
+    cy.window().its('scrollY').should('equal', 0);
+
+    cy.getTestId('back-to-top-button').should('not.exist');
+  }); 
 });
