@@ -1,3 +1,4 @@
+// add unit testing for this function
 export function parseString(string: string) {
   return (
     string
