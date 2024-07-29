@@ -54,7 +54,7 @@ export default function SearchPage() {
     querySearch(query)
       .then((data: { data: CardType[] }) => {
         setCards(data.data);
-        setDisplayedCards(data.data.slice(0, 20)); // Initially display the first 20 cards
+        setDisplayedCards(data.data.slice(0, 20));
         setHasMore(data.data.length > 20);
       })
       .catch(showBoundary);
