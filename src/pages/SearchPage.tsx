@@ -66,7 +66,7 @@ export default function SearchPage() {
   }, []);
 
   const handleScroll = () => {
-    if (window.scrollY > 200) {
+    if (window.scrollY > 400) {
       setShowTopButton(true);
     } else {
       setShowTopButton(false);
