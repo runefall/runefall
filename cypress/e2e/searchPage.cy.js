@@ -148,7 +148,7 @@ describe("template spec", () => {
     cy.visit("/search?query=dar");
     cy.getTestId('back-to-top-button').should('not.exist');
 
-    cy.scrollTo('bottom');
+    cy.scrollTo('bottom', { duration: 400 });
 
     cy.getTestId('back-to-top-button').should('be.visible');
 
