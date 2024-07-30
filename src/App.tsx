@@ -26,6 +26,8 @@ function App() {
               <Route path="/card/:code" element={<CardPage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/sets" element={<SetPage />} />
+              <Route path="/syntax" element={<div>Syntax</div>} />
+              <Route path="/random" element={<div>Random</div>} />
             </Routes>
           </main>
           <Footer />

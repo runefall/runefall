@@ -31,8 +31,9 @@ export default function CardFull({ card }: { card: CardAttributes }) {
           >
             {card.region_refs.map((region) => (
               <img
+                key={region}
                 src={`/regions/icon-${region.toLowerCase()}.png`}
-                alt="Region icon"
+                alt={`${region} region`}
                 className="w-8"
               />
             ))}

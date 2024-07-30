@@ -1,7 +1,10 @@
 import { Card as CardType } from "@/types/interfaces";
 import { getSetString } from "@/utils/sets";
+import { useNavigate } from "react-router-dom";
 
 export default function CardList({ cards }: { cards: CardType[] }) {
+  const navigate = useNavigate();
+
   const cardElements = cards.map((card, index) => {
     const {
       name,
@@ -16,7 +19,12 @@ export default function CardList({ cards }: { cards: CardType[] }) {
       card_code,
     } = card.attributes;
     return (
-      <tr data-test-id="card-list-item" key={index}>
+      <tr
+        data-test-id="card-list-item"
+        key={index}
+        className="cursor-pointer even:bg-primary-foreground hover:bg-primary hover:text-primary-foreground"
+        onClick={() => navigate(`/card/${card_code}`)}
+      >
         <td>{card_code}</td>
         <td>{name}</td>
         <td>{cost}</td>
@@ -32,7 +40,7 @@ export default function CardList({ cards }: { cards: CardType[] }) {
   });
 
   return (
-    <table className="w-full max-w-7xl [&_td]:px-2 [&_th]:p-2 [&_tr:not(:first-child):nth-child(even)]:bg-primary-foreground">
+    <table className="w-full max-w-7xl [&_td]:px-2 [&_th]:p-2">
       <thead>
         <tr>
           <th>Card Code</th>

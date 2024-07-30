@@ -12,7 +12,7 @@ export default function SetPage() {
         <tr
           data-test-id="card-list-item"
           key={index}
-          className="cursor-pointer"
+          className="cursor-pointer even:bg-primary-foreground hover:bg-primary hover:text-primary-foreground"
           onClick={() => {
             const encodedText = encodeURI(`set:${nameRef}`);
             navigate(`/search?query=${encodedText}`);
@@ -33,7 +33,7 @@ export default function SetPage() {
 
   return (
     <div className="flex justify-center">
-      <table className="w-full max-w-7xl [&_td]:py-2 [&_th]:p-2 [&_tr:not(:first-child):nth-child(even)]:bg-primary-foreground">
+      <table className="w-full max-w-7xl [&_td]:py-2 [&_th]:p-2">
         <thead>
           <tr>
             <th>Icon</th>
