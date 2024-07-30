@@ -5,8 +5,9 @@
     "examples": [
       "Draven",
       "name:Shot",
-      "\"Pale Casecade\""
-    ]
+      "\"Pale Cascade\""
+    ],
+    "color": "orange"
   },
   {
     "title": "Searching by region",
@@ -15,6 +16,7 @@
       "region:Targon",
       "r:DE",
       "\"region: P&Z\""
-    ]
+    ],
+    "color": "blue"
   }
 ]
