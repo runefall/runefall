@@ -1,5 +1,6 @@
 import Contributor from "../components/Contributor";
 import data from "../data/contributors";
+import { useEffect } from 'react';
 
 export default function AboutPage() {
   const contributors = data.map(
@@ -8,6 +9,10 @@ export default function AboutPage() {
       index,
     ) => <Contributor {...info} key={index} />,
   );
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="m-8 mx-auto max-w-screen-md px-4">

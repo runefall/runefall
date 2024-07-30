@@ -14,7 +14,6 @@ const Syntax: React.FC<SyntaxProps> = ({ title, description, examples, color }) 
     navigate(`/search?query=${example}`);
   };
 
-  console.log(color)
   return (
     <div className="p-8 flex flex-col sm:flex-row border-t border-black">
       <div className="sm:w-1/2 sm:p-4 sm:pr-20 text-center sm:text-left">
