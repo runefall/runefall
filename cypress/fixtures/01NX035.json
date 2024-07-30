@@ -1,0 +1,82 @@
+{
+  "data": {
+    "id": "129",
+    "type": "card",
+    "attributes": {
+      "name": "Draven's Biggest Fan",
+      "card_code": "01NX035",
+      "description": "When I'm summoned, move \u003clink=card.dravenRef\u003e\u003cstyle=AssociatedCard\u003eDraven\u003c/style\u003e\u003c/link\u003e to the top of your deck if you don't have him in hand or in play.",
+      "description_raw": "When I'm summoned, move Draven to the top of your deck if you don't have him in hand or in play.",
+      "levelup_description": "",
+      "levelup_description_raw": "",
+      "flavor_text": "\"You want an autograph? Get... Get in line, pal!\"",
+      "artist_name": "SIXMOREVODKA",
+      "attack": 2,
+      "cost": 1,
+      "health": 1,
+      "spell_speed": "",
+      "rarity": "COMMON",
+      "supertype": "",
+      "card_type": "Unit",
+      "collectible": true,
+      "set": "Set1",
+      "associated_card_refs": ["01NX020"],
+      "regions": ["Noxus"],
+      "region_refs": ["Noxus"],
+      "keywords": [],
+      "keyword_refs": [],
+      "formats": ["Commons Only", "Eternal"],
+      "format_refs": [
+        "client_Formats_CommonsOnly_name",
+        "client_Formats_Eternal_name"
+      ],
+      "assets": [
+        {
+          "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX035.png",
+          "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX035-full.png"
+        }
+      ],
+      "associated_cards": [
+        {
+          "id": 70,
+          "name": "Draven",
+          "card_code": "01NX020",
+          "description": "When I'm summoned or \u003clink=vocab.Strike\u003e\u003cstyle=Vocab\u003estrike\u003c/style\u003e\u003c/link\u003e: Create a \u003clink=card.create\u003e\u003cstyle=AssociatedCard\u003eSpinning Axe\u003c/style\u003e\u003c/link\u003e in hand.",
+          "description_raw": "When I'm summoned or strike: Create a Spinning Axe in hand.",
+          "levelup_description": "I've \u003clink=vocab.Strike\u003e\u003cstyle=Vocab\u003estruck\u003c/style\u003e\u003c/link\u003e with 2+ total \u003clink=card.create\u003e\u003cstyle=AssociatedCard\u003eSpinning Axes\u003c/style\u003e\u003c/link\u003e.\u003cstyle=Variable\u003e\u003c/style\u003e",
+          "levelup_description_raw": "I've struck with 2+ total Spinning Axes.",
+          "flavor_text": "\"You want an autograph? Get in line, pal.\"",
+          "artist_name": "SIXMOREVODKA",
+          "attack": 3,
+          "cost": 3,
+          "health": 3,
+          "spell_speed": "",
+          "rarity": "Champion",
+          "supertype": "Champion",
+          "card_type": "Unit",
+          "collectible": true,
+          "set": "Set1",
+          "associated_card_refs": ["01NX020T1", "01NX020T3", "01NX020T2"],
+          "regions": ["Noxus"],
+          "region_refs": ["Noxus"],
+          "keywords": ["Quick Attack"],
+          "keyword_refs": ["QuickStrike"],
+          "formats": ["Commons Only", "Eternal"],
+          "format_refs": [
+            "client_Formats_CommonsOnly_name",
+            "client_Formats_Eternal_name"
+          ],
+          "assets": [
+            {
+              "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020.png",
+              "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020-full.png"
+            }
+          ],
+          "created_at": "2024-07-23T19:19:10.522Z",
+          "updated_at": "2024-07-23T19:19:10.522Z",
+          "associated_cards": []
+        }
+      ]
+    }
+  }
+}
