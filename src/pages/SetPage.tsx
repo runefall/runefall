@@ -10,11 +10,12 @@ export default function SetPage() {
       const { name, nameRef } = set;
       return (
         <tr
-          data-test-id="card-list-item"
+          data-test-id="set-item"
           key={index}
           className="cursor-pointer even:bg-primary-foreground hover:bg-primary hover:text-primary-foreground"
           onClick={() => {
-            const encodedText = encodeURI(`set:${nameRef}`);
+            const encodedText = encodeURIComponent(`set:${nameRef}`);
+            console.log(encodedText);
             navigate(`/search?query=${encodedText}`);
           }}
         >

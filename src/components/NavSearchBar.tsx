@@ -11,7 +11,7 @@ export default function NavSearchBar() {
   const { resetBoundary } = useErrorBoundary();
 
   useEffect(() => {
-    setSearch(searchParams.get("query") || "");
+    setSearch(searchParams.get("query") || search);
   }, [searchParams]);
 
   return (
