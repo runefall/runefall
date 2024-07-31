@@ -45,13 +45,4 @@ describe("template spec", () => {
         cy.visit("/syntax");
       });
   });
-
-  // it("should scroll to the top on mount", () => {
-  //   cy.visit("/syntax");
-  //   cy.window().then((win) => {
-  //     cy.stub(win, "scrollTo").as("scrollToStub");
-  //   });
-  //   cy.visit("/syntax");
-  //   cy.get("@scrollToStub").should("have.been.calledWith", 0, 0);
-  // });
 });
