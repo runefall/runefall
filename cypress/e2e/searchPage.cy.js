@@ -257,6 +257,7 @@ describe("template spec", () => {
     cy.getTestId("nav-search-bar-input").type("draven").type("{enter}");
     cy.url().should("eq", `${baseUrl}/search?query=draven`);
   });
+
   it('should display "Back to Top" button after scrolling down and scroll back to top when clicked', () => {
     cy.visit("/search?query=dar")
     cy.getTestId('back-to-top-button').should('not.exist');
@@ -270,6 +271,46 @@ describe("template spec", () => {
         cy.getTestId('back-to-top-button').should('not.exist');
       });
     });
+  });
+
+  it("should sort cards correctly with a bigger search result", () => {
+    cy.visit("/search?query=dar");
+    
+    cy.getTestId("card-image").should("have.length", 42);
+    cy.getTestId("card-image")
+    .find("img")
+    .first()
+    .should("have.attr", "src")
+    .should(
+      "include",
+      "http://dd.b.pvp.net/5_6_0/set7/en_us/img/cards/07NX005.png",
+    );
+  cy.getTestId("card-image")
+    .find("img")
+    .last()
+    .should("have.attr", "src")
+    .should(
+      "include",
+      "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06BC029T3.png",
+    );
+    cy.getTestId("select-direction").click();
+    cy.getTestId("select-direction-descending").click();
+    cy.getTestId("card-image")
+      .find("img")
+      .first()
+      .should("have.attr", "src")
+      .should(
+        "include",
+        "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06BC029.png",
+      );
+    cy.getTestId("card-image")
+      .find("img")
+      .last()
+      .should("have.attr", "src")
+      .should(
+        "include",
+        "http://dd.b.pvp.net/5_6_0/set7/en_us/img/cards/07NX005.png",
+      );
   });
 });
 
