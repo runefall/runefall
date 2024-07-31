@@ -7,7 +7,7 @@ import { calculateRarity } from "@/utils/rarity";
 import { useEffect, useState } from "react";
 import { useErrorBoundary } from "react-error-boundary";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import BackToTopButton from "@/components/ui/BackToTopButton";
+import BackToTopButton from "@/components/BackToTopButton";
 
 export default function SearchPage() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -17,8 +17,6 @@ export default function SearchPage() {
     sortAttribute: "name",
     sortDirection: "auto",
   });
-  const [displayedCards, setDisplayedCards] = useState<CardType[]>([]);
-  const [hasMore, setHasMore] = useState(true);
   const [showTopButton, setShowTopButton] = useState(false);
   const navigate = useNavigate();
   const { showBoundary } = useErrorBoundary();
@@ -67,8 +65,6 @@ export default function SearchPage() {
       .then((data: { data: CardType[] }) => {
         const sortedCards = sortCards(data.data, sortAttribute, sortDirection);
         setCards(sortedCards);
-        setDisplayedCards(sortedCards.slice(0, 20));
-        setHasMore(sortedCards.length > 20);
       })
       .catch(showBoundary);
   }, [searchParams]);
@@ -84,14 +80,6 @@ export default function SearchPage() {
     } else {
       setShowTopButton(false);
     }
-  };
-
-  const fetchMoreData = () => {
-    const currentLength = displayedCards.length;
-    const newLength = currentLength + 20;
-    const newCards = cards.slice(0, newLength);
-    setDisplayedCards(newCards);
-    setHasMore(newLength < cards.length);
   };
 
   const sortCards = (cardsToSort: CardType[], attribute: string, direction: string): CardType[] => {
@@ -140,7 +128,7 @@ export default function SearchPage() {
 
   useEffect(() => {
     const sortedCards = sortCards(cards, sortAttribute, sortDirection);
-    setDisplayedCards(sortedCards.slice(0, displayedCards.length));
+    setCards(sortedCards);
   }, [sortAttribute, sortDirection]);
 
   if (cards.length === 1) {
@@ -157,10 +145,8 @@ export default function SearchPage() {
         </div>
       ) : (
         <CardDisplay
-          cards={displayedCards}
+          cards={cards}
           mode={sortMode}
-          fetchMoreData={fetchMoreData}
-          hasMore={hasMore}
         />
       )}
       <BackToTopButton show={showTopButton} />
