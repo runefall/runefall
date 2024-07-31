@@ -25,7 +25,7 @@ export default function FallBackPage({ error }: { error: Error | null }) {
     <div className="flex min-h-screen flex-col">
       <NavBar />
       <div
-        className="flex flex-1 flex-col items-center justify-center px-4 py-8"
+        className="m-4 flex flex-1 flex-col items-center justify-center px-4 py-8"
         role="alert"
       >
         <div className="max-w-lg rounded-lg p-6 text-center shadow-[0_0_15px_5px] shadow-shadow">

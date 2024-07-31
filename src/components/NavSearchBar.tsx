@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useErrorBoundary } from "react-error-boundary";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
 
@@ -7,6 +8,11 @@ export default function NavSearchBar() {
   const [search, setSearch] = useState(searchParams.get("query") || "");
   const navigate = useNavigate();
   const location = useLocation();
+  const { resetBoundary } = useErrorBoundary();
+
+  useEffect(() => {
+    setSearch(searchParams.get("query") || search);
+  }, [searchParams]);
 
   return (
     <div className="relative flex flex-1">
@@ -23,6 +29,7 @@ export default function NavSearchBar() {
         onChange={(e) => setSearch(e.target.value)}
         onKeyDown={(e) => {
           if (e.key === "Enter") {
+            resetBoundary();
             if (location.pathname === "/search") {
               searchParams.set("query", search);
               searchParams.sort();

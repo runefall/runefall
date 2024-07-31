@@ -126,6 +126,16 @@ export default function SearchPage() {
     <div className="flex flex-1 flex-col">
       <SearchFilter filterState={filterState} setFilterState={handleFilterState} />
       <CardDisplay cards={cardsSorted} mode={sortMode} loading={loading.current} />
+      
+      <SearchFilter
+        filterState={filterState}
+        setFilterState={handleFilterState}
+      />
+      <CardDisplay
+        cards={cardsSorted}
+        mode={sortMode}
+        loading={loading.current}
+      />
       <BackToTopButton show={showTopButton} />
     </div>
   );
