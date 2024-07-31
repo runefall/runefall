@@ -1,22 +1,79 @@
 [
   {
-    "title": "Searching by name",
+    "title": "Name",
     "description": "You can search for cards by name with 'name:' or by simply entering the words you want to find. By default, each word will be treated as a separate search token. Enclosing the string in quotes will cause it to be treated as a single token.",
     "examples": [
       "Draven",
       "name:Shot",
+      "name:spinning name:axe",
       "\"Pale Cascade\""
-    ],
-    "color": "orange"
+    ]
   },
   {
-    "title": "Searching by region",
-    "description": "Use 'region:' or 'r:' to search by region. You can use the full name of the region or various short forms, such as the official 2-character codes (BW, DE, FR, IO, MT, NX, PZ, SI) or other abbreviated versions ('Targon', 'P&Z', 'Isles').",
+    "title": "Description",
+    "description": "You can search for cards by description with 'description:' or 'd:'. Multiple description queries, e.g. 'description:something description:other' can be used to narrow down the description, or a specific string can be enclosed in double quotes.",
     "examples": [
-      "region:Targon",
-      "r:DE",
-      "\"region: P&Z\""
-    ],
-    "color": "blue"
+      "description:reduce",
+      "d:stun",
+      "description:\"create a\"",
+      "description:give description:summoned"
+    ]
+  },
+  {
+    "title": "Attack, health or cost",
+    "description": "You can search for cards by attack with any of the following operators: <, <=, =, >, >=.",
+    "examples": ["attack:3", "attack:>2", "health:<=3", "cost:=4"]
+  },
+  {
+    "title": "Card Type",
+    "description": "You can search for cards by type with 'type:' or 't:'. The values that work are: unit, spell, landmark, ability, equipment",
+    "examples": ["type:unit", "t:spell"]
+  },
+  {
+    "title": "Rarity",
+    "description": "You can search for cards by rarity with 'rarity:' or 'r:'. The values that work are: common, rare, epic, champion, none",
+    "examples": ["rarity:common", "r:epic"]
+  },
+  {
+    "title": "Region",
+    "description": "You can search for cards by region with 'region:' or 'reg:'. The following regions work: Ionia, Noxus, Piltover and Zaun, Freljord, Bandle City, Bilgewater, Shadow Isles, Shurima, Targon, Runeterra",
+    "examples": ["region:Noxus", "reg:Demacia"]
+  },
+  {
+    "title": "Keywords",
+    "description": "You can search for cards by keywords with 'keyword:' or 'k:'. Multiple keyword queries can be separated by a comma to specify any of multiple keywords.",
+    "examples": [
+      "keyword:\"quick attack\"",
+      "k:support",
+      "keyword:\"quick attack, support\""
+    ]
+  },
+  {
+    "title": "Format",
+    "description": "You can search for cards by format with 'format:' or 'f:'. Multiple format queries can be separated by a comma to specify any of multiple formats. The following formats are legal: standard, eternal, commons only",
+    "examples": ["format:eternal", "f:standard", "format:\"eternal, standard\""]
+  },
+  {
+    "title": "Set",
+    "description": "You can search for cards by set with 'set:' or 's:'. The lists of sets that are viable are: set1, set2, set3, set4, set5, set6, set6cde, set7, set7b, set8, set9",
+    "examples": ["set:Set1", "s:Set2"]
+  },
+  {
+    "title": "Flavor Text",
+    "description": "You can search for cards by flavor text with 'flavor_text:' or 'ft:'.",
+    "examples": [
+      "flavor_text:\"Never fear change\"",
+      "ft:\"Never fear change\""
+    ]
+  },
+  {
+    "title": "Artist",
+    "description": "You can search for cards by artist with 'artist:' or 'a:'.",
+    "examples": ["artist:SIXMOREVODKA", "a:\"Kudos Productions\""]
+  },
+  {
+    "title": "OR operator",
+    "description": "By default, all search queries are going to be combined together. To create a new set of queries, you can use the OR operator.",
+    "examples": ["artist:SIXMOREVODKA", "a:\"Kudos Productions\""]
   }
 ]

@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 interface SyntaxProps {
   title: string;
@@ -7,27 +7,31 @@ interface SyntaxProps {
   color: string;
 }
 
-const Syntax: React.FC<SyntaxProps> = ({ title, description, examples, color }) => {
+const Syntax: React.FC<SyntaxProps> = ({
+  title,
+  description,
+  examples,
+  color,
+}) => {
   const navigate = useNavigate();
 
-  const handleExampleClick = (example: string) => {
-    navigate(`/search?query=${example}`);
-  };
-
   return (
-    <div className="p-8 flex flex-col sm:flex-row border-t border-black">
-      <div className="sm:w-1/2 sm:p-4 sm:pr-20 text-center sm:text-left">
-        <h2 className="text-xl font-bold mb-2">{title}</h2>
+    <div className="flex flex-col border-t border-border p-8 sm:flex-row">
+      <div className="text-center sm:w-1/2 sm:p-4 sm:pr-20 sm:text-left">
+        <h2 className="mb-2 text-2xl font-bold">{title}</h2>
         <p className="mb-4">{description}</p>
       </div>
-      <div className="sm:w-1/2 flex items-center">
+      <div className="flex items-center sm:w-1/2">
         <div className="w-full">
           {examples.map((example, index) => (
             <div
               key={index}
-              className={ 'p-3 pl-6 mb-2 shadow-xl relative cursor-pointer border-l-8 hover:scale-105 hover:cursor-pointer' }
+              className={
+                "relative mb-2 cursor-pointer border border-l-8 p-3 pl-4 font-mono text-sm shadow-[0_0_10px] shadow-shadow hover:scale-105 hover:cursor-pointer"
+              }
               style={{ borderColor: color }}
-              onClick={() => handleExampleClick(example)}
+              data-test-id="syntax-example"
+              onClick={() => navigate(`/search?query=${example}`)}
             >
               {example}
             </div>
