@@ -10,11 +10,13 @@ interface ThemeProviderProps {
 
 interface ThemeProviderState {
   theme: Theme;
+  isLight: boolean;
   setTheme: (theme: Theme) => void;
 }
 
 const initialState: ThemeProviderState = {
   theme: "system",
+  isLight: false,
   setTheme: () => null,
 };
 
@@ -29,6 +31,7 @@ export default function ThemeProvider({
   const [theme, setTheme] = useState<Theme>(
     () => (localStorage.getItem(storageKey) as Theme) || defaultTheme,
   );
+  const [isLight, setIsLight] = useState(false);
 
   useEffect(() => {
     const root = window.document.documentElement;
@@ -41,15 +44,18 @@ export default function ThemeProvider({
         ? "dark"
         : "light";
 
+      setIsLight(systemTheme === "light");
       root.classList.add(systemTheme);
       return;
     }
 
+    setIsLight(theme === "light");
     root.classList.add(theme);
   }, [theme]);
 
   const value = {
     theme,
+    isLight,
     setTheme: (theme: Theme) => {
       localStorage.setItem(storageKey, theme);
       setTheme(theme);

@@ -15,15 +15,30 @@ export default function CardFull({ card }: { card: CardAttributes }) {
         className="h-auto w-full max-w-xs drop-shadow-2xl md:absolute md:left-[calc(-20rem+20px)] md:top-4"
       />
       <div className="w-full max-w-sm rounded-2xl border border-border bg-card py-2 shadow-md [&>*:not(:first-child)]:border-t [&>*]:w-full [&>*]:p-2 [&>*]:px-6">
-        <p className="flex items-center gap-2">
-          <span
-            className="flex size-8 items-center justify-center rounded-full bg-blue-500 text-white"
-            data-test-id="card-cost"
+        <div className="flex items-center justify-between">
+          <p className="flex items-center gap-2">
+            <span
+              className="flex size-8 items-center justify-center rounded-full bg-blue-500 text-white"
+              data-test-id="card-cost"
+            >
+              {card.cost}
+            </span>{" "}
+            {card.name}
+          </p>
+          <div
+            className="flex items-center justify-center gap-1"
+            data-test-id="region-icons"
           >
-            {card.cost}
-          </span>{" "}
-          {card.name}
-        </p>
+            {card.region_refs.map((region) => (
+              <img
+                key={region}
+                src={`/regions/icon-${region.toLowerCase()}.png`}
+                alt={`${region} region`}
+                className="w-8"
+              />
+            ))}
+          </div>
+        </div>
         <p>{`${card.card_type}${card.spell_speed && ` - ${card.spell_speed}`} / ${card.rarity[0] + card.rarity.slice(1).toLowerCase()} / ${getSetString(card.set)}`}</p>
         {card.keywords.length !== 0 && (
           <p>Keywords: {card.keywords.join(", ")}</p>

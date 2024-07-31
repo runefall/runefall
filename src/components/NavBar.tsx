@@ -1,6 +1,6 @@
-import ModeToggle from "@/components/ModeToggle";
 import NavSearchBar from "@/components/NavSearchBar";
 import { Link } from "react-router-dom";
+import NavButtons from "./NavButtons";
 
 export default function NavBar() {
   return (
@@ -10,7 +10,7 @@ export default function NavBar() {
           <h1 className="text-4xl font-bold text-white">RUNEFALL</h1>
         </Link>
         <NavSearchBar />
-        <ModeToggle />
+        <NavButtons />
       </div>
     </header>
   );
