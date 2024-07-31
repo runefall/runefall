@@ -19,7 +19,7 @@ export default function SearchFilter({
   const [showFilters, setShowFilters] = useState(false);
 
   return (
-    <div className="border-b border-border bg-secondary [&>*]:p-2">
+    <nav className="border-b border-border bg-secondary [&>*]:p-2">
       {/* desktop view */}
       <div className="hidden items-center justify-center gap-4 md:flex">
         <SelectSortMode
@@ -75,6 +75,6 @@ export default function SearchFilter({
           </div>
         )}
       </div>
-    </div>
+    </nav>
   );
 }

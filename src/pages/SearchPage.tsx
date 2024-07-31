@@ -8,7 +8,7 @@ import {
   isSortModeType,
 } from "@/utils/isType";
 import { calculateRarity } from "@/utils/rarity";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useErrorBoundary } from "react-error-boundary";
 import { useNavigate, useSearchParams } from "react-router-dom";
 
@@ -20,6 +20,7 @@ export default function SearchPage() {
     sortAttribute: "name",
     sortDirection: "auto",
   });
+  const loading = useRef(true);
   const navigate = useNavigate();
   const { showBoundary } = useErrorBoundary();
   const { sortMode, sortAttribute, sortDirection } = filterState;
@@ -61,9 +62,11 @@ export default function SearchPage() {
     });
 
     setCards([]);
+    loading.current = true;
     querySearch(query)
       .then((data: { data: CardType[] }) => {
         setCards(data.data);
+        loading.current = false;
       })
       .catch(showBoundary);
   }, [searchParams]);
@@ -122,18 +125,16 @@ export default function SearchPage() {
   }
 
   return (
-    <>
+    <div className="flex flex-1 flex-col">
       <SearchFilter
         filterState={filterState}
         setFilterState={handleFilterState}
       />
-      {cards.length === 0 ? (
-        <div data-test-id="no-cards" className="m-8 w-auto text-center">
-          No cards found with the specified search query.
-        </div>
-      ) : (
-        <CardDisplay cards={cardsSorted} mode={sortMode} />
-      )}
-    </>
+      <CardDisplay
+        cards={cardsSorted}
+        mode={sortMode}
+        loading={loading.current}
+      />
+    </div>
   );
 }

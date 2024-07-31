@@ -41,6 +41,20 @@ describe("template spec", () => {
     cy.getTestId("select-mode").click();
     cy.getTestId("select-mode-text").click();
     cy.getTestId("card-text").should("have.length", 4);
+    cy.getTestId("card-text")
+      .first()
+      .find(`[data-test-id="region-icons"]`)
+      .find("img")
+      .first()
+      .should("have.attr", "src")
+      .should("eq", "/regions/icon-noxus.png");
+    cy.getTestId("card-text")
+      .last()
+      .find(`[data-test-id="region-icons"]`)
+      .find("img")
+      .first()
+      .should("have.attr", "src")
+      .should("eq", "/regions/icon-noxus.png");
     cy.getTestId("no-cards").should("not.exist");
 
     cy.location("search").should("eq", "?mode=text&query=draven");
@@ -69,6 +83,20 @@ describe("template spec", () => {
     cy.getTestId("select-mode").click();
     cy.getTestId("select-mode-full").click();
     cy.getTestId("card-full").should("have.length", 4);
+    cy.getTestId("card-full")
+      .first()
+      .find(`[data-test-id="region-icons"]`)
+      .find("img")
+      .first()
+      .should("have.attr", "src")
+      .should("eq", "/regions/icon-noxus.png");
+    cy.getTestId("card-full")
+      .last()
+      .find(`[data-test-id="region-icons"]`)
+      .find("img")
+      .first()
+      .should("have.attr", "src")
+      .should("eq", "/regions/icon-noxus.png");
     cy.getTestId("no-cards").should("not.exist");
 
     cy.location("search").should("eq", "?mode=full&query=draven");
