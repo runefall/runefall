@@ -124,9 +124,6 @@ export default function SearchPage() {
 
   return (
     <div className="flex flex-1 flex-col">
-      <SearchFilter filterState={filterState} setFilterState={handleFilterState} />
-      <CardDisplay cards={cardsSorted} mode={sortMode} loading={loading.current} />
-      
       <SearchFilter
         filterState={filterState}
         setFilterState={handleFilterState}
