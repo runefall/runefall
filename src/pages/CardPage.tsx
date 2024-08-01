@@ -1,3 +1,7 @@
+import {
+  default as CardActions,
+  default as CardActions,
+} from "@/components/CardActions";
 import CardAssociated from "@/components/CardAssociated";
 import CardFull from "@/components/display/CardFull";
 import { CardAttributes } from "@/types/interfaces";
@@ -5,8 +9,6 @@ import { getCard } from "@/utils/apiCalls";
 import { useEffect, useState } from "react";
 import { useErrorBoundary } from "react-error-boundary";
 import { useParams } from "react-router-dom";
-import CardActions from "@/components/CardActions";
-
 
 export default function CardPage() {
   const { code } = useParams<{ code: string }>();
@@ -27,9 +29,9 @@ export default function CardPage() {
         <p>Loading...</p>
       ) : (
         <>
-          <div className="p-4 flex flex-col items-center md:flex-row md:items-start md:justify-center md:space-x-40">
+          <div className="flex flex-col items-center p-4 md:flex-row md:items-start md:justify-center md:space-x-40">
             <CardFull card={card} />
-            <div className="items-center md:ml-4 md:mt-0 mt-4">
+            <div className="mt-4 items-center md:ml-4 md:mt-0">
               <CardActions card={card} />
             </div>
           </div>
