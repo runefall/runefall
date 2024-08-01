@@ -11,6 +11,8 @@ import { calculateRarity } from "@/utils/rarity";
 import { useEffect, useRef, useState } from "react";
 import { useErrorBoundary } from "react-error-boundary";
 import { useNavigate, useSearchParams } from "react-router-dom";
+import BackToTopButton from "@/components/BackToTopButton";
+import { useScrollToTop } from "@/utils/useScrollToTop";
 
 export default function SearchPage() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -77,7 +79,7 @@ export default function SearchPage() {
   }
 
   let cardsSorted = cards.sort((card1, card2) =>
-    card1.attributes.name.localeCompare(card2.attributes.name),
+    card1.attributes.name.localeCompare(card2.attributes.name)
   );
   switch (sortAttribute) {
     case "name":
@@ -87,20 +89,16 @@ export default function SearchPage() {
     case "card_code":
     default:
       cardsSorted = cards.sort((card1, card2) =>
-        card1.attributes[sortAttribute].localeCompare(
-          card2.attributes[sortAttribute],
-        ),
+        card1.attributes[sortAttribute].localeCompare(card2.attributes[sortAttribute])
       );
-
       if (sortDirection === "descending") cardsSorted = cardsSorted.reverse();
       break;
     case "region_refs":
       cardsSorted = cards.sort((card1, card2) =>
         card1.attributes[sortAttribute]
           .join(", ")
-          .localeCompare(card2.attributes[sortAttribute].join(", ")),
+          .localeCompare(card2.attributes[sortAttribute].join(", "))
       );
-
       if (sortDirection === "descending") cardsSorted = cardsSorted.reverse();
       break;
     case "attack":
@@ -108,21 +106,21 @@ export default function SearchPage() {
     case "health":
       cardsSorted = cards.sort(
         (card1, card2) =>
-          card1.attributes[sortAttribute] - card2.attributes[sortAttribute],
+          card1.attributes[sortAttribute] - card2.attributes[sortAttribute]
       );
-
       if (sortDirection === "descending") cardsSorted = cardsSorted.reverse();
       break;
     case "rarity":
       cardsSorted = cards.sort(
         (card1, card2) =>
           calculateRarity(card1.attributes.rarity) -
-          calculateRarity(card2.attributes.rarity),
+          calculateRarity(card2.attributes.rarity)
       );
-
       if (sortDirection === "descending") cardsSorted = cardsSorted.reverse();
       break;
   }
+
+  const showTopButton = useScrollToTop();
 
   return (
     <div className="flex flex-1 flex-col">
@@ -135,6 +133,7 @@ export default function SearchPage() {
         mode={sortMode}
         loading={loading.current}
       />
+      <BackToTopButton show={showTopButton} />
     </div>
   );
 }
