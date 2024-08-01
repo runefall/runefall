@@ -16,4 +16,6 @@ export default function RandomPage() {
       })
       .catch(showBoundary);
   });
+
+  return <></>;
 }
