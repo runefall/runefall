@@ -20,23 +20,23 @@
     ]
   },
   {
-    "title": "Attack, health or cost",
-    "description": "You can search for cards by attack with any of the following operators: <, <=, =, >, >=.",
+    "title": "Attack, Health or Cost",
+    "description": "You can search for cards by attack, health, or cost with any of the following comparison operators: <, <=, =, >, >=.",
     "examples": ["attack:3", "attack:>2", "health:<=3", "cost:=4"]
   },
   {
-    "title": "Card Type",
-    "description": "You can search for cards by type with 'type:' or 't:'. The values that work are: unit, spell, landmark, ability, equipment",
+    "title": "Type",
+    "description": "You can search for cards by type with 'type:' or 't:'. Acceptable type values: unit, spell, landmark, ability, equipment.",
     "examples": ["type:unit", "t:spell"]
   },
   {
     "title": "Rarity",
-    "description": "You can search for cards by rarity with 'rarity:' or 'r:'. The values that work are: common, rare, epic, champion, none",
+    "description": "You can search for cards by rarity with 'rarity:' or 'r:'. Acceptable rarity values: common, rare, epic, champion, none.",
     "examples": ["rarity:common", "r:epic"]
   },
   {
     "title": "Region",
-    "description": "You can search for cards by region with 'region:' or 'reg:'. The following regions work: Ionia, Noxus, Piltover and Zaun, Freljord, Bandle City, Bilgewater, Shadow Isles, Shurima, Targon, Runeterra",
+    "description": "You can search for cards by region with 'region:' or 'reg:'. Acceptable region values: Ionia, Noxus, Piltover and Zaun, Freljord, Bandle City, Bilgewater, Shadow Isles, Shurima, Targon, Runeterra",
     "examples": ["region:Noxus", "reg:Demacia"]
   },
   {
@@ -50,12 +50,12 @@
   },
   {
     "title": "Format",
-    "description": "You can search for cards by format with 'format:' or 'f:'. Multiple format queries can be separated by a comma to specify any of multiple formats. The following formats are legal: standard, eternal, commons only",
+    "description": "You can search for cards by format with 'format:' or 'f:'. Multiple format queries can be separated by a comma to specify any of multiple formats. Acceptable format values: standard, eternal, commons only",
     "examples": ["format:eternal", "f:standard", "format:\"eternal, standard\""]
   },
   {
     "title": "Set",
-    "description": "You can search for cards by set with 'set:' or 's:'. The lists of sets that are viable are: set1, set2, set3, set4, set5, set6, set6cde, set7, set7b, set8, set9",
+    "description": "You can search for cards by set with 'set:' or 's:'. Acceptable set values: set1, set2, set3, set4, set5, set6, set6cde, set7, set7b, set8, set9",
     "examples": ["set:Set1", "s:Set2"]
   },
   {
@@ -72,8 +72,8 @@
     "examples": ["artist:SIXMOREVODKA", "a:\"Kudos Productions\""]
   },
   {
-    "title": "OR operator",
-    "description": "By default, all search queries are going to be combined together. To create a new set of queries, you can use the OR operator.",
-    "examples": ["artist:SIXMOREVODKA", "a:\"Kudos Productions\""]
+    "title": "Advance Queries",
+    "description": "You can search for cards which satisfy at least one of many criteria by using 'or'",
+    "examples": ["region:Noxus or region:Demacia", "attack:>5 or health:>5"]
   }
 ]
