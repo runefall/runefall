@@ -8,6 +8,7 @@ import AboutPage from "./pages/AboutPage";
 import CardPage from "./pages/CardPage";
 import FallBackPage from "./pages/FallBackPage.tsx";
 import HomePage from "./pages/HomePage";
+import RandomPage from "./pages/RandomPage.tsx";
 import SearchPage from "./pages/SearchPage";
 import SetPage from "./pages/SetPage.tsx";
 import SyntaxPage from "./pages/SyntaxPage";
@@ -29,7 +30,8 @@ function App() {
               <Route path="/about" element={<AboutPage />} />
               <Route path="/sets" element={<SetPage />} />
               <Route path="/syntax" element={<SyntaxPage />} />
-              <Route path="/random" element={<div>Random</div>} />
+              <Route path="/random" element={<RandomPage />} />
+              <Route path="*" element={<div>This page is missing</div>} />
             </Routes>
           </main>
           <Footer />
