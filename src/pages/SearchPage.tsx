@@ -1,3 +1,4 @@
+import BackToTopButton from "@/components/BackToTopButton";
 import CardDisplay from "@/components/display/CardDisplay";
 import SearchFilter from "@/components/SearchFilter/SearchFilter";
 import { Card as CardType, FilterState } from "@/types/interfaces";
@@ -7,12 +8,12 @@ import {
   isSortDirectionType,
   isSortModeType,
 } from "@/utils/isType";
+import { parseQuery } from "@/utils/parse";
 import { calculateRarity } from "@/utils/rarity";
+import { useScrollToTop } from "@/utils/useScrollToTop";
 import { useEffect, useRef, useState } from "react";
 import { useErrorBoundary } from "react-error-boundary";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import BackToTopButton from "@/components/BackToTopButton";
-import { useScrollToTop } from "@/utils/useScrollToTop";
 
 export default function SearchPage() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -46,22 +47,30 @@ export default function SearchPage() {
     const query = searchParams.get("query");
     if (!query) return;
 
-    setFilterState((prevState) => {
-      const sortModeParam = searchParams.get("mode") || "";
-      const sortAttributeParam = searchParams.get("attribute") || "";
-      const sortDirectionParam = searchParams.get("direction") || "";
+    const parsedQuery = parseQuery(query);
 
-      return {
-        ...prevState,
-        sortMode: isSortModeType(sortModeParam) ? sortModeParam : "image",
-        sortAttribute: isSortAttributeType(sortAttributeParam)
-          ? sortAttributeParam
-          : "name",
-        sortDirection: isSortDirectionType(sortDirectionParam)
-          ? sortDirectionParam
-          : "auto",
-      } as FilterState;
-    });
+    const sortModeParam = searchParams.get("mode") || "";
+    const sortMode = isSortModeType(parsedQuery.mode)
+      ? parsedQuery.mode
+      : isSortModeType(sortModeParam)
+        ? sortModeParam
+        : "image";
+
+    const sortAttributeParam = searchParams.get("mode") || "";
+    const sortAttribute = isSortAttributeType(parsedQuery.attribute)
+      ? parsedQuery.attribute
+      : isSortModeType(sortAttributeParam)
+        ? sortAttributeParam
+        : "name";
+
+    const sortDirectionParam = searchParams.get("direction") || "";
+    const sortDirection = isSortDirectionType(parsedQuery.direction)
+      ? parsedQuery.direction
+      : isSortModeType(sortDirectionParam)
+        ? sortDirectionParam
+        : "name";
+
+    setFilterState({ sortMode, sortAttribute, sortDirection } as FilterState);
 
     setCards([]);
     loading.current = true;
@@ -75,11 +84,11 @@ export default function SearchPage() {
 
   if (cards.length === 1) {
     const { card_code } = cards[0].attributes;
-    navigate(`/card/${card_code}`);
+    navigate(`/card/${card_code}`, { replace: true });
   }
 
   let cardsSorted = cards.sort((card1, card2) =>
-    card1.attributes.name.localeCompare(card2.attributes.name)
+    card1.attributes.name.localeCompare(card2.attributes.name),
   );
   switch (sortAttribute) {
     case "name":
@@ -89,7 +98,9 @@ export default function SearchPage() {
     case "card_code":
     default:
       cardsSorted = cards.sort((card1, card2) =>
-        card1.attributes[sortAttribute].localeCompare(card2.attributes[sortAttribute])
+        card1.attributes[sortAttribute].localeCompare(
+          card2.attributes[sortAttribute],
+        ),
       );
       if (sortDirection === "descending") cardsSorted = cardsSorted.reverse();
       break;
@@ -97,7 +108,7 @@ export default function SearchPage() {
       cardsSorted = cards.sort((card1, card2) =>
         card1.attributes[sortAttribute]
           .join(", ")
-          .localeCompare(card2.attributes[sortAttribute].join(", "))
+          .localeCompare(card2.attributes[sortAttribute].join(", ")),
       );
       if (sortDirection === "descending") cardsSorted = cardsSorted.reverse();
       break;
@@ -106,7 +117,7 @@ export default function SearchPage() {
     case "health":
       cardsSorted = cards.sort(
         (card1, card2) =>
-          card1.attributes[sortAttribute] - card2.attributes[sortAttribute]
+          card1.attributes[sortAttribute] - card2.attributes[sortAttribute],
       );
       if (sortDirection === "descending") cardsSorted = cardsSorted.reverse();
       break;
@@ -114,26 +125,28 @@ export default function SearchPage() {
       cardsSorted = cards.sort(
         (card1, card2) =>
           calculateRarity(card1.attributes.rarity) -
-          calculateRarity(card2.attributes.rarity)
+          calculateRarity(card2.attributes.rarity),
       );
       if (sortDirection === "descending") cardsSorted = cardsSorted.reverse();
       break;
   }
 
-  const showTopButton = useScrollToTop();
-
+  const parse = parseQuery(searchParams.get("query") || "");
   return (
     <div className="flex flex-1 flex-col">
       <SearchFilter
         filterState={filterState}
         setFilterState={handleFilterState}
+        disableSortMode={isSortModeType(parse.mode)}
+        disableSortAttribute={isSortAttributeType(parse.attribute)}
+        disableSortDirection={isSortDirectionType(parse.direction)}
       />
       <CardDisplay
         cards={cardsSorted}
         mode={sortMode}
         loading={loading.current}
       />
-      <BackToTopButton show={showTopButton} />
+      <BackToTopButton show={(() => useScrollToTop())()} />
     </div>
   );
 }

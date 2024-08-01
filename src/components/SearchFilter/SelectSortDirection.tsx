@@ -11,14 +11,17 @@ export default function SelectSortDirection({
   className = "w-[180px]",
   sortDirection,
   setFilterState,
+  disabled = false,
 }: {
   className?: string;
   sortDirection: SortDirection;
   setFilterState: (action: { type: string; value: string }) => void;
+  disabled?: boolean;
 }) {
   return (
     <Select
       value={sortDirection}
+      disabled={disabled}
       onValueChange={(value: SortDirection) =>
         setFilterState({ type: "sortDirection", value })
       }

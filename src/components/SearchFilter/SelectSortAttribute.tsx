@@ -11,14 +11,17 @@ export default function SelectSortAttribute({
   className = "w-[180px]",
   sortAttribute,
   setFilterState,
+  disabled = false,
 }: {
   className?: string;
   sortAttribute: SortAttribute;
   setFilterState: (action: { type: string; value: string }) => void;
+  disabled?: boolean;
 }) {
   return (
     <Select
       value={sortAttribute}
+      disabled={disabled}
       onValueChange={(value: SortAttribute) =>
         setFilterState({ type: "sortAttribute", value })
       }
