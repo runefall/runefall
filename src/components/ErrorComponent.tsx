@@ -3,7 +3,12 @@ import { useErrorBoundary } from "react-error-boundary";
 import { TbFaceIdError } from "react-icons/tb";
 import { useNavigate } from "react-router-dom";
 
-export default function ErrorComponent({ error }: { error: Error | null }) {
+export default function ErrorComponent({
+  error,
+  ...props
+}: {
+  error: Error | null;
+}) {
   const { resetBoundary } = useErrorBoundary();
   const navigate = useNavigate();
 
@@ -16,6 +21,7 @@ export default function ErrorComponent({ error }: { error: Error | null }) {
     <div
       className="m-4 flex flex-1 flex-col items-center justify-center px-4 py-8"
       role="alert"
+      {...props}
     >
       <div className="w-full max-w-lg rounded-lg p-6 text-center shadow-[0_0_15px_5px] shadow-shadow">
         <TbFaceIdError

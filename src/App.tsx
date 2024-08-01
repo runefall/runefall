@@ -36,6 +36,7 @@ function App() {
                 path="*"
                 element={
                   <ErrorComponent
+                    data-test-id="missing-page"
                     error={{
                       name: "404 Error",
                       message: "This page does not exist.",
