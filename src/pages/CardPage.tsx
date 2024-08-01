@@ -27,9 +27,9 @@ export default function CardPage() {
         <p>Loading...</p>
       ) : (
         <>
-          <div className="p-4 flex flex-col md:flex-row md:items-start md:justify-center md:space-x-40">
+          <div className="p-4 flex flex-col items-center md:flex-row md:items-start md:justify-center md:space-x-40">
             <CardFull card={card} />
-            <div className="md:ml-4 md:mt-0 mt-4">
+            <div className="items-center md:ml-4 md:mt-0 mt-4">
               <CardActions card={card} />
             </div>
           </div>
