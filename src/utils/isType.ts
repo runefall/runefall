@@ -21,7 +21,7 @@ export function isSortAttributeType(
     "health",
     "set",
     "rarity",
-    "region_refs",
+    "region",
     "artist_name",
     "card_code",
   ].includes(keyInput);

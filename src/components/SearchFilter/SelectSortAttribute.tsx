@@ -51,10 +51,7 @@ export default function SelectSortAttribute({
         <SelectItem data-test-id="select-attribute-rarity" value="rarity">
           Rarity
         </SelectItem>
-        <SelectItem
-          data-test-id="select-attribute-region-refs"
-          value="region_refs"
-        >
+        <SelectItem data-test-id="select-attribute-region" value="region">
           Region
         </SelectItem>
         <SelectItem

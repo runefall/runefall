@@ -23,7 +23,7 @@ export default function SearchPage() {
     sortAttribute: "name",
     sortDirection: "auto",
   });
-  const loading = useRef(true);
+  const loading = useRef(false);
   const navigate = useNavigate();
   const { showBoundary } = useErrorBoundary();
   const { sortMode, sortAttribute, sortDirection } = filterState;
@@ -44,9 +44,7 @@ export default function SearchPage() {
   }
 
   useEffect(() => {
-    const query = searchParams.get("query");
-    if (!query) return;
-
+    const query = searchParams.get("query") || "";
     const parsedQuery = parseQuery(query);
 
     const sortModeParam = searchParams.get("mode") || "";
@@ -56,24 +54,25 @@ export default function SearchPage() {
         ? sortModeParam
         : "image";
 
-    const sortAttributeParam = searchParams.get("mode") || "";
+    const sortAttributeParam = searchParams.get("attribute") || "";
     const sortAttribute = isSortAttributeType(parsedQuery.attribute)
       ? parsedQuery.attribute
-      : isSortModeType(sortAttributeParam)
+      : isSortAttributeType(sortAttributeParam)
         ? sortAttributeParam
         : "name";
 
     const sortDirectionParam = searchParams.get("direction") || "";
     const sortDirection = isSortDirectionType(parsedQuery.direction)
       ? parsedQuery.direction
-      : isSortModeType(sortDirectionParam)
+      : isSortDirectionType(sortDirectionParam)
         ? sortDirectionParam
-        : "name";
+        : "auto";
 
     setFilterState({ sortMode, sortAttribute, sortDirection } as FilterState);
 
     setCards([]);
     loading.current = true;
+
     querySearch(query)
       .then((data: { data: CardType[] }) => {
         setCards(data.data);
@@ -104,11 +103,11 @@ export default function SearchPage() {
       );
       if (sortDirection === "descending") cardsSorted = cardsSorted.reverse();
       break;
-    case "region_refs":
+    case "region":
       cardsSorted = cards.sort((card1, card2) =>
-        card1.attributes[sortAttribute]
+        card1.attributes["region_refs"]
           .join(", ")
-          .localeCompare(card2.attributes[sortAttribute].join(", ")),
+          .localeCompare(card2.attributes["region_refs"].join(", ")),
       );
       if (sortDirection === "descending") cardsSorted = cardsSorted.reverse();
       break;
@@ -132,6 +131,8 @@ export default function SearchPage() {
   }
 
   const parse = parseQuery(searchParams.get("query") || "");
+
+  console.log(loading);
   return (
     <div className="flex flex-1 flex-col">
       <SearchFilter

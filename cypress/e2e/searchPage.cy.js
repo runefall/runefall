@@ -200,12 +200,12 @@ describe("template spec", () => {
     );
 
     cy.getTestId("select-attribute").click();
-    cy.getTestId("select-attribute-region-refs").click();
+    cy.getTestId("select-attribute-region").click();
     cy.getTestId("card-list-item").first().contains("01NX020");
     cy.getTestId("card-list-item").last().contains("01NX020T2");
     cy.location("search").should(
       "eq",
-      "?attribute=region_refs&direction=auto&mode=list&query=draven",
+      "?attribute=region&direction=auto&mode=list&query=draven",
     );
 
     cy.getTestId("select-attribute").click();
@@ -287,40 +287,40 @@ describe("template spec", () => {
   });
 
   it('should display "Back to Top" button after scrolling down and scroll back to top when clicked', () => {
-    cy.visit("/search?query=dar")
-    cy.getTestId('back-to-top-button').should('not.exist');
+    cy.visit("/search?query=dar");
+    cy.getTestId("back-to-top-button").should("not.exist");
 
-    cy.scrollTo('bottom', { duration: 1000 }).then(() => {
-      cy.scrollTo('bottom', { duration: 1000 }).then(() => {
-        cy.scrollTo('bottom', { duration: 1000 });
-        cy.getTestId('back-to-top-button').should('be.visible');
-        cy.getTestId('back-to-top-button').click();
-        cy.window().its('scrollY').should('equal', 0);
-        cy.getTestId('back-to-top-button').should('not.exist');
+    cy.scrollTo("bottom", { duration: 1000 }).then(() => {
+      cy.scrollTo("bottom", { duration: 1000 }).then(() => {
+        cy.scrollTo("bottom", { duration: 1000 });
+        cy.getTestId("back-to-top-button").should("be.visible");
+        cy.getTestId("back-to-top-button").click();
+        cy.window().its("scrollY").should("equal", 0);
+        cy.getTestId("back-to-top-button").should("not.exist");
       });
     });
   });
 
   it("should sort cards correctly with a bigger search result", () => {
     cy.visit("/search?query=dar");
-    
+
     cy.getTestId("card-image").should("have.length", 42);
     cy.getTestId("card-image")
-    .find("img")
-    .first()
-    .should("have.attr", "src")
-    .should(
-      "include",
-      "http://dd.b.pvp.net/5_6_0/set7/en_us/img/cards/07NX005.png",
-    );
-  cy.getTestId("card-image")
-    .find("img")
-    .last()
-    .should("have.attr", "src")
-    .should(
-      "include",
-      "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06BC029T3.png",
-    );
+      .find("img")
+      .first()
+      .should("have.attr", "src")
+      .should(
+        "include",
+        "http://dd.b.pvp.net/5_6_0/set7/en_us/img/cards/07NX005.png",
+      );
+    cy.getTestId("card-image")
+      .find("img")
+      .last()
+      .should("have.attr", "src")
+      .should(
+        "include",
+        "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06BC029T3.png",
+      );
     cy.getTestId("select-direction").click();
     cy.getTestId("select-direction-descending").click();
     cy.getTestId("card-image")
@@ -341,4 +341,3 @@ describe("template spec", () => {
       );
   });
 });
-
