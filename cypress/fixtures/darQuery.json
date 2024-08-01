@@ -1,0 +1,3698 @@
+{
+  "data": [
+    {
+      "id": "81",
+      "type": "card",
+      "attributes": {
+        "name": "Darius",
+        "card_code": "01NX038",
+        "description": "",
+        "description_raw": "",
+        "levelup_description": "I see the enemy Nexus has half of its starting Health or less.<br><style=Variable></style>",
+        "levelup_description_raw": "I see the enemy Nexus has half of its starting Health or less.",
+        "flavor_text": "\"An iron will and a titan's strength. There is no finer general to lead the Trifarian Legion.\" - Swain\n",
+        "artist_name": "SIXMOREVODKA",
+        "attack": 6,
+        "cost": 6,
+        "health": 6,
+        "spell_speed": "",
+        "rarity": "Champion",
+        "supertype": "Champion",
+        "card_type": "Unit",
+        "collectible": true,
+        "set": "Set1",
+        "associated_card_refs": ["01NX038T2", "01NX038T1"],
+        "regions": ["Noxus"],
+        "region_refs": ["Noxus"],
+        "keywords": ["Overwhelm"],
+        "keyword_refs": ["Overwhelm"],
+        "formats": ["Commons Only", "Eternal"],
+        "format_refs": [
+          "client_Formats_CommonsOnly_name",
+          "client_Formats_Eternal_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX038.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX038-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 88,
+            "name": "Darius",
+            "card_code": "01NX038T2",
+            "description": "",
+            "description_raw": "",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "\"Stand in our way and I'll cut you down myself!\"",
+            "artist_name": "SIXMOREVODKA",
+            "attack": 10,
+            "cost": 6,
+            "health": 7,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "Champion",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set1",
+            "associated_card_refs": ["01NX038T1", "01NX038"],
+            "regions": ["Noxus"],
+            "region_refs": ["Noxus"],
+            "keywords": ["Overwhelm"],
+            "keyword_refs": ["Overwhelm"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX038T2.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX038T2-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:55:58.423Z",
+            "updated_at": "2024-07-24T23:55:58.423Z",
+            "associated_cards": []
+          },
+          {
+            "id": 89,
+            "name": "Darius' Decimate",
+            "card_code": "01NX038T1",
+            "description": "Deal 4 to the enemy Nexus.\r\nCreate a <link=card.level1><style=AssociatedCard>Darius</style></link> in your deck.",
+            "description_raw": "Deal 4 to the enemy Nexus.\r\nCreate a Darius in your deck.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "\"Sometimes, it takes tactical genius to break a fortress. Sometimes, you just have to hit it harder.\" - Darius",
+            "artist_name": "Max Grecke",
+            "attack": 0,
+            "cost": 6,
+            "health": 0,
+            "spell_speed": "Slow",
+            "rarity": "None",
+            "supertype": "Champion",
+            "card_type": "Spell",
+            "collectible": false,
+            "set": "Set1",
+            "associated_card_refs": ["01NX038T2", "01NX038"],
+            "regions": ["Noxus"],
+            "region_refs": ["Noxus"],
+            "keywords": ["Slow"],
+            "keyword_refs": ["Slow"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX038T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX038T1-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:55:58.424Z",
+            "updated_at": "2024-07-24T23:55:58.424Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "88",
+      "type": "card",
+      "attributes": {
+        "name": "Darius",
+        "card_code": "01NX038T2",
+        "description": "",
+        "description_raw": "",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "\"Stand in our way and I'll cut you down myself!\"",
+        "artist_name": "SIXMOREVODKA",
+        "attack": 10,
+        "cost": 6,
+        "health": 7,
+        "spell_speed": "",
+        "rarity": "None",
+        "supertype": "Champion",
+        "card_type": "Unit",
+        "collectible": false,
+        "set": "Set1",
+        "associated_card_refs": ["01NX038T1", "01NX038"],
+        "regions": ["Noxus"],
+        "region_refs": ["Noxus"],
+        "keywords": ["Overwhelm"],
+        "keyword_refs": ["Overwhelm"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX038T2.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX038T2-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 89,
+            "name": "Darius' Decimate",
+            "card_code": "01NX038T1",
+            "description": "Deal 4 to the enemy Nexus.\r\nCreate a <link=card.level1><style=AssociatedCard>Darius</style></link> in your deck.",
+            "description_raw": "Deal 4 to the enemy Nexus.\r\nCreate a Darius in your deck.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "\"Sometimes, it takes tactical genius to break a fortress. Sometimes, you just have to hit it harder.\" - Darius",
+            "artist_name": "Max Grecke",
+            "attack": 0,
+            "cost": 6,
+            "health": 0,
+            "spell_speed": "Slow",
+            "rarity": "None",
+            "supertype": "Champion",
+            "card_type": "Spell",
+            "collectible": false,
+            "set": "Set1",
+            "associated_card_refs": ["01NX038T2", "01NX038"],
+            "regions": ["Noxus"],
+            "region_refs": ["Noxus"],
+            "keywords": ["Slow"],
+            "keyword_refs": ["Slow"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX038T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX038T1-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:55:58.424Z",
+            "updated_at": "2024-07-24T23:55:58.424Z",
+            "associated_cards": []
+          },
+          {
+            "id": 81,
+            "name": "Darius",
+            "card_code": "01NX038",
+            "description": "",
+            "description_raw": "",
+            "levelup_description": "I see the enemy Nexus has half of its starting Health or less.<br><style=Variable></style>",
+            "levelup_description_raw": "I see the enemy Nexus has half of its starting Health or less.",
+            "flavor_text": "\"An iron will and a titan's strength. There is no finer general to lead the Trifarian Legion.\" - Swain\n",
+            "artist_name": "SIXMOREVODKA",
+            "attack": 6,
+            "cost": 6,
+            "health": 6,
+            "spell_speed": "",
+            "rarity": "Champion",
+            "supertype": "Champion",
+            "card_type": "Unit",
+            "collectible": true,
+            "set": "Set1",
+            "associated_card_refs": ["01NX038T2", "01NX038T1"],
+            "regions": ["Noxus"],
+            "region_refs": ["Noxus"],
+            "keywords": ["Overwhelm"],
+            "keyword_refs": ["Overwhelm"],
+            "formats": ["Commons Only", "Eternal"],
+            "format_refs": [
+              "client_Formats_CommonsOnly_name",
+              "client_Formats_Eternal_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX038.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX038-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:55:58.411Z",
+            "updated_at": "2024-07-24T23:55:58.411Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "89",
+      "type": "card",
+      "attributes": {
+        "name": "Darius' Decimate",
+        "card_code": "01NX038T1",
+        "description": "Deal 4 to the enemy Nexus.\r\nCreate a <link=card.level1><style=AssociatedCard>Darius</style></link> in your deck.",
+        "description_raw": "Deal 4 to the enemy Nexus.\r\nCreate a Darius in your deck.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "\"Sometimes, it takes tactical genius to break a fortress. Sometimes, you just have to hit it harder.\" - Darius",
+        "artist_name": "Max Grecke",
+        "attack": 0,
+        "cost": 6,
+        "health": 0,
+        "spell_speed": "Slow",
+        "rarity": "None",
+        "supertype": "Champion",
+        "card_type": "Spell",
+        "collectible": false,
+        "set": "Set1",
+        "associated_card_refs": ["01NX038T2", "01NX038"],
+        "regions": ["Noxus"],
+        "region_refs": ["Noxus"],
+        "keywords": ["Slow"],
+        "keyword_refs": ["Slow"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX038T1.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX038T1-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 88,
+            "name": "Darius",
+            "card_code": "01NX038T2",
+            "description": "",
+            "description_raw": "",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "\"Stand in our way and I'll cut you down myself!\"",
+            "artist_name": "SIXMOREVODKA",
+            "attack": 10,
+            "cost": 6,
+            "health": 7,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "Champion",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set1",
+            "associated_card_refs": ["01NX038T1", "01NX038"],
+            "regions": ["Noxus"],
+            "region_refs": ["Noxus"],
+            "keywords": ["Overwhelm"],
+            "keyword_refs": ["Overwhelm"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX038T2.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX038T2-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:55:58.423Z",
+            "updated_at": "2024-07-24T23:55:58.423Z",
+            "associated_cards": []
+          },
+          {
+            "id": 81,
+            "name": "Darius",
+            "card_code": "01NX038",
+            "description": "",
+            "description_raw": "",
+            "levelup_description": "I see the enemy Nexus has half of its starting Health or less.<br><style=Variable></style>",
+            "levelup_description_raw": "I see the enemy Nexus has half of its starting Health or less.",
+            "flavor_text": "\"An iron will and a titan's strength. There is no finer general to lead the Trifarian Legion.\" - Swain\n",
+            "artist_name": "SIXMOREVODKA",
+            "attack": 6,
+            "cost": 6,
+            "health": 6,
+            "spell_speed": "",
+            "rarity": "Champion",
+            "supertype": "Champion",
+            "card_type": "Unit",
+            "collectible": true,
+            "set": "Set1",
+            "associated_card_refs": ["01NX038T2", "01NX038T1"],
+            "regions": ["Noxus"],
+            "region_refs": ["Noxus"],
+            "keywords": ["Overwhelm"],
+            "keyword_refs": ["Overwhelm"],
+            "formats": ["Commons Only", "Eternal"],
+            "format_refs": [
+              "client_Formats_CommonsOnly_name",
+              "client_Formats_Eternal_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX038.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX038-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:55:58.411Z",
+            "updated_at": "2024-07-24T23:55:58.411Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "238",
+      "type": "card",
+      "attributes": {
+        "name": "Jae Medarda",
+        "card_code": "01PZ035",
+        "description": "When I'm targeted, draw 1.",
+        "description_raw": "When I'm targeted, draw 1.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "Heir apparent to Piltover's prestigious Clan Medarda, Jae preferred hunting ancient artifacts over managing the family business... much to his father's chagrin.",
+        "artist_name": "SIXMOREVODKA",
+        "attack": 5,
+        "cost": 6,
+        "health": 5,
+        "spell_speed": "",
+        "rarity": "EPIC",
+        "supertype": "",
+        "card_type": "Unit",
+        "collectible": true,
+        "set": "Set1",
+        "associated_card_refs": [],
+        "regions": ["Piltover & Zaun"],
+        "region_refs": ["PiltoverZaun"],
+        "keywords": [],
+        "keyword_refs": [],
+        "formats": ["Eternal"],
+        "format_refs": ["client_Formats_Eternal_name"],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01PZ035.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01PZ035-full.png"
+          }
+        ],
+        "associated_cards": []
+      }
+    },
+    {
+      "id": "244",
+      "type": "card",
+      "attributes": {
+        "name": "Daring Poro",
+        "card_code": "01PZ020",
+        "description": "",
+        "description_raw": "",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "Her first launch was pure accident: she slipped inside a Progress Day cannon while preening herself. Now she's the toast of Piltover, arcing across the sky to the adoring gasps of the crowds below.",
+        "artist_name": "SIXMOREVODKA",
+        "attack": 1,
+        "cost": 1,
+        "health": 1,
+        "spell_speed": "",
+        "rarity": "COMMON",
+        "supertype": "",
+        "card_type": "Unit",
+        "collectible": true,
+        "set": "Set1",
+        "associated_card_refs": [],
+        "regions": ["Piltover & Zaun"],
+        "region_refs": ["PiltoverZaun"],
+        "keywords": ["Elusive"],
+        "keyword_refs": ["Elusive"],
+        "formats": ["Commons Only", "Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_CommonsOnly_name",
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01PZ020.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01PZ020-full.png"
+          }
+        ],
+        "associated_cards": []
+      }
+    },
+    {
+      "id": "414",
+      "type": "card",
+      "attributes": {
+        "name": "Darkwater Scourge",
+        "card_code": "01SI004",
+        "description": "",
+        "description_raw": "",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "Some fleeing the Ruination tried diving beneath the waves, believing the corruption wouldn't seep into the depths. They were wrong.",
+        "artist_name": "SIXMOREVODKA",
+        "attack": 5,
+        "cost": 3,
+        "health": 5,
+        "spell_speed": "",
+        "rarity": "COMMON",
+        "supertype": "",
+        "card_type": "Unit",
+        "collectible": true,
+        "set": "Set1",
+        "associated_card_refs": [],
+        "regions": ["Shadow Isles"],
+        "region_refs": ["ShadowIsles"],
+        "keywords": ["Ephemeral", "Lifesteal"],
+        "keyword_refs": ["Ephemeral", "Lifesteal"],
+        "formats": ["Commons Only", "Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_CommonsOnly_name",
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01SI004.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01SI004-full.png"
+          }
+        ],
+        "associated_cards": []
+      }
+    },
+    {
+      "id": "806",
+      "type": "card",
+      "attributes": {
+        "name": "Shroud of Darkness",
+        "card_code": "03SI007",
+        "description": "The next time you summon an ally this round, give it +1|+0 and <link=keyword.SpellShield><sprite name=SpellShield><style=Keyword>SpellShield</style></link> this round.",
+        "description_raw": "The next time you summon an ally this round, give it +1|+0 and SpellShield this round.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "\"Soon as you step outside the Tooth, you'll feel 'em. Fingertips on your nape, light as rain. Them creatures don't budge when you come at 'em, neither. Ain't afraid of my blade or my torch. Nothin'. Awful things.\" - Whale's Tooth looter",
+        "artist_name": "Kudos Productions",
+        "attack": 0,
+        "cost": 1,
+        "health": 0,
+        "spell_speed": "Burst",
+        "rarity": "COMMON",
+        "supertype": "",
+        "card_type": "Spell",
+        "collectible": true,
+        "set": "Set3",
+        "associated_card_refs": [],
+        "regions": ["Shadow Isles"],
+        "region_refs": ["ShadowIsles"],
+        "keywords": ["Burst"],
+        "keyword_refs": ["Burst"],
+        "formats": ["Commons Only", "Eternal"],
+        "format_refs": [
+          "client_Formats_CommonsOnly_name",
+          "client_Formats_Eternal_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set3/en_us/img/cards/03SI007.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set3/en_us/img/cards/03SI007-full.png"
+          }
+        ],
+        "associated_cards": []
+      }
+    },
+    {
+      "id": "1294",
+      "type": "card",
+      "attributes": {
+        "name": "Poison Dart",
+        "card_code": "05BC164",
+        "description": "Deal 1 to anything and plant 3 <link=card.shuffle><style=AssociatedCard>Poison Puffcaps</style></link> in the enemy deck. ",
+        "description_raw": "Deal 1 to anything and plant 3 Poison Puffcaps in the enemy deck. ",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "\"Haha! Bullseye!\" - Teemo",
+        "artist_name": "Kudos Productions",
+        "attack": 0,
+        "cost": 1,
+        "health": 0,
+        "spell_speed": "Slow",
+        "rarity": "COMMON",
+        "supertype": "",
+        "card_type": "Spell",
+        "collectible": true,
+        "set": "Set5",
+        "associated_card_refs": ["01PZ022"],
+        "regions": ["Bandle City"],
+        "region_refs": ["BandleCity"],
+        "keywords": ["Slow"],
+        "keyword_refs": ["Slow"],
+        "formats": ["Commons Only", "Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_CommonsOnly_name",
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set5/en_us/img/cards/05BC164.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set5/en_us/img/cards/05BC164-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 226,
+            "name": "Poison Puffcap",
+            "card_code": "01PZ022",
+            "description": "Deal 1 to your Nexus.",
+            "description_raw": "Deal 1 to your Nexus.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "\"Pop goes the puffcap, pop goes the puffcap,\nOw ow ow, ow ow ow!\nPop goes the puffcap, pop goes the puffcap,\nDown we go, down we go!\"\n- Zaunite nursery rhyme",
+            "artist_name": "SIXMOREVODKA",
+            "attack": 0,
+            "cost": 0,
+            "health": 0,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Trap",
+            "collectible": false,
+            "set": "Set1",
+            "associated_card_refs": ["01PZ008"],
+            "regions": ["Piltover & Zaun"],
+            "region_refs": ["PiltoverZaun"],
+            "keywords": ["Trap"],
+            "keyword_refs": ["Autoplay"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01PZ022.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01PZ022-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:55:58.662Z",
+            "updated_at": "2024-07-24T23:55:58.662Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "1383",
+      "type": "card",
+      "attributes": {
+        "name": "Darkbulb Acolyte",
+        "card_code": "05BC094",
+        "description": "When I'm summoned, create a <link=card.create><style=AssociatedCard>Darkness</style></link> in hand if you don't have one. ",
+        "description_raw": "When I'm summoned, create a Darkness in hand if you don't have one. ",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "\"Yes, I'm quite sure the fellow up on the roof has many stories to tell. We all know he has lots to say. We just don't have any idea exactly WHAT it is he's saying.\" - Stilted Robemaker",
+        "artist_name": "Kudos Productions",
+        "attack": 2,
+        "cost": 2,
+        "health": 2,
+        "spell_speed": "",
+        "rarity": "COMMON",
+        "supertype": "",
+        "card_type": "Unit",
+        "collectible": true,
+        "set": "Set5",
+        "associated_card_refs": ["05SI029"],
+        "regions": ["Bandle City"],
+        "region_refs": ["BandleCity"],
+        "keywords": ["Augment"],
+        "keyword_refs": ["Augment"],
+        "formats": ["Commons Only", "Eternal"],
+        "format_refs": [
+          "client_Formats_CommonsOnly_name",
+          "client_Formats_Eternal_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set5/en_us/img/cards/05BC094.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set5/en_us/img/cards/05BC094-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 1542,
+            "name": "Darkness",
+            "card_code": "05SI029",
+            "description": "<style=Variable>Deal 2 to an enemy.</style>",
+            "description_raw": "Deal 2 to an enemy.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "There is a little of fear in everything. It lays quietly at the heart of mystery. It is the spark of joy in awe and wonder. It grants life its purpose - death, its power. It is everything. It is nothing.",
+            "artist_name": "Kudos Productions",
+            "attack": 0,
+            "cost": 3,
+            "health": 0,
+            "spell_speed": "Slow",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Spell",
+            "collectible": false,
+            "set": "Set5",
+            "associated_card_refs": [],
+            "regions": ["Shadow Isles"],
+            "region_refs": ["ShadowIsles"],
+            "keywords": ["Slow"],
+            "keyword_refs": ["Slow"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set5/en_us/img/cards/05SI029.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set5/en_us/img/cards/05SI029-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.167Z",
+            "updated_at": "2024-07-24T23:56:01.167Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "1541",
+      "type": "card",
+      "attributes": {
+        "name": "Piercing Darkness",
+        "card_code": "05SI003",
+        "description": "<link=keyword.Drain><style=Keyword>Drain</style></link> 5 from a unit.",
+        "description_raw": "Drain 5 from a unit.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "\"Death is drawn to life.\" - Senna",
+        "artist_name": "Kudos Productions",
+        "attack": 0,
+        "cost": 6,
+        "health": 0,
+        "spell_speed": "Slow",
+        "rarity": "COMMON",
+        "supertype": "",
+        "card_type": "Spell",
+        "collectible": true,
+        "set": "Set5",
+        "associated_card_refs": [],
+        "regions": ["Shadow Isles"],
+        "region_refs": ["ShadowIsles"],
+        "keywords": ["Slow"],
+        "keyword_refs": ["Slow"],
+        "formats": ["Commons Only", "Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_CommonsOnly_name",
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set5/en_us/img/cards/05SI003.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set5/en_us/img/cards/05SI003-full.png"
+          }
+        ],
+        "associated_cards": []
+      }
+    },
+    {
+      "id": "1542",
+      "type": "card",
+      "attributes": {
+        "name": "Darkness",
+        "card_code": "05SI029",
+        "description": "<style=Variable>Deal 2 to an enemy.</style>",
+        "description_raw": "Deal 2 to an enemy.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "There is a little of fear in everything. It lays quietly at the heart of mystery. It is the spark of joy in awe and wonder. It grants life its purpose - death, its power. It is everything. It is nothing.",
+        "artist_name": "Kudos Productions",
+        "attack": 0,
+        "cost": 3,
+        "health": 0,
+        "spell_speed": "Slow",
+        "rarity": "None",
+        "supertype": "",
+        "card_type": "Spell",
+        "collectible": false,
+        "set": "Set5",
+        "associated_card_refs": [],
+        "regions": ["Shadow Isles"],
+        "region_refs": ["ShadowIsles"],
+        "keywords": ["Slow"],
+        "keyword_refs": ["Slow"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set5/en_us/img/cards/05SI029.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set5/en_us/img/cards/05SI029-full.png"
+          }
+        ],
+        "associated_cards": []
+      }
+    },
+    {
+      "id": "1764",
+      "type": "card",
+      "attributes": {
+        "name": "The Darkin Ballista",
+        "card_code": "06NX020T5",
+        "description": "",
+        "description_raw": "",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "The steppes of eastern Valoran were known to be barren, unfit to feed or home the Noxii people. But as the centuries fell by, a new empire was founded, hungry for expansion. Fallow lands found new fertility under new farming techniques, and weapons once thought safely buried become uncovered once again.",
+        "artist_name": "Kudos Productions",
+        "attack": 0,
+        "cost": 1,
+        "health": 0,
+        "spell_speed": "",
+        "rarity": "None",
+        "supertype": "",
+        "card_type": "Equipment",
+        "collectible": false,
+        "set": "Set6cde",
+        "associated_card_refs": ["06NX020T1"],
+        "regions": ["Noxus"],
+        "region_refs": ["Noxus"],
+        "keywords": ["Equipment"],
+        "keyword_refs": ["Equipment"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06NX020T5.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06NX020T5-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 1763,
+            "name": "Naganeka of Zuretta",
+            "card_code": "06NX020T1",
+            "description": "<link=vocab.RoundEnd><style=Vocab>Round End</style></link>: The <link=vocab.Strongest><style=Vocab>Strongest</style></link> enemy and I <link=vocab.Strike><style=Vocab>strike</style></link> each other.",
+            "description_raw": "Round End: The Strongest enemy and I strike each other.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "Ancient muscles flexed once more. The warrior heard her general's call, and knew where she was needed--south, in the lands she once knew as Icathia.",
+            "artist_name": "Kudos Productions",
+            "attack": 5,
+            "cost": 8,
+            "health": 13,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": [],
+            "regions": ["Noxus"],
+            "region_refs": ["Noxus"],
+            "keywords": ["Overwhelm"],
+            "keyword_refs": ["Overwhelm"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06NX020T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06NX020T1-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.594Z",
+            "updated_at": "2024-07-24T23:56:01.594Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "1770",
+      "type": "card",
+      "attributes": {
+        "name": "The Darkin Ballista",
+        "card_code": "06NX020",
+        "description": "You may spend 8 mana to play me as <link=card.unit><style=AssociatedCard>Naganeka of Zuretta</style></link>.",
+        "description_raw": "You may spend 8 mana to play me as Naganeka of Zuretta.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "The steppes of eastern Valoran were known to be barren, unfit to feed or home the Noxii people. But as the centuries fell by, a new empire was founded, hungry for expansion. Fallow lands found new fertility under new farming techniques, and weapons once thought safely buried become uncovered once again.",
+        "artist_name": "Kudos Productions",
+        "attack": 0,
+        "cost": 1,
+        "health": 0,
+        "spell_speed": "",
+        "rarity": "EPIC",
+        "supertype": "",
+        "card_type": "Equipment",
+        "collectible": true,
+        "set": "Set6cde",
+        "associated_card_refs": ["06NX020T1"],
+        "regions": ["Noxus"],
+        "region_refs": ["Noxus"],
+        "keywords": ["Equipment"],
+        "keyword_refs": ["Equipment"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06NX020.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06NX020-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 1763,
+            "name": "Naganeka of Zuretta",
+            "card_code": "06NX020T1",
+            "description": "<link=vocab.RoundEnd><style=Vocab>Round End</style></link>: The <link=vocab.Strongest><style=Vocab>Strongest</style></link> enemy and I <link=vocab.Strike><style=Vocab>strike</style></link> each other.",
+            "description_raw": "Round End: The Strongest enemy and I strike each other.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "Ancient muscles flexed once more. The warrior heard her general's call, and knew where she was needed--south, in the lands she once knew as Icathia.",
+            "artist_name": "Kudos Productions",
+            "attack": 5,
+            "cost": 8,
+            "health": 13,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": [],
+            "regions": ["Noxus"],
+            "region_refs": ["Noxus"],
+            "keywords": ["Overwhelm"],
+            "keyword_refs": ["Overwhelm"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06NX020T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06NX020T1-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.594Z",
+            "updated_at": "2024-07-24T23:56:01.594Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "1795",
+      "type": "card",
+      "attributes": {
+        "name": "The Darkin Lodestone",
+        "card_code": "06MT006",
+        "description": "<link=keyword.Support><style=Keyword>Support</style></link>: Grant my supported ally +1|+1.\r\nYou may spend 8 mana to play me as <link=card.unit><style=AssociatedCard>Horazi</style></link>.",
+        "description_raw": "Support: Grant my supported ally +1|+1.\r\nYou may spend 8 mana to play me as Horazi.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "Perhaps those who imprisoned the Darkin thought that burying the legendary warrior Horazi within an orb of star metal would sufficiently dim her irascible will. But as her general stirred, so too did Horazi, who found that even Targon's ancient protectors could be tempted by promises whispered from afar.",
+        "artist_name": "Kudos Productions",
+        "attack": 0,
+        "cost": 2,
+        "health": 0,
+        "spell_speed": "",
+        "rarity": "EPIC",
+        "supertype": "",
+        "card_type": "Equipment",
+        "collectible": true,
+        "set": "Set6cde",
+        "associated_card_refs": ["06MT006T2"],
+        "regions": ["Targon"],
+        "region_refs": ["Targon"],
+        "keywords": ["Equipment", "Support"],
+        "keyword_refs": ["Equipment", "Support"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06MT006.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06MT006-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 1796,
+            "name": "Horazi",
+            "card_code": "06MT006T2",
+            "description": "<link=keyword.Support><style=Keyword>Support</style></link>: Grow my supported ally's stats to mine. Give it my positive keywords this round.",
+            "description_raw": "Support: Grow my supported ally's stats to mine. Give it my positive keywords this round.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "Horazi was gifted a higher perspective in the burning celestial matter that imprisoned her. She glimpsed the secrets of the cosmos, and of the infinite passage of time that preceded and followed her existence. She learned so much, and yet her hatred for the coward Xolaani remained.",
+            "artist_name": "Kudos Productions",
+            "attack": 7,
+            "cost": 8,
+            "health": 7,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": [],
+            "regions": ["Targon"],
+            "region_refs": ["Targon"],
+            "keywords": ["SpellShield", "Support"],
+            "keyword_refs": ["SpellShield", "Support"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06MT006T2.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06MT006T2-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.658Z",
+            "updated_at": "2024-07-24T23:56:01.658Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "1797",
+      "type": "card",
+      "attributes": {
+        "name": "The Darkin Lodestone",
+        "card_code": "06MT006T3",
+        "description": "<link=keyword.Support><style=Keyword>Support</style></link>: Grant my supported ally +1|+1.",
+        "description_raw": "Support: Grant my supported ally +1|+1.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "Perhaps those who imprisoned the Darkin thought that burying the legendary warrior Horazi within an orb of star metal would sufficiently dim her irascible will. But as her general stirred, so too did Horazi, who found that even Targon's ancient protectors could be tempted by promises whispered from afar.",
+        "artist_name": "Kudos Productions",
+        "attack": 0,
+        "cost": 2,
+        "health": 0,
+        "spell_speed": "",
+        "rarity": "None",
+        "supertype": "",
+        "card_type": "Equipment",
+        "collectible": false,
+        "set": "Set6cde",
+        "associated_card_refs": ["06MT006T2"],
+        "regions": ["Targon"],
+        "region_refs": ["Targon"],
+        "keywords": ["Equipment", "Support"],
+        "keyword_refs": ["Equipment", "Support"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06MT006T3.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06MT006T3-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 1796,
+            "name": "Horazi",
+            "card_code": "06MT006T2",
+            "description": "<link=keyword.Support><style=Keyword>Support</style></link>: Grow my supported ally's stats to mine. Give it my positive keywords this round.",
+            "description_raw": "Support: Grow my supported ally's stats to mine. Give it my positive keywords this round.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "Horazi was gifted a higher perspective in the burning celestial matter that imprisoned her. She glimpsed the secrets of the cosmos, and of the infinite passage of time that preceded and followed her existence. She learned so much, and yet her hatred for the coward Xolaani remained.",
+            "artist_name": "Kudos Productions",
+            "attack": 7,
+            "cost": 8,
+            "health": 7,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": [],
+            "regions": ["Targon"],
+            "region_refs": ["Targon"],
+            "keywords": ["SpellShield", "Support"],
+            "keyword_refs": ["SpellShield", "Support"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06MT006T2.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06MT006T2-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.658Z",
+            "updated_at": "2024-07-24T23:56:01.658Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "1824",
+      "type": "card",
+      "attributes": {
+        "name": "The Darkin Scythe",
+        "card_code": "06RU005T3",
+        "description": "<link=vocab.Attack><style=Vocab>Attack</style></link>: Grant <link=card.selfRef><style=AssociatedCard>The Darkin Scythe</style></link> +1|+0.",
+        "description_raw": "Attack: Grant The Darkin Scythe +1|+0.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "“Time to reap.”\n- Rhaast",
+        "artist_name": "Kudos Productions",
+        "attack": 0,
+        "cost": 2,
+        "health": 0,
+        "spell_speed": "",
+        "rarity": "None",
+        "supertype": "",
+        "card_type": "Equipment",
+        "collectible": false,
+        "set": "Set6cde",
+        "associated_card_refs": [
+          "06RU005",
+          "06RU005T2",
+          "06RU005T1",
+          "06RU005T11",
+          "06RU005T10",
+          "06RU005"
+        ],
+        "regions": ["Runeterra"],
+        "region_refs": ["Runeterra"],
+        "keywords": ["Equipment"],
+        "keyword_refs": ["Equipment"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU005T3.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU005T3-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 1819,
+            "name": "Kayn",
+            "card_code": "06RU005",
+            "description": "<link=vocab.Origin><style=Vocab>Origin</style></link>: <link=card.origin><style=AssociatedCard>The Shadow Reaper</style></link>.\r\n<link=vocab.AutoEquip><style=Vocab>Auto-Equip</style></link>: <link=card.equipment><style=AssociatedCard>The Darkin Scythe</style></link>.\r\nWhen I kill an enemy, heal me 2.",
+            "description_raw": "Origin: The Shadow Reaper.\r\nAuto-Equip: The Darkin Scythe.\r\nWhen I kill an enemy, heal me 2.",
+            "levelup_description": "I've <link=vocab.Strike><style=Vocab>struck</style></link> twice.<style=Variable></style> When I level up, <link=keyword.Recall><style=Keyword>Recall</style></link> me.",
+            "levelup_description_raw": "I've struck twice. When I level up, Recall me.",
+            "flavor_text": "As another body fell, Kayn let out a gleeful laugh, knowing that he would soon unleash the second Darkin weapon that lay below. Within him, Rhaast's anticipation grew, knowing that Kayn’s undoing was finally near.",
+            "artist_name": "Kudos Productions",
+            "attack": 2,
+            "cost": 5,
+            "health": 5,
+            "spell_speed": "",
+            "rarity": "Champion",
+            "supertype": "Champion",
+            "card_type": "Unit",
+            "collectible": true,
+            "set": "Set6cde",
+            "associated_card_refs": [
+              "06RU005T3",
+              "06RU005T6",
+              "06RU005T4",
+              "06RU005T8",
+              "06RU005T2",
+              "06RU005T11",
+              "06RU005T1",
+              "06RU005T10"
+            ],
+            "regions": ["Runeterra"],
+            "region_refs": ["Runeterra"],
+            "keywords": ["Challenger"],
+            "keyword_refs": ["Challenger"],
+            "formats": ["Eternal"],
+            "format_refs": ["client_Formats_Eternal_name"],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU005.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU005-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.703Z",
+            "updated_at": "2024-07-24T23:56:01.703Z",
+            "associated_cards": []
+          },
+          {
+            "id": 1823,
+            "name": "Rhaast",
+            "card_code": "06RU005T2",
+            "description": "<link=vocab.AutoEquip><style=Vocab>Auto-Equip</style></link>: <link=card.equipment><style=AssociatedCard>Corrupted Scythe</style></link>.\r\nWhen I kill an enemy, fully heal me and heal your Nexus 2.",
+            "description_raw": "Auto-Equip: Corrupted Scythe.\r\nWhen I kill an enemy, fully heal me and heal your Nexus 2.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "Rhaast let out a triumphant howl. Years of waiting, yearning, and now... he was finally free. He lifted Xolaani’s blades and put them to his tongue, savoring the taste of fresh blood. He closed his eyes in bliss, and a smile crept across his face for the first time in millennia. The reaping had begun.",
+            "artist_name": "Kudos Productions",
+            "attack": 3,
+            "cost": 5,
+            "health": 6,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "Champion",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": ["06RU005T4", "06RU005T11", "06RU005"],
+            "regions": ["Runeterra"],
+            "region_refs": ["Runeterra"],
+            "keywords": ["Challenger", "Overwhelm"],
+            "keyword_refs": ["Challenger", "Overwhelm"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU005T2.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU005T2-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.711Z",
+            "updated_at": "2024-07-24T23:56:01.711Z",
+            "associated_cards": []
+          },
+          {
+            "id": 1826,
+            "name": "The Shadow Assassin",
+            "card_code": "06RU005T1",
+            "description": "<link=vocab.AutoEquip><style=Vocab>Auto-Equip</style></link>: <link=card.equipment><style=AssociatedCard>Shadow Scythe</style></link>.",
+            "description_raw": "Auto-Equip: Shadow Scythe.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "Tremendous power flowed through his veins. Freed from the Darkin’s influence, the full power of the shadows was his to command. Kayn laughed, slipping into darkness, and emerged a moment later only to silently slit the throat of the guard before him.",
+            "artist_name": "Kudos Productions",
+            "attack": 3,
+            "cost": 5,
+            "health": 6,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "Champion",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": ["06RU005T10", "06RU005T4", "06RU005"],
+            "regions": ["Runeterra"],
+            "region_refs": ["Runeterra"],
+            "keywords": ["Elusive", "Challenger"],
+            "keyword_refs": ["Elusive", "Challenger"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU005T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU005T1-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.716Z",
+            "updated_at": "2024-07-24T23:56:01.716Z",
+            "associated_cards": []
+          },
+          {
+            "id": 1820,
+            "name": "Corrupted Scythe",
+            "card_code": "06RU005T11",
+            "description": "<link=vocab.Attack><style=Vocab>Attack</style></link>: Grant <link=card.selfRef><style=AssociatedCard>Corrupted Scythe</style></link> +1|+1.",
+            "description_raw": "Attack: Grant Corrupted Scythe +1|+1.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "As Kayn yielded his spirit to the Darkin, his anger subsided and an unbearable emptiness was left in its place. The young warrior was gone. Only Rhaast remained.",
+            "artist_name": "Kudos Productions",
+            "attack": 0,
+            "cost": 2,
+            "health": 0,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Equipment",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": ["06RU005T2"],
+            "regions": ["Runeterra"],
+            "region_refs": ["Runeterra"],
+            "keywords": ["Equipment"],
+            "keyword_refs": ["Equipment"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU005T11.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU005T11-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.705Z",
+            "updated_at": "2024-07-24T23:56:01.705Z",
+            "associated_cards": []
+          },
+          {
+            "id": 1821,
+            "name": "Shadow Scythe",
+            "card_code": "06RU005T10",
+            "description": "<link=vocab.Attack><style=Vocab>Attack</style></link>: Grant <link=card.selfRef><style=AssociatedCard>Shadow Scythe</style></link> +2|+0.",
+            "description_raw": "Attack: Grant Shadow Scythe +2|+0.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "Kayn’s anger grew into a fearsome blaze amidst Rhaast's furious screams. The Darkin's hold on the shadow warrior burned away, and when Kayn rose to his feet, he knew the full power of the Darkin was his to command.",
+            "artist_name": "Kudos Productions",
+            "attack": 0,
+            "cost": 2,
+            "health": 0,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Equipment",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": ["06RU005T1"],
+            "regions": ["Runeterra"],
+            "region_refs": ["Runeterra"],
+            "keywords": ["Equipment"],
+            "keyword_refs": ["Equipment"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU005T10.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU005T10-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.707Z",
+            "updated_at": "2024-07-24T23:56:01.707Z",
+            "associated_cards": []
+          },
+          {
+            "id": 1819,
+            "name": "Kayn",
+            "card_code": "06RU005",
+            "description": "<link=vocab.Origin><style=Vocab>Origin</style></link>: <link=card.origin><style=AssociatedCard>The Shadow Reaper</style></link>.\r\n<link=vocab.AutoEquip><style=Vocab>Auto-Equip</style></link>: <link=card.equipment><style=AssociatedCard>The Darkin Scythe</style></link>.\r\nWhen I kill an enemy, heal me 2.",
+            "description_raw": "Origin: The Shadow Reaper.\r\nAuto-Equip: The Darkin Scythe.\r\nWhen I kill an enemy, heal me 2.",
+            "levelup_description": "I've <link=vocab.Strike><style=Vocab>struck</style></link> twice.<style=Variable></style> When I level up, <link=keyword.Recall><style=Keyword>Recall</style></link> me.",
+            "levelup_description_raw": "I've struck twice. When I level up, Recall me.",
+            "flavor_text": "As another body fell, Kayn let out a gleeful laugh, knowing that he would soon unleash the second Darkin weapon that lay below. Within him, Rhaast's anticipation grew, knowing that Kayn’s undoing was finally near.",
+            "artist_name": "Kudos Productions",
+            "attack": 2,
+            "cost": 5,
+            "health": 5,
+            "spell_speed": "",
+            "rarity": "Champion",
+            "supertype": "Champion",
+            "card_type": "Unit",
+            "collectible": true,
+            "set": "Set6cde",
+            "associated_card_refs": [
+              "06RU005T3",
+              "06RU005T6",
+              "06RU005T4",
+              "06RU005T8",
+              "06RU005T2",
+              "06RU005T11",
+              "06RU005T1",
+              "06RU005T10"
+            ],
+            "regions": ["Runeterra"],
+            "region_refs": ["Runeterra"],
+            "keywords": ["Challenger"],
+            "keyword_refs": ["Challenger"],
+            "formats": ["Eternal"],
+            "format_refs": ["client_Formats_Eternal_name"],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU005.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU005-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.703Z",
+            "updated_at": "2024-07-24T23:56:01.703Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "1832",
+      "type": "card",
+      "attributes": {
+        "name": "The Darkin Blade",
+        "card_code": "06RU026T1",
+        "description": "",
+        "description_raw": "",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "\"By my sword, this world must die.\" - Aatrox",
+        "artist_name": "Kudos Productions",
+        "attack": 0,
+        "cost": 1,
+        "health": 0,
+        "spell_speed": "",
+        "rarity": "None",
+        "supertype": "",
+        "card_type": "Equipment",
+        "collectible": false,
+        "set": "Set6cde",
+        "associated_card_refs": [
+          "06RU026T3",
+          "06RU026",
+          "06RU026T5",
+          "06RU026T1",
+          "06RU026"
+        ],
+        "regions": ["Runeterra"],
+        "region_refs": ["Runeterra"],
+        "keywords": ["Equipment", "Regeneration"],
+        "keyword_refs": ["Equipment", "Regeneration"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU026T1.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU026T1-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 1834,
+            "name": "Aatrox",
+            "card_code": "06RU026T3",
+            "description": "<link=vocab.AutoEquip><style=Vocab>Auto-Equip</style></link>: <link=card.item><style=AssociatedCard>The Darkin Blade</style></link>.\r\nDarkin allies cost 5 less.\r\nWhen I'm summoned or <link=vocab.Strike><style=Vocab>strike</style></link>: Heal your Nexus 2.",
+            "description_raw": "Auto-Equip: The Darkin Blade.\r\nDarkin allies cost 5 less.\r\nWhen I'm summoned or strike: Heal your Nexus 2.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "The battle gathered pace. Xolaani had finally found the courage to face him, and as the two ancient enemies warred, the terrain itself began to wither and bend beneath their fury. An army of celestials descended upon them, desperate to save their dying land--but it was too late. Aatrox would have his day. He would find his peace.",
+            "artist_name": "Kudos Productions",
+            "attack": 9,
+            "cost": 6,
+            "health": 9,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "Champion",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": ["06RU026T5", "06RU026", "06RU026T1"],
+            "regions": ["Runeterra"],
+            "region_refs": ["Runeterra"],
+            "keywords": ["Overwhelm"],
+            "keyword_refs": ["Overwhelm"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU026T3.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU026T3-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.733Z",
+            "updated_at": "2024-07-24T23:56:01.733Z",
+            "associated_cards": []
+          },
+          {
+            "id": 1828,
+            "name": "Aatrox",
+            "card_code": "06RU026",
+            "description": "<link=vocab.Origin><style=Vocab>Origin</style></link>: <link=card.origin><style=AssociatedCard>The World Ender</style></link>.\r\n<link=vocab.AutoEquip><style=Vocab>Auto-Equip</style></link>: <link=card.item><style=AssociatedCard>The Darkin Blade</style></link>.\r\nWhen I'm summoned or <link=vocab.Strike><style=Vocab>strike</style></link>: Heal your Nexus 2 and create a <link=card.create><style=AssociatedCard>World Ender</style></link> in hand if you don't have one.",
+            "description_raw": "Origin: The World Ender.\r\nAuto-Equip: The Darkin Blade.\r\nWhen I'm summoned or strike: Heal your Nexus 2 and create a World Ender in hand if you don't have one.",
+            "levelup_description": "You've played <link=card.create><style=AssociatedCard>World Ender</style></link>.",
+            "levelup_description_raw": "You've played World Ender.",
+            "flavor_text": "Even across continents, Aatrox felt her awakening. How the hatred still burned. He had already broken her statues, now he could wage a final war against the Coward of Icathia, and through destroying her, end this pitiful existence.",
+            "artist_name": "Kudos Productions",
+            "attack": 5,
+            "cost": 6,
+            "health": 5,
+            "spell_speed": "",
+            "rarity": "Champion",
+            "supertype": "Champion",
+            "card_type": "Unit",
+            "collectible": true,
+            "set": "Set6cde",
+            "associated_card_refs": [
+              "06RU026T3",
+              "06RU026T1",
+              "06RU026T5",
+              "06RU026T4",
+              "06RU026T2",
+              "06RU026T7",
+              "06RU026T6"
+            ],
+            "regions": ["Runeterra"],
+            "region_refs": ["Runeterra"],
+            "keywords": [],
+            "keyword_refs": [],
+            "formats": ["Eternal"],
+            "format_refs": ["client_Formats_Eternal_name"],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU026.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU026-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.721Z",
+            "updated_at": "2024-07-24T23:56:01.721Z",
+            "associated_cards": []
+          },
+          {
+            "id": 1831,
+            "name": "Aatrox's Deathbringer Sweep",
+            "card_code": "06RU026T5",
+            "description": "<link=card.level1><style=AssociatedCard>Aatrox</style></link> and an enemy <link=vocab.Strike><style=Vocab>strike</style></link> each other.\r\nCreate a <link=card.create><style=AssociatedCard>Deathbringer Slash</style></link> in hand.\r\nCreate a <link=card.level1><style=AssociatedCard>Aatrox</style></link> in your deck.",
+            "description_raw": "Aatrox and an enemy strike each other.\r\nCreate a Deathbringer Slash in hand.\r\nCreate a Aatrox in your deck.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "\"I will break this land!\" - Aatrox",
+            "artist_name": "Kudos Productions",
+            "attack": 0,
+            "cost": 3,
+            "health": 0,
+            "spell_speed": "Fast",
+            "rarity": "None",
+            "supertype": "Champion",
+            "card_type": "Spell",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": [
+              "06RU026T4",
+              "06RU026",
+              "06RU026T3",
+              "06RU026T2"
+            ],
+            "regions": ["Runeterra"],
+            "region_refs": ["Runeterra"],
+            "keywords": ["Fast"],
+            "keyword_refs": ["Fast"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU026T5.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU026T5-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.727Z",
+            "updated_at": "2024-07-24T23:56:01.727Z",
+            "associated_cards": []
+          },
+          {
+            "id": 1832,
+            "name": "The Darkin Blade",
+            "card_code": "06RU026T1",
+            "description": "",
+            "description_raw": "",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "\"By my sword, this world must die.\" - Aatrox",
+            "artist_name": "Kudos Productions",
+            "attack": 0,
+            "cost": 1,
+            "health": 0,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Equipment",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": [
+              "06RU026T3",
+              "06RU026",
+              "06RU026T5",
+              "06RU026T1",
+              "06RU026"
+            ],
+            "regions": ["Runeterra"],
+            "region_refs": ["Runeterra"],
+            "keywords": ["Equipment", "Regeneration"],
+            "keyword_refs": ["Equipment", "Regeneration"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU026T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU026T1-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.729Z",
+            "updated_at": "2024-07-24T23:56:01.729Z",
+            "associated_cards": []
+          },
+          {
+            "id": 1828,
+            "name": "Aatrox",
+            "card_code": "06RU026",
+            "description": "<link=vocab.Origin><style=Vocab>Origin</style></link>: <link=card.origin><style=AssociatedCard>The World Ender</style></link>.\r\n<link=vocab.AutoEquip><style=Vocab>Auto-Equip</style></link>: <link=card.item><style=AssociatedCard>The Darkin Blade</style></link>.\r\nWhen I'm summoned or <link=vocab.Strike><style=Vocab>strike</style></link>: Heal your Nexus 2 and create a <link=card.create><style=AssociatedCard>World Ender</style></link> in hand if you don't have one.",
+            "description_raw": "Origin: The World Ender.\r\nAuto-Equip: The Darkin Blade.\r\nWhen I'm summoned or strike: Heal your Nexus 2 and create a World Ender in hand if you don't have one.",
+            "levelup_description": "You've played <link=card.create><style=AssociatedCard>World Ender</style></link>.",
+            "levelup_description_raw": "You've played World Ender.",
+            "flavor_text": "Even across continents, Aatrox felt her awakening. How the hatred still burned. He had already broken her statues, now he could wage a final war against the Coward of Icathia, and through destroying her, end this pitiful existence.",
+            "artist_name": "Kudos Productions",
+            "attack": 5,
+            "cost": 6,
+            "health": 5,
+            "spell_speed": "",
+            "rarity": "Champion",
+            "supertype": "Champion",
+            "card_type": "Unit",
+            "collectible": true,
+            "set": "Set6cde",
+            "associated_card_refs": [
+              "06RU026T3",
+              "06RU026T1",
+              "06RU026T5",
+              "06RU026T4",
+              "06RU026T2",
+              "06RU026T7",
+              "06RU026T6"
+            ],
+            "regions": ["Runeterra"],
+            "region_refs": ["Runeterra"],
+            "keywords": [],
+            "keyword_refs": [],
+            "formats": ["Eternal"],
+            "format_refs": ["client_Formats_Eternal_name"],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU026.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU026-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.721Z",
+            "updated_at": "2024-07-24T23:56:01.721Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "1842",
+      "type": "card",
+      "attributes": {
+        "name": "The Darkin Bow",
+        "card_code": "06RU009T7",
+        "description": "When you play a spell or <link=vocab.Equip><style=Vocab>equip</style></link> an ally, give me +1|+0 (max +5|+0) until the next time my bearer <link=vocab.Strike><style=Vocab>strikes</style></link>.",
+        "description_raw": "When you play a spell or equip an ally, give me +1|+0 (max +5|+0) until the next time my bearer strikes.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "Heartlights Kai and Valmar were not the first to bear the bow and host Varus' inhuman power... but they were the first to remind him of his lost humanity.",
+        "artist_name": "Kudos Productions",
+        "attack": 0,
+        "cost": 2,
+        "health": 0,
+        "spell_speed": "",
+        "rarity": "None",
+        "supertype": "",
+        "card_type": "Equipment",
+        "collectible": false,
+        "set": "Set6cde",
+        "associated_card_refs": ["06RU009", "06RU009T6"],
+        "regions": ["Runeterra"],
+        "region_refs": ["Runeterra"],
+        "keywords": ["Equipment"],
+        "keyword_refs": ["Equipment"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU009T7.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU009T7-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 1839,
+            "name": "Varus",
+            "card_code": "06RU009",
+            "description": "<link=vocab.Origin><style=Vocab>Origin</style></link>: <link=card.origin><style=AssociatedCard>The Arrow of Retribution</style></link>.\r\n<link=vocab.AutoEquip><style=Vocab>Auto-Equip</style></link> <link=card.item><style=AssociatedCard>The Darkin Bow</style></link>.\r\n",
+            "description_raw": "Origin: The Arrow of Retribution.\r\nAuto-Equip The Darkin Bow.\r\n",
+            "levelup_description": "You've targeted 7+ allies.<style=Variable></style>",
+            "levelup_description_raw": "You've targeted 7+ allies.",
+            "flavor_text": "What if, over time, the man that became the Darkin remembered himself, prompted by the mortal voices within? What if, instead of overcoming those voices entirely, he came to believe in them?",
+            "artist_name": "Kudos Productions",
+            "attack": 3,
+            "cost": 4,
+            "health": 4,
+            "spell_speed": "",
+            "rarity": "Champion",
+            "supertype": "Champion",
+            "card_type": "Unit",
+            "collectible": true,
+            "set": "Set6cde",
+            "associated_card_refs": [
+              "06RU009T6",
+              "06RU009T7",
+              "06RU009T9",
+              "06RU009T11"
+            ],
+            "regions": ["Runeterra"],
+            "region_refs": ["Runeterra"],
+            "keywords": ["Quick Attack"],
+            "keyword_refs": ["QuickStrike"],
+            "formats": ["Eternal"],
+            "format_refs": ["client_Formats_Eternal_name"],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU009.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU009-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.743Z",
+            "updated_at": "2024-07-24T23:56:01.743Z",
+            "associated_cards": []
+          },
+          {
+            "id": 1843,
+            "name": "Varus",
+            "card_code": "06RU009T6",
+            "description": "<link=vocab.AutoEquip><style=Vocab>Auto-Equip</style></link> <link=card.item><style=AssociatedCard>The Darkin Bow</style></link>. \r\n<link=card.item><style=AssociatedCard>The Darkin Bow</style></link> activates twice and has max +10|+0.",
+            "description_raw": "Auto-Equip The Darkin Bow. \r\nThe Darkin Bow activates twice and has max +10|+0.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "Varus was empowered, bolstered, reminded of who he was and what he had yet to become. He embraced the sum of his parts instead of working against them--and when they acted, they acted as one.",
+            "artist_name": "Kudos Productions",
+            "attack": 4,
+            "cost": 4,
+            "health": 5,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "Champion",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": [
+              "06RU009",
+              "06RU009T7",
+              "06RU009T9",
+              "06RU009T11"
+            ],
+            "regions": ["Runeterra"],
+            "region_refs": ["Runeterra"],
+            "keywords": ["Overwhelm", "Quick Attack"],
+            "keyword_refs": ["Overwhelm", "QuickStrike"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU009T6.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06RU009T6-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.751Z",
+            "updated_at": "2024-07-24T23:56:01.751Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "1861",
+      "type": "card",
+      "attributes": {
+        "name": "The Darkin Spear",
+        "card_code": "06FR018",
+        "description": "<link=vocab.Attack><style=Vocab>Attack</style></link>: Grant the top 2 allies in your deck +1|+1.\r\nYou may spend 8 mana to play me as <link=card.unit><style=AssociatedCard>Anaakca</style></link>.",
+        "description_raw": "Attack: Grant the top 2 allies in your deck +1|+1.\r\nYou may spend 8 mana to play me as Anaakca.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "\"Warmother, the grip of winter has tightened. The Avarosans have fled beyond their outposts. North is the sea... our only path leads east.\"\n\"Do not listen to him, Warmother. That way is the Pale, and beyond it, the whispering wilds. I say better to die than face that cursed land.\"\n\"How fortunate for you both that neither must decide my people's fate.\"\n\"True, Warmother. But perhaps there is a third way. Let me travel east. Better a scout is lost to darkness than all of our people.\"\n- Warmother Sejuani conferring with her generals",
+        "artist_name": "Kudos Productions",
+        "attack": 0,
+        "cost": 2,
+        "health": 0,
+        "spell_speed": "",
+        "rarity": "EPIC",
+        "supertype": "",
+        "card_type": "Equipment",
+        "collectible": true,
+        "set": "Set6cde",
+        "associated_card_refs": ["06FR018T1"],
+        "regions": ["Freljord"],
+        "region_refs": ["Freljord"],
+        "keywords": ["Equipment"],
+        "keyword_refs": ["Equipment"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06FR018.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06FR018-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 1862,
+            "name": "Anaakca",
+            "card_code": "06FR018T1",
+            "description": "<link=vocab.Attack><style=Vocab>Attack</style></link>: From the top 6 cards of your deck, summon an attacking follower or non-Champion Darkin and grant it +1|+1.",
+            "description_raw": "Attack: From the top 6 cards of your deck, summon an attacking follower or non-Champion Darkin and grant it +1|+1.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "With newfound vigor, the great warrior Anaakca sped south through the Freljord and into Demacian lands. The outposts prepared as best they could to repel her assault, but no mere mortal would stand between Anaakca's fury and the coward who stoked it.",
+            "artist_name": "Aron Elekes",
+            "attack": 6,
+            "cost": 8,
+            "health": 8,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": [],
+            "regions": ["Freljord"],
+            "region_refs": ["Freljord"],
+            "keywords": [],
+            "keyword_refs": [],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06FR018T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06FR018T1-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.789Z",
+            "updated_at": "2024-07-24T23:56:01.789Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "1863",
+      "type": "card",
+      "attributes": {
+        "name": "The Darkin Spear",
+        "card_code": "06FR018T3",
+        "description": "<link=vocab.Attack><style=Vocab>Attack</style></link>: Grant the top 2 allies in your deck +1|+1. ",
+        "description_raw": "Attack: Grant the top 2 allies in your deck +1|+1. ",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "\"Warmother, the grip of winter has tightened to the east. South, the Avarosans have fled beyond their outposts. North is the sea... our only path leads east.\"\n\"No, Warmother. That way is the Pale, and beyond it, the whispering wilds. I say better to die than face that cursed land.\"\n\"How fortunate for you both that neither must decide my people's fate.\"\n\"True, Warmother. But perhaps there is a third way. Let me travel East. Better a scout is lost to darkness than all of our people.\"\n- Warmother Sejuani, conferring with her generals",
+        "artist_name": "Kudos Productions",
+        "attack": 0,
+        "cost": 2,
+        "health": 0,
+        "spell_speed": "",
+        "rarity": "None",
+        "supertype": "",
+        "card_type": "Equipment",
+        "collectible": false,
+        "set": "Set6cde",
+        "associated_card_refs": ["06FR018T1"],
+        "regions": ["Freljord"],
+        "region_refs": ["Freljord"],
+        "keywords": ["Equipment"],
+        "keyword_refs": ["Equipment"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06FR018T3.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06FR018T3-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 1862,
+            "name": "Anaakca",
+            "card_code": "06FR018T1",
+            "description": "<link=vocab.Attack><style=Vocab>Attack</style></link>: From the top 6 cards of your deck, summon an attacking follower or non-Champion Darkin and grant it +1|+1.",
+            "description_raw": "Attack: From the top 6 cards of your deck, summon an attacking follower or non-Champion Darkin and grant it +1|+1.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "With newfound vigor, the great warrior Anaakca sped south through the Freljord and into Demacian lands. The outposts prepared as best they could to repel her assault, but no mere mortal would stand between Anaakca's fury and the coward who stoked it.",
+            "artist_name": "Aron Elekes",
+            "attack": 6,
+            "cost": 8,
+            "health": 8,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": [],
+            "regions": ["Freljord"],
+            "region_refs": ["Freljord"],
+            "keywords": [],
+            "keyword_refs": [],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06FR018T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06FR018T1-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.789Z",
+            "updated_at": "2024-07-24T23:56:01.789Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "1891",
+      "type": "card",
+      "attributes": {
+        "name": "The Darkin Staff",
+        "card_code": "06BC029",
+        "description": "<link=vocab.Strike><style=Vocab>Strike</style></link>: Refill 1 spell mana.\r\nYou may spend 8 mana to play me as <link=card.unit><style=AssociatedCard>Baalkux</style></link>.",
+        "description_raw": "Strike: Refill 1 spell mana.\r\nYou may spend 8 mana to play me as Baalkux.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "The bandlewood seemed a perfect place to hide a Darkin weapon, they reasoned. Bandlewoods are, by their very nature, impossible to navigate, and the yordles would know to steer clear of such abject malevolence. But the Targonians failed to realize the efficacy of such strange magic, and the effects it would have over the local flora.",
+        "artist_name": "Kudos Productions",
+        "attack": 0,
+        "cost": 1,
+        "health": 0,
+        "spell_speed": "",
+        "rarity": "EPIC",
+        "supertype": "",
+        "card_type": "Equipment",
+        "collectible": true,
+        "set": "Set6cde",
+        "associated_card_refs": ["06BC029T1"],
+        "regions": ["Bandle City"],
+        "region_refs": ["BandleCity"],
+        "keywords": ["Equipment", "Impact"],
+        "keyword_refs": ["Equipment", "Impact"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06BC029.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06BC029-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 1892,
+            "name": "Baalkux",
+            "card_code": "06BC029T1",
+            "description": "When you spend spell mana, grant me <link=keyword.Impact><sprite name=Impact><style=Keyword>Impact</style></link> for every spell mana you spend.",
+            "description_raw": "When you spend spell mana, grant me Impact for every spell mana you spend.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "Baalkux felt the tree's limbs grip the staff inside which he lay dormant. Quickly, he gripped back. His life erupted from the darkin staff and coursed through the tree's ancient boughs and branches. There was no heart to control here. No blood to bend. Baalkux could finally return to his general, and atone for his past transgressions.",
+            "artist_name": "Envar Studio",
+            "attack": 7,
+            "cost": 8,
+            "health": 9,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": [],
+            "regions": ["Bandle City"],
+            "region_refs": ["BandleCity"],
+            "keywords": ["Impact"],
+            "keyword_refs": ["Impact"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06BC029T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06BC029T1-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.847Z",
+            "updated_at": "2024-07-24T23:56:01.847Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "1893",
+      "type": "card",
+      "attributes": {
+        "name": "The Darkin Staff",
+        "card_code": "06BC029T3",
+        "description": "<link=vocab.Strike><style=Vocab>Strike</style></link>: Refill 1 spell mana.",
+        "description_raw": "Strike: Refill 1 spell mana.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "The bandlewood seemed a perfect place to hide a Darkin weapon, they reasoned. They are, at their core, impossible to navigate, and the yordles would know to steer clear of such abject malevolence. But the Targonians failed to realize the efficacy of bandle magic, and the effects it would have over the local flora.",
+        "artist_name": "Kudos Productions",
+        "attack": 0,
+        "cost": 1,
+        "health": 0,
+        "spell_speed": "",
+        "rarity": "None",
+        "supertype": "",
+        "card_type": "Equipment",
+        "collectible": false,
+        "set": "Set6cde",
+        "associated_card_refs": ["06BC029T1"],
+        "regions": ["Bandle City"],
+        "region_refs": ["BandleCity"],
+        "keywords": ["Equipment", "Impact"],
+        "keyword_refs": ["Equipment", "Impact"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06BC029T3.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06BC029T3-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 1892,
+            "name": "Baalkux",
+            "card_code": "06BC029T1",
+            "description": "When you spend spell mana, grant me <link=keyword.Impact><sprite name=Impact><style=Keyword>Impact</style></link> for every spell mana you spend.",
+            "description_raw": "When you spend spell mana, grant me Impact for every spell mana you spend.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "Baalkux felt the tree's limbs grip the staff inside which he lay dormant. Quickly, he gripped back. His life erupted from the darkin staff and coursed through the tree's ancient boughs and branches. There was no heart to control here. No blood to bend. Baalkux could finally return to his general, and atone for his past transgressions.",
+            "artist_name": "Envar Studio",
+            "attack": 7,
+            "cost": 8,
+            "health": 9,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": [],
+            "regions": ["Bandle City"],
+            "region_refs": ["BandleCity"],
+            "keywords": ["Impact"],
+            "keyword_refs": ["Impact"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06BC029T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06BC029T1-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.847Z",
+            "updated_at": "2024-07-24T23:56:01.847Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "1909",
+      "type": "card",
+      "attributes": {
+        "name": "The Darkin Fan",
+        "card_code": "06IO023",
+        "description": "<link=vocab.Attack><style=Vocab>Attack</style></link>: Summon an attacking <link=card.summon><style=AssociatedCard>Dragonling</style></link>. \r\nYou may spend 9 mana to play me as <link=card.unit><style=AssociatedCard>Praa the Breachwalker</style></link>.",
+        "description_raw": "Attack: Summon an attacking Dragonling. \r\nYou may spend 9 mana to play me as Praa the Breachwalker.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "\"In the bridge between worlds, I have long sensed a shadow that pulses with silent rage. Though I know better than to delve into the darkness after it, the pulse has lately grown stronger, faster--and I fear  the creatures of the spirit realm will soon begin searching for it.\" - Shen",
+        "artist_name": "Kudos Productions",
+        "attack": 0,
+        "cost": 2,
+        "health": 0,
+        "spell_speed": "",
+        "rarity": "EPIC",
+        "supertype": "",
+        "card_type": "Equipment",
+        "collectible": true,
+        "set": "Set6cde",
+        "associated_card_refs": ["06IO023T1", "02IO003T1"],
+        "regions": ["Ionia"],
+        "region_refs": ["Ionia"],
+        "keywords": ["Equipment"],
+        "keyword_refs": ["Equipment"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO023.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO023-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 1914,
+            "name": "Praa the Breachwalker",
+            "card_code": "06IO023T1",
+            "description": "<link=vocab.Play><style=Vocab>Play</style></link>, and when I transform: Summon two <link=keyword.Ephemeral><sprite name=Ephemeral><style=Keyword>Ephemeral</style></link> copies of me. Grant one <link=keyword.Lifesteal><sprite name=Lifesteal><style=Keyword>Lifesteal</style></link>, one <link=keyword.Challenger><sprite name=Challenger><style=Keyword>Challenger</style></link> and me <link=keyword.Elusive><sprite name=Elusive><style=Keyword>Elusive</style></link>.",
+            "description_raw": "Play, and when I transform: Summon two Ephemeral copies of me. Grant one Lifesteal, one Challenger and me Elusive.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "His general's call stirred him from slumber. As his senses came to him, Praa found himself looking through a weighted veil to a lush, unfamiliar land. Slowly, inexorably, he stepped through the divide, and buried his feet in Runeterra's soil once more. For Aatrox. For victory. For peace. For death.",
+            "artist_name": "Aron Elekes",
+            "attack": 5,
+            "cost": 9,
+            "health": 4,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": [],
+            "regions": ["Ionia"],
+            "region_refs": ["Ionia"],
+            "keywords": [],
+            "keyword_refs": [],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO023T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO023T1-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.889Z",
+            "updated_at": "2024-07-24T23:56:01.889Z",
+            "associated_cards": []
+          },
+          {
+            "id": 584,
+            "name": "Dragonling",
+            "card_code": "02IO003T1",
+            "description": "",
+            "description_raw": "",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "\"The spirit gives to those who listen.\" - Eye of the Dragon",
+            "artist_name": "Dao Le",
+            "attack": 2,
+            "cost": 2,
+            "health": 1,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set2",
+            "associated_card_refs": [],
+            "regions": ["Ionia"],
+            "region_refs": ["Ionia"],
+            "keywords": ["Ephemeral", "Lifesteal"],
+            "keyword_refs": ["Ephemeral", "Lifesteal"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set2/en_us/img/cards/02IO003T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set2/en_us/img/cards/02IO003T1-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:55:59.301Z",
+            "updated_at": "2024-07-24T23:55:59.301Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "1915",
+      "type": "card",
+      "attributes": {
+        "name": "The Darkin Fan",
+        "card_code": "06IO023T3",
+        "description": "<link=vocab.Attack><style=Vocab>Attack</style></link>: Summon an attacking <link=card.summon><style=AssociatedCard>Dragonling</style></link>.",
+        "description_raw": "Attack: Summon an attacking Dragonling.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "\"In the bridge between worlds, I have long sensed a shadow that pulses with silent rage. Though I know better than to delve into the darkness after it, the pulse has lately grown stronger, faster, and I fear that the creatures of the spirit realm will soon begin searching for it.\" - Shen",
+        "artist_name": "Kudos Productions",
+        "attack": 0,
+        "cost": 2,
+        "health": 0,
+        "spell_speed": "",
+        "rarity": "EPIC",
+        "supertype": "",
+        "card_type": "Equipment",
+        "collectible": false,
+        "set": "Set6cde",
+        "associated_card_refs": ["06IO023T1", "02IO003T1"],
+        "regions": ["Ionia"],
+        "region_refs": ["Ionia"],
+        "keywords": ["Equipment"],
+        "keyword_refs": ["Equipment"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO023T3.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO023T3-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 1914,
+            "name": "Praa the Breachwalker",
+            "card_code": "06IO023T1",
+            "description": "<link=vocab.Play><style=Vocab>Play</style></link>, and when I transform: Summon two <link=keyword.Ephemeral><sprite name=Ephemeral><style=Keyword>Ephemeral</style></link> copies of me. Grant one <link=keyword.Lifesteal><sprite name=Lifesteal><style=Keyword>Lifesteal</style></link>, one <link=keyword.Challenger><sprite name=Challenger><style=Keyword>Challenger</style></link> and me <link=keyword.Elusive><sprite name=Elusive><style=Keyword>Elusive</style></link>.",
+            "description_raw": "Play, and when I transform: Summon two Ephemeral copies of me. Grant one Lifesteal, one Challenger and me Elusive.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "His general's call stirred him from slumber. As his senses came to him, Praa found himself looking through a weighted veil to a lush, unfamiliar land. Slowly, inexorably, he stepped through the divide, and buried his feet in Runeterra's soil once more. For Aatrox. For victory. For peace. For death.",
+            "artist_name": "Aron Elekes",
+            "attack": 5,
+            "cost": 9,
+            "health": 4,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": [],
+            "regions": ["Ionia"],
+            "region_refs": ["Ionia"],
+            "keywords": [],
+            "keyword_refs": [],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO023T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06IO023T1-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.889Z",
+            "updated_at": "2024-07-24T23:56:01.889Z",
+            "associated_cards": []
+          },
+          {
+            "id": 584,
+            "name": "Dragonling",
+            "card_code": "02IO003T1",
+            "description": "",
+            "description_raw": "",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "\"The spirit gives to those who listen.\" - Eye of the Dragon",
+            "artist_name": "Dao Le",
+            "attack": 2,
+            "cost": 2,
+            "health": 1,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set2",
+            "associated_card_refs": [],
+            "regions": ["Ionia"],
+            "region_refs": ["Ionia"],
+            "keywords": ["Ephemeral", "Lifesteal"],
+            "keyword_refs": ["Ephemeral", "Lifesteal"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set2/en_us/img/cards/02IO003T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set2/en_us/img/cards/02IO003T1-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:55:59.301Z",
+            "updated_at": "2024-07-24T23:55:59.301Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "1944",
+      "type": "card",
+      "attributes": {
+        "name": "The Darkin Harp",
+        "card_code": "06PZ008",
+        "description": "You may spend 8 mana to play me as <link=card.unit><style=AssociatedCard>Styraatu</style></link>.",
+        "description_raw": "You may spend 8 mana to play me as Styraatu.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "As the Targonians pondered where they should scatter the Darkin weapons, one of their kind suggested the lands that would become known as Zaun. Buried deep within the walls of the cavernous and winding passageways would be perfect, they assumed. Far from human reach. But not Chirean.",
+        "artist_name": "Kudos Productions",
+        "attack": 0,
+        "cost": 2,
+        "health": 0,
+        "spell_speed": "",
+        "rarity": "EPIC",
+        "supertype": "",
+        "card_type": "Equipment",
+        "collectible": true,
+        "set": "Set6cde",
+        "associated_card_refs": ["06PZ008T2"],
+        "regions": ["Piltover & Zaun"],
+        "region_refs": ["PiltoverZaun"],
+        "keywords": ["Equipment", "Quick Attack"],
+        "keyword_refs": ["Equipment", "QuickStrike"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06PZ008.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06PZ008-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 1950,
+            "name": "Styraatu",
+            "card_code": "06PZ008T2",
+            "description": "<link=vocab.Attack><style=Vocab>Attack</style></link>: Draw 2, then reduce those cards' costs by 2.",
+            "description_raw": "Attack: Draw 2, then reduce those cards' costs by 2.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "Styraatu burst through the processing plant, furious and impatient. Her rage was known even before the tendrils of madness found their way into her mind, but now... now she would make them all pay. First here, in this land of technology, then south, where she would war alongside her general once again.",
+            "artist_name": "Kudos Productions",
+            "attack": 8,
+            "cost": 8,
+            "health": 6,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": [],
+            "regions": ["Piltover & Zaun"],
+            "region_refs": ["PiltoverZaun"],
+            "keywords": ["Quick Attack"],
+            "keyword_refs": ["QuickStrike"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06PZ008T2.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06PZ008T2-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.959Z",
+            "updated_at": "2024-07-24T23:56:01.959Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "1949",
+      "type": "card",
+      "attributes": {
+        "name": "The Darkin Harp",
+        "card_code": "06PZ008T3",
+        "description": "",
+        "description_raw": "",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "As the Targonians pondered where they should scatter the Darkin weapons, one of their kind suggested the lands that would become known as Zaun. Buried deep within the walls of the cavernous and winding passageways would be perfect, they assumed. Far from human reach. But not Chirean.",
+        "artist_name": "Kudos Productions",
+        "attack": 0,
+        "cost": 2,
+        "health": 0,
+        "spell_speed": "",
+        "rarity": "None",
+        "supertype": "",
+        "card_type": "Equipment",
+        "collectible": false,
+        "set": "Set6cde",
+        "associated_card_refs": ["06PZ008T2"],
+        "regions": ["Piltover & Zaun"],
+        "region_refs": ["PiltoverZaun"],
+        "keywords": ["Equipment", "Quick Attack"],
+        "keyword_refs": ["Equipment", "QuickStrike"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06PZ008T3.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06PZ008T3-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 1950,
+            "name": "Styraatu",
+            "card_code": "06PZ008T2",
+            "description": "<link=vocab.Attack><style=Vocab>Attack</style></link>: Draw 2, then reduce those cards' costs by 2.",
+            "description_raw": "Attack: Draw 2, then reduce those cards' costs by 2.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "Styraatu burst through the processing plant, furious and impatient. Her rage was known even before the tendrils of madness found their way into her mind, but now... now she would make them all pay. First here, in this land of technology, then south, where she would war alongside her general once again.",
+            "artist_name": "Kudos Productions",
+            "attack": 8,
+            "cost": 8,
+            "health": 6,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": [],
+            "regions": ["Piltover & Zaun"],
+            "region_refs": ["PiltoverZaun"],
+            "keywords": ["Quick Attack"],
+            "keyword_refs": ["QuickStrike"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06PZ008T2.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06PZ008T2-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.959Z",
+            "updated_at": "2024-07-24T23:56:01.959Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "1968",
+      "type": "card",
+      "attributes": {
+        "name": "The Darkin Harpoon",
+        "card_code": "06BW014",
+        "description": "<link=vocab.Attack><style=Vocab>Attack</style></link>: Draw 1 at next <link=vocab.RoundStart><style=Vocab>Round Start</style></link> and grant it <link=keyword.Fleeting><sprite name=Fleeting><style=Keyword>Fleeting</style></link>. \r\nYou may spend 9 mana to play me as <link=card.unit><style=AssociatedCard>Ibaaros</style></link>.",
+        "description_raw": "Attack: Draw 1 at next Round Start and grant it Fleeting. \r\nYou may spend 9 mana to play me as Ibaaros.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "\"Steer clear, steer clear, of the strait of Daray,\nWhere the waters whisper and the winds betray,\nWhere sea beast and bird so seldom foray,\nFor fear o' the darkness deep 'neath the strait of Daray.\"\n- Bilgewater rhyme",
+        "artist_name": "Kudos Productions",
+        "attack": 0,
+        "cost": 2,
+        "health": 0,
+        "spell_speed": "",
+        "rarity": "EPIC",
+        "supertype": "",
+        "card_type": "Equipment",
+        "collectible": true,
+        "set": "Set6cde",
+        "associated_card_refs": ["06BW014T1"],
+        "regions": ["Bilgewater"],
+        "region_refs": ["Bilgewater"],
+        "keywords": ["Equipment", "Fearsome"],
+        "keyword_refs": ["Equipment", "Fearsome"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06BW014.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06BW014-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 1969,
+            "name": "Ibaaros",
+            "card_code": "06BW014T1",
+            "description": "I have +1|+1 for each card you've drawn this game. I can only be blocked by enemies with 4 or more Power.",
+            "description_raw": "I have +1|+1 for each card you've drawn this game. I can only be blocked by enemies with 4 or more Power.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "Ibaaros, the Champion of the Dunes, lifted himself through the water. His blood coursed with that same familiar yearning from years before. To serve. To obey. To submit.",
+            "artist_name": "Michal Ivan",
+            "attack": 1,
+            "cost": 9,
+            "health": 1,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": [],
+            "regions": ["Bilgewater"],
+            "region_refs": ["Bilgewater"],
+            "keywords": [],
+            "keyword_refs": [],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06BW014T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06BW014T1-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.996Z",
+            "updated_at": "2024-07-24T23:56:01.996Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "1970",
+      "type": "card",
+      "attributes": {
+        "name": "The Darkin Harpoon",
+        "card_code": "06BW014T3",
+        "description": "<link=vocab.Attack><style=Vocab>Attack</style></link>: Draw 1 at the next <link=vocab.RoundStart><style=Vocab>Round Start</style></link> and grant it <link=keyword.Fleeting><sprite name=Fleeting><style=Keyword>Fleeting</style></link>.",
+        "description_raw": "Attack: Draw 1 at the next Round Start and grant it Fleeting.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "\"Steer clear, steer clear, of the strait of Daray,\nWhere the waters whisper and the winds betray,\nWhere sea beast and bird so seldom foray,\nFor fear o' the darkness deep 'neath the strait of Daray.\"\n- Bilgewater rhyme",
+        "artist_name": "Kudos Productions",
+        "attack": 0,
+        "cost": 2,
+        "health": 0,
+        "spell_speed": "",
+        "rarity": "EPIC",
+        "supertype": "",
+        "card_type": "Equipment",
+        "collectible": false,
+        "set": "Set6cde",
+        "associated_card_refs": ["06BW014T1"],
+        "regions": ["Bilgewater"],
+        "region_refs": ["Bilgewater"],
+        "keywords": ["Equipment", "Fearsome"],
+        "keyword_refs": ["Equipment", "Fearsome"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06BW014T3.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06BW014T3-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 1969,
+            "name": "Ibaaros",
+            "card_code": "06BW014T1",
+            "description": "I have +1|+1 for each card you've drawn this game. I can only be blocked by enemies with 4 or more Power.",
+            "description_raw": "I have +1|+1 for each card you've drawn this game. I can only be blocked by enemies with 4 or more Power.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "Ibaaros, the Champion of the Dunes, lifted himself through the water. His blood coursed with that same familiar yearning from years before. To serve. To obey. To submit.",
+            "artist_name": "Michal Ivan",
+            "attack": 1,
+            "cost": 9,
+            "health": 1,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": [],
+            "regions": ["Bilgewater"],
+            "region_refs": ["Bilgewater"],
+            "keywords": [],
+            "keyword_refs": [],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06BW014T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06BW014T1-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:01.996Z",
+            "updated_at": "2024-07-24T23:56:01.996Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "1978",
+      "type": "card",
+      "attributes": {
+        "name": "Darkinthrall",
+        "card_code": "06SH004T1",
+        "description": "The first time I'm <link=vocab.Equip><style=Vocab>Equipped</style></link> grant me +2|+2.",
+        "description_raw": "The first time I'm Equipped grant me +2|+2.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "Long did these devoted few tend their lady's temples. Long did they sweep back the sands and expel would-be desecrators. Long did they pray for her return. Her kindness. Her control.",
+        "artist_name": "Kudos Productions",
+        "attack": 1,
+        "cost": 1,
+        "health": 1,
+        "spell_speed": "",
+        "rarity": "None",
+        "supertype": "",
+        "card_type": "Unit",
+        "collectible": false,
+        "set": "Set6cde",
+        "associated_card_refs": [],
+        "regions": ["Shurima"],
+        "region_refs": ["Shurima"],
+        "keywords": ["Can't Block"],
+        "keyword_refs": ["CantBlock"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06SH004T1.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06SH004T1-full.png"
+          }
+        ],
+        "associated_cards": []
+      }
+    },
+    {
+      "id": "1979",
+      "type": "card",
+      "attributes": {
+        "name": "The Darkin Bloodletters",
+        "card_code": "06SH004T4",
+        "description": "<link=keyword.Last Breath><sprite name=LastBreath><style=Keyword>LastBreath</style></link>: If my bearer is not a <link=card.summon><style=AssociatedCard>Darkinthrall</style></link>, summon a <link=card.summon><style=AssociatedCard>Darkinthrall</style></link>.",
+        "description_raw": "LastBreath: If my bearer is not a Darkinthrall, summon a Darkinthrall.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "",
+        "artist_name": "Kudos Productions",
+        "attack": 0,
+        "cost": 1,
+        "health": 0,
+        "spell_speed": "",
+        "rarity": "None",
+        "supertype": "",
+        "card_type": "Equipment",
+        "collectible": false,
+        "set": "Set6cde",
+        "associated_card_refs": ["06SH004T2", "06SH004T1"],
+        "regions": ["Shurima"],
+        "region_refs": ["Shurima"],
+        "keywords": ["Equipment"],
+        "keyword_refs": ["Equipment"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06SH004T4.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06SH004T4-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 1993,
+            "name": "Xolaani",
+            "card_code": "06SH004T2",
+            "description": "To play me, kill an ally.\r\n<link=keyword.Last Breath><sprite name=LastBreath><style=Keyword>Last Breath</style></link>: Create a <link=card.create><style=AssociatedCard>The Darkin Bloodletters</style></link> in hand.",
+            "description_raw": "To play me, kill an ally.\r\nLast Breath: Create a The Darkin Bloodletters in hand.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "Shurima's Ascended were doomed the moment they took up arms against the Void. This was an enemy that could never be beaten, and while the god-warriors were all but guaranteed immortality, their minds were never as resilient. Madness consumed them all. Xolaani, once a beloved and gifted healer, began using her hemomantic powers to control her brethren, and soon enough, the hatred between her and Aatrox boiled over into civil war.",
+            "artist_name": "Kudos Productions",
+            "attack": 7,
+            "cost": 6,
+            "health": 7,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": ["06SH004"],
+            "regions": ["Shurima"],
+            "region_refs": ["Shurima"],
+            "keywords": ["Overwhelm", "Last Breath"],
+            "keyword_refs": ["Overwhelm", "LastBreath"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06SH004T2.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06SH004T2-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:02.043Z",
+            "updated_at": "2024-07-24T23:56:02.043Z",
+            "associated_cards": []
+          },
+          {
+            "id": 1978,
+            "name": "Darkinthrall",
+            "card_code": "06SH004T1",
+            "description": "The first time I'm <link=vocab.Equip><style=Vocab>Equipped</style></link> grant me +2|+2.",
+            "description_raw": "The first time I'm Equipped grant me +2|+2.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "Long did these devoted few tend their lady's temples. Long did they sweep back the sands and expel would-be desecrators. Long did they pray for her return. Her kindness. Her control.",
+            "artist_name": "Kudos Productions",
+            "attack": 1,
+            "cost": 1,
+            "health": 1,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": [],
+            "regions": ["Shurima"],
+            "region_refs": ["Shurima"],
+            "keywords": ["Can't Block"],
+            "keyword_refs": ["CantBlock"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06SH004T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06SH004T1-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:02.013Z",
+            "updated_at": "2024-07-24T23:56:02.013Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "1991",
+      "type": "card",
+      "attributes": {
+        "name": "The Darkin Bloodletters",
+        "card_code": "06SH004",
+        "description": "<link=keyword.Last Breath><sprite name=LastBreath><style=Keyword>Last Breath</style></link>: If my bearer is not a <link=card.summon><style=AssociatedCard>Darkinthrall</style></link>, summon a <link=card.summon><style=AssociatedCard>Darkinthrall</style></link>.\r\nYou may spend 6 mana and kill an ally to play me as <link=card.unit><style=AssociatedCard>Xolaani</style></link>.",
+        "description_raw": "Last Breath: If my bearer is not a Darkinthrall, summon a Darkinthrall.\r\nYou may spend 6 mana and kill an ally to play me as Xolaani.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "As the fighting raged on, Jun, desperate and badly wounded, turned to the voice whispering in her thoughts. \"You will never die,\" it said, soft as summer rain, \"because I will never let you.\"",
+        "artist_name": "Kudos Productions",
+        "attack": 0,
+        "cost": 1,
+        "health": 0,
+        "spell_speed": "",
+        "rarity": "EPIC",
+        "supertype": "",
+        "card_type": "Equipment",
+        "collectible": true,
+        "set": "Set6cde",
+        "associated_card_refs": ["06SH004T2", "06SH004T1"],
+        "regions": ["Shurima"],
+        "region_refs": ["Shurima"],
+        "keywords": ["Equipment"],
+        "keyword_refs": ["Equipment"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06SH004.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06SH004-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 1993,
+            "name": "Xolaani",
+            "card_code": "06SH004T2",
+            "description": "To play me, kill an ally.\r\n<link=keyword.Last Breath><sprite name=LastBreath><style=Keyword>Last Breath</style></link>: Create a <link=card.create><style=AssociatedCard>The Darkin Bloodletters</style></link> in hand.",
+            "description_raw": "To play me, kill an ally.\r\nLast Breath: Create a The Darkin Bloodletters in hand.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "Shurima's Ascended were doomed the moment they took up arms against the Void. This was an enemy that could never be beaten, and while the god-warriors were all but guaranteed immortality, their minds were never as resilient. Madness consumed them all. Xolaani, once a beloved and gifted healer, began using her hemomantic powers to control her brethren, and soon enough, the hatred between her and Aatrox boiled over into civil war.",
+            "artist_name": "Kudos Productions",
+            "attack": 7,
+            "cost": 6,
+            "health": 7,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": ["06SH004"],
+            "regions": ["Shurima"],
+            "region_refs": ["Shurima"],
+            "keywords": ["Overwhelm", "Last Breath"],
+            "keyword_refs": ["Overwhelm", "LastBreath"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06SH004T2.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06SH004T2-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:02.043Z",
+            "updated_at": "2024-07-24T23:56:02.043Z",
+            "associated_cards": []
+          },
+          {
+            "id": 1978,
+            "name": "Darkinthrall",
+            "card_code": "06SH004T1",
+            "description": "The first time I'm <link=vocab.Equip><style=Vocab>Equipped</style></link> grant me +2|+2.",
+            "description_raw": "The first time I'm Equipped grant me +2|+2.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "Long did these devoted few tend their lady's temples. Long did they sweep back the sands and expel would-be desecrators. Long did they pray for her return. Her kindness. Her control.",
+            "artist_name": "Kudos Productions",
+            "attack": 1,
+            "cost": 1,
+            "health": 1,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": [],
+            "regions": ["Shurima"],
+            "region_refs": ["Shurima"],
+            "keywords": ["Can't Block"],
+            "keyword_refs": ["CantBlock"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06SH004T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06SH004T1-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:02.013Z",
+            "updated_at": "2024-07-24T23:56:02.013Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "2001",
+      "type": "card",
+      "attributes": {
+        "name": "The Darkin Aegis",
+        "card_code": "06DE011",
+        "description": "You may spend 5 mana to play me as <link=card.unit><style=AssociatedCard>Joraal</style></link>.",
+        "description_raw": "You may spend 5 mana to play me as Joraal.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "\"My son, listen now. That shield must never be touched. Long ago, it was gifted to our house on the condition that we keep it safe, and leave it be. It is my responsibility, and when I pass, it will be yours. Do you hear me now? You must never climb to it again. You must never touch it.\"\n\"But mama, the voice inside... it cries to me. It sounds so sad.\"\n\"...All the more reason, my son.\"\n- Lady Fortis and her son",
+        "artist_name": "Kudos Productions",
+        "attack": 0,
+        "cost": 2,
+        "health": 0,
+        "spell_speed": "",
+        "rarity": "EPIC",
+        "supertype": "",
+        "card_type": "Equipment",
+        "collectible": true,
+        "set": "Set6cde",
+        "associated_card_refs": ["06DE011T1"],
+        "regions": ["Demacia"],
+        "region_refs": ["Demacia"],
+        "keywords": ["Equipment", "Tough"],
+        "keyword_refs": ["Equipment", "Tough"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06DE011.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06DE011-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 2007,
+            "name": "Joraal",
+            "card_code": "06DE011T1",
+            "description": "Your opponent's spells cost 2 more while I am attacking.",
+            "description_raw": "Your opponent's spells cost 2 more while I am attacking.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "A mighty Ascended tactician known as the Aegis of Eternity, Joraal seemed impervious to attack, even for the immortal god-warriors of Shurima. But the war against the Void raged on, and as resilient as Joraal's body was, it was his mind that broke. And how it broke.",
+            "artist_name": "Kudos Productions",
+            "attack": 4,
+            "cost": 5,
+            "health": 3,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": [],
+            "regions": ["Demacia"],
+            "region_refs": ["Demacia"],
+            "keywords": ["Challenger", "Tough"],
+            "keyword_refs": ["Challenger", "Tough"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06DE011T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06DE011T1-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:02.069Z",
+            "updated_at": "2024-07-24T23:56:02.069Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "2008",
+      "type": "card",
+      "attributes": {
+        "name": "The Darkin Aegis",
+        "card_code": "06DE011T4",
+        "description": "",
+        "description_raw": "",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "\"My son, listen now. That shield must never be touched. Long ago, it was gifted to our house on the condition that we keep it safe, and leave it be. It is my responsibility, and when I pass, it will be yours. Do you hear me now? You must never climb to it again. You must never touch it.\"\n\"But mama, the voice inside... it cries to me. It sounds so sad.\"\n\"...All the more reason, my son.\"\n- Lady Fortis and her son",
+        "artist_name": "Kudos Productions",
+        "attack": 0,
+        "cost": 2,
+        "health": 0,
+        "spell_speed": "",
+        "rarity": "None",
+        "supertype": "",
+        "card_type": "Equipment",
+        "collectible": false,
+        "set": "Set6cde",
+        "associated_card_refs": ["06DE011T1"],
+        "regions": ["Demacia"],
+        "region_refs": ["Demacia"],
+        "keywords": ["Equipment", "Tough"],
+        "keyword_refs": ["Equipment", "Tough"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06DE011T4.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06DE011T4-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 2007,
+            "name": "Joraal",
+            "card_code": "06DE011T1",
+            "description": "Your opponent's spells cost 2 more while I am attacking.",
+            "description_raw": "Your opponent's spells cost 2 more while I am attacking.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "A mighty Ascended tactician known as the Aegis of Eternity, Joraal seemed impervious to attack, even for the immortal god-warriors of Shurima. But the war against the Void raged on, and as resilient as Joraal's body was, it was his mind that broke. And how it broke.",
+            "artist_name": "Kudos Productions",
+            "attack": 4,
+            "cost": 5,
+            "health": 3,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": [],
+            "regions": ["Demacia"],
+            "region_refs": ["Demacia"],
+            "keywords": ["Challenger", "Tough"],
+            "keyword_refs": ["Challenger", "Tough"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06DE011T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06DE011T1-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:02.069Z",
+            "updated_at": "2024-07-24T23:56:02.069Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "2031",
+      "type": "card",
+      "attributes": {
+        "name": "The Darkin Halberd",
+        "card_code": "06SI007",
+        "description": "To play me, kill an ally.\r\nYou may spend 10 mana to play me as <link=card.unit><style=AssociatedCard>Taarosh</style></link>.",
+        "description_raw": "To play me, kill an ally.\r\nYou may spend 10 mana to play me as Taarosh.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "Straining against the confines of his cell, Taarosh heard his general's call. He would answer it, one way or another.",
+        "artist_name": "Kudos Productions ",
+        "attack": 0,
+        "cost": 1,
+        "health": 0,
+        "spell_speed": "",
+        "rarity": "EPIC",
+        "supertype": "",
+        "card_type": "Equipment",
+        "collectible": true,
+        "set": "Set6cde",
+        "associated_card_refs": ["06SI007T1"],
+        "regions": ["Shadow Isles"],
+        "region_refs": ["ShadowIsles"],
+        "keywords": ["Equipment"],
+        "keyword_refs": ["Equipment"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06SI007.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06SI007-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 2036,
+            "name": "Taarosh",
+            "card_code": "06SI007T1",
+            "description": "Each round, the first time I attack, fill your attackers with revived <link=keyword.Ephemeral><sprite name=Ephemeral><style=Keyword>Ephemeral</style></link> copies of the <link=vocab.Strongest><style=Vocab>strongest</style></link> followers you've <link=vocab.Slay><style=Vocab>slain</style></link> this game.",
+            "description_raw": "Each round, the first time I attack, fill your attackers with revived Ephemeral copies of the strongest followers you've slain this game.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "Legend says Taarosh was mere moments from destroying Xolaani when the Darkin were set upon by the Targonians. As centuries passed, he sensed the land around him become corrupted, tainted with rot and perpetual stench of death. How he dreamt of steeping Xolaani in this same suffering once he'd claimed his freedom.",
+            "artist_name": "Kudos Productions",
+            "attack": 10,
+            "cost": 10,
+            "health": 10,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": ["06SI007"],
+            "regions": ["Shadow Isles"],
+            "region_refs": ["ShadowIsles"],
+            "keywords": ["Fearsome"],
+            "keyword_refs": ["Fearsome"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06SI007T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06SI007T1-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:02.125Z",
+            "updated_at": "2024-07-24T23:56:02.125Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "2035",
+      "type": "card",
+      "attributes": {
+        "name": "The Darkin Halberd",
+        "card_code": "06SI007T4",
+        "description": "To play me, kill an ally. ",
+        "description_raw": "To play me, kill an ally. ",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "",
+        "artist_name": "Kudos Productions ",
+        "attack": 0,
+        "cost": 1,
+        "health": 0,
+        "spell_speed": "",
+        "rarity": "None",
+        "supertype": "",
+        "card_type": "Equipment",
+        "collectible": false,
+        "set": "Set6cde",
+        "associated_card_refs": ["06SI007T1"],
+        "regions": ["Shadow Isles"],
+        "region_refs": ["ShadowIsles"],
+        "keywords": ["Equipment"],
+        "keyword_refs": ["Equipment"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06SI007T4.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06SI007T4-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 2036,
+            "name": "Taarosh",
+            "card_code": "06SI007T1",
+            "description": "Each round, the first time I attack, fill your attackers with revived <link=keyword.Ephemeral><sprite name=Ephemeral><style=Keyword>Ephemeral</style></link> copies of the <link=vocab.Strongest><style=Vocab>strongest</style></link> followers you've <link=vocab.Slay><style=Vocab>slain</style></link> this game.",
+            "description_raw": "Each round, the first time I attack, fill your attackers with revived Ephemeral copies of the strongest followers you've slain this game.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "Legend says Taarosh was mere moments from destroying Xolaani when the Darkin were set upon by the Targonians. As centuries passed, he sensed the land around him become corrupted, tainted with rot and perpetual stench of death. How he dreamt of steeping Xolaani in this same suffering once he'd claimed his freedom.",
+            "artist_name": "Kudos Productions",
+            "attack": 10,
+            "cost": 10,
+            "health": 10,
+            "spell_speed": "",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set6cde",
+            "associated_card_refs": ["06SI007"],
+            "regions": ["Shadow Isles"],
+            "region_refs": ["ShadowIsles"],
+            "keywords": ["Fearsome"],
+            "keyword_refs": ["Fearsome"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06SI007T1.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set6cde/en_us/img/cards/06SI007T1-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:02.125Z",
+            "updated_at": "2024-07-24T23:56:02.125Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "2066",
+      "type": "card",
+      "attributes": {
+        "name": "Daring Demolisher",
+        "card_code": "07NX001",
+        "description": "<link=vocab.Play><style=Vocab>Play</style></link>: Deal 1 to the enemy Nexus or activate an ally's <link=keyword.Plunder><style=Keyword>Plunder</style></link> effect.",
+        "description_raw": "Play: Deal 1 to the enemy Nexus or activate an ally's Plunder effect.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "“Being in the weapons business means having a healthy relationship with data. Concept, test, rebuild, modify: all that takes information. There’s nothing like a little field testing to create a healthy sample size, and a few craters!” - Lani",
+        "artist_name": "Kudos Productions",
+        "attack": 3,
+        "cost": 2,
+        "health": 1,
+        "spell_speed": "",
+        "rarity": "RARE",
+        "supertype": "",
+        "card_type": "Unit",
+        "collectible": true,
+        "set": "Set7",
+        "associated_card_refs": [],
+        "regions": ["Noxus"],
+        "region_refs": ["Noxus"],
+        "keywords": [],
+        "keyword_refs": [],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set7/en_us/img/cards/07NX001.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set7/en_us/img/cards/07NX001-full.png"
+          }
+        ],
+        "associated_cards": []
+      }
+    },
+    {
+      "id": "2067",
+      "type": "card",
+      "attributes": {
+        "name": "Daring Demolisher",
+        "card_code": "07NX001T1",
+        "description": "<link=vocab.Play><style=Vocab>Play</style></link>: Activate an ally's <link=keyword.Plunder><style=Keyword>Plunder</style></link> effect.",
+        "description_raw": "Play: Activate an ally's Plunder effect.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "“Being in the weapons business means having a healthy relationship with data. Concept, test, rebuild, modify: all that takes information. There’s nothing like a little field testing to create a healthy sample size, and a few craters!” - Lani ",
+        "artist_name": "Kudos Productions",
+        "attack": 3,
+        "cost": 2,
+        "health": 1,
+        "spell_speed": "",
+        "rarity": "None",
+        "supertype": "",
+        "card_type": "Unit",
+        "collectible": false,
+        "set": "Set7",
+        "associated_card_refs": [],
+        "regions": ["Noxus"],
+        "region_refs": ["Noxus"],
+        "keywords": [],
+        "keyword_refs": [],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set7/en_us/img/cards/07NX001T1.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set7/en_us/img/cards/07NX001T1-full.png"
+          }
+        ],
+        "associated_cards": []
+      }
+    },
+    {
+      "id": "2068",
+      "type": "card",
+      "attributes": {
+        "name": "Daring Demolisher",
+        "card_code": "07NX001T2",
+        "description": "<link=vocab.Play><style=Vocab>Play</style></link>: Deal 1 to the enemy Nexus.",
+        "description_raw": "Play: Deal 1 to the enemy Nexus.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "“Being in the weapons business means having a healthy relationship with data. Concept, test, rebuild, modify: all that takes information. There’s nothing like a little field testing to create a healthy sample size, and a few craters!” - Lani",
+        "artist_name": "Kudos Productions",
+        "attack": 3,
+        "cost": 2,
+        "health": 1,
+        "spell_speed": "",
+        "rarity": "None",
+        "supertype": "",
+        "card_type": "Unit",
+        "collectible": false,
+        "set": "Set7",
+        "associated_card_refs": [],
+        "regions": ["Noxus"],
+        "region_refs": ["Noxus"],
+        "keywords": [],
+        "keyword_refs": [],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set7/en_us/img/cards/07NX001T2.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set7/en_us/img/cards/07NX001T2-full.png"
+          }
+        ],
+        "associated_cards": []
+      }
+    },
+    {
+      "id": "2069",
+      "type": "card",
+      "attributes": {
+        "name": "Captain Indari",
+        "card_code": "07NX005",
+        "description": "When I'm summoned, I <link=vocab.Improvise><style=Vocab>Improvise</style></link>.\r\n<link=keyword.Plunder><style=Keyword>Plunder</style></link>: <link=vocab.Forge><style=Vocab>Forge</style></link> other allies.",
+        "description_raw": "When I'm summoned, I Improvise.\r\nPlunder: Forge other allies.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "“I’ve worked with many operatives before. Some were easy, some a challenge... and then there’s Samira. I made peace with the fact that I can’t reign her in--instead, I direct the bedlam, aim it--and occasionally, join in here and there.”",
+        "artist_name": "Kudos Productions",
+        "attack": 5,
+        "cost": 6,
+        "health": 5,
+        "spell_speed": "",
+        "rarity": "RARE",
+        "supertype": "",
+        "card_type": "Unit",
+        "collectible": true,
+        "set": "Set7",
+        "associated_card_refs": [],
+        "regions": ["Noxus"],
+        "region_refs": ["Noxus"],
+        "keywords": ["Plunder"],
+        "keyword_refs": ["Plunder"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set7/en_us/img/cards/07NX005.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set7/en_us/img/cards/07NX005-full.png"
+          }
+        ],
+        "associated_cards": []
+      }
+    },
+    {
+      "id": "2205",
+      "type": "card",
+      "attributes": {
+        "name": "Proliferating Darkwraith",
+        "card_code": "07SI013",
+        "description": "<link=keyword.Last Breath><sprite name=LastBreath><style=Keyword>Last Breath</style></link>: Create in deck an exact copy of your <link=vocab.Strongest><style=Vocab>strongest</style></link> <link=card.selfref><style=AssociatedCard>Proliferating Darkwraith</style></link> in deck, then double the stats of <link=card.selfref><style=AssociatedCard>Proliferating Darkwraiths</style></link> in deck.",
+        "description_raw": "Last Breath: Create in deck an exact copy of your strongest Proliferating Darkwraith in deck, then double the stats of Proliferating Darkwraiths in deck.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "\"This Mist has taught me many things. Most importantly, it has taught me to know when to run.\" - Ixtali Sentinel",
+        "artist_name": "Xavier Leroux",
+        "attack": 1,
+        "cost": 1,
+        "health": 1,
+        "spell_speed": "",
+        "rarity": "RARE",
+        "supertype": "",
+        "card_type": "Unit",
+        "collectible": true,
+        "set": "Set7b",
+        "associated_card_refs": [],
+        "regions": ["Shadow Isles"],
+        "region_refs": ["ShadowIsles"],
+        "keywords": ["Last Breath"],
+        "keyword_refs": ["LastBreath"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SI013.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set7b/en_us/img/cards/07SI013-full.png"
+          }
+        ],
+        "associated_cards": []
+      }
+    },
+    {
+      "id": "2328",
+      "type": "card",
+      "attributes": {
+        "name": "Morgana's Dark Binding",
+        "card_code": "08MT003T3",
+        "description": "<link=keyword.Stun><sprite name=Stunned><style=Keyword>Stun</style></link> an enemy and <link=keyword.Curse><sprite name=Curse><style=Keyword>Curse</style></link> it with <link=card.curse><style=AssociatedCard>Shackles</style></link>.\r\nCreate a <link=card.level1><style=AssociatedCard>Morgana</style></link> in your deck.",
+        "description_raw": "Stun an enemy and Curse it with Shackles.\r\nCreate a Morgana in your deck.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "\"Suffer, as you've made them suffer!\" - Morgana",
+        "artist_name": "Polar Engine",
+        "attack": 0,
+        "cost": 3,
+        "health": 0,
+        "spell_speed": "Fast",
+        "rarity": "Champion",
+        "supertype": "Champion",
+        "card_type": "Spell",
+        "collectible": false,
+        "set": "Set8",
+        "associated_card_refs": ["08MT003", "08MT003T4", "08MT003T11"],
+        "regions": ["Targon"],
+        "region_refs": ["Targon"],
+        "keywords": ["Fast"],
+        "keyword_refs": ["Fast"],
+        "formats": [
+          "Commons Only",
+          "Eternal",
+          "Even Cost Cards",
+          "Singleton",
+          "Standard"
+        ],
+        "format_refs": [
+          "client_Formats_CommonsOnly_name",
+          "client_Formats_Eternal_name",
+          "client_Formats_EvenCostCards_name",
+          "client_Deckbuilder_RulesFilters_Singleton",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set8/en_us/img/cards/08MT003T3.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set8/en_us/img/cards/08MT003T3-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 2326,
+            "name": "Morgana",
+            "card_code": "08MT003",
+            "description": "<link=vocab.Play><style=Vocab>Play</style></link>: <link=keyword.Curse><sprite name=Curse><style=Keyword>Curse</style></link> an enemy with <link=card.curse><style=AssociatedCard>Shackles</style></link> twice.",
+            "description_raw": "Play: Curse an enemy with Shackles twice.",
+            "levelup_description": "You've targeted units 10+ times. <style=Variable></style>",
+            "levelup_description_raw": "You've targeted units 10+ times. ",
+            "flavor_text": "\"You come to me bruised and bleeding, and yet I've never seen a countenance so jubilant. You are a strange woman indeed--but you are safe here. Please rest, and when you're feeling better, I'd be keen to hear your story.\"",
+            "artist_name": "Envar Studio",
+            "attack": 3,
+            "cost": 5,
+            "health": 4,
+            "spell_speed": "",
+            "rarity": "Champion",
+            "supertype": "Champion",
+            "card_type": "Unit",
+            "collectible": true,
+            "set": "Set8",
+            "associated_card_refs": [
+              "08MT003T3",
+              "08MT003T4",
+              "08MT003T11",
+              "08MT003T12"
+            ],
+            "regions": ["Targon", "Demacia"],
+            "region_refs": ["Targon", "Demacia"],
+            "keywords": ["Lifesteal"],
+            "keyword_refs": ["Lifesteal"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set8/en_us/img/cards/08MT003.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set8/en_us/img/cards/08MT003-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:02.678Z",
+            "updated_at": "2024-07-24T23:56:02.678Z",
+            "associated_cards": []
+          },
+          {
+            "id": 2327,
+            "name": "Morgana",
+            "card_code": "08MT003T4",
+            "description": "<link=vocab.Play><style=Vocab>Play</style></link>: <link=keyword.Curse><sprite name=Curse><style=Keyword>Curse</style></link> an enemy with <link=card.curse><style=AssociatedCard>Shackles</style></link> twice.\r\n<link=vocab.Attack><style=Vocab>Attack</style></link>: <link=keyword.Curse><sprite name=Curse><style=Keyword>Curse</style></link> the <link=vocab.Strongest><style=Vocab>strongest</style></link> enemy that isn't <link=keyword.Curse><sprite name=Curse><style=Keyword>Cursed</style></link> with <link=card.curse><style=AssociatedCard>Shackles</style></link> and deal 3 to <link=keyword.Curse><sprite name=Curse><style=Keyword>Cursed</style></link> enemies and 2 to the enemy Nexus.",
+            "description_raw": "Play: Curse an enemy with Shackles twice.\r\nAttack: Curse the strongest enemy that isn't Cursed with Shackles and deal 3 to Cursed enemies and 2 to the enemy Nexus.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "\"You will regret this transgression! Be assured of this if nothing else: you will feel the suffering you have inflicted on others as a vise around your very soul. You will admit your sins, or be suffocated by them.\"",
+            "artist_name": "Envar Studio",
+            "attack": 4,
+            "cost": 5,
+            "health": 5,
+            "spell_speed": "",
+            "rarity": "Champion",
+            "supertype": "Champion",
+            "card_type": "Unit",
+            "collectible": false,
+            "set": "Set8",
+            "associated_card_refs": [
+              "08MT003T3",
+              "08MT003",
+              "08MT003T11",
+              "08MT003T12"
+            ],
+            "regions": ["Targon", "Demacia"],
+            "region_refs": ["Targon", "Demacia"],
+            "keywords": ["Lifesteal"],
+            "keyword_refs": ["Lifesteal"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set8/en_us/img/cards/08MT003T4.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set8/en_us/img/cards/08MT003T4-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:02.680Z",
+            "updated_at": "2024-07-24T23:56:02.680Z",
+            "associated_cards": []
+          },
+          {
+            "id": 2329,
+            "name": "Shackles",
+            "card_code": "08MT003T11",
+            "description": " While I'm in hand, <style=Variable>the cursed unit</style> is <link=keyword.Immobile><sprite name=Immobile><sprite name=Reckless><style=Keyword>Immobile</style></link>.",
+            "description_raw": " While I'm in hand, the cursed unit is Immobile.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "\"Bound by truth!\" - Morgana",
+            "artist_name": "Polar Engine",
+            "attack": 0,
+            "cost": 2,
+            "health": 0,
+            "spell_speed": "Burst",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Spell",
+            "collectible": false,
+            "set": "Set8",
+            "associated_card_refs": [],
+            "regions": ["Targon"],
+            "region_refs": ["Targon"],
+            "keywords": ["Focus", "Curse"],
+            "keyword_refs": ["Focus", "Curse"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set8/en_us/img/cards/08MT003T11.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set8/en_us/img/cards/08MT003T11-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:02.684Z",
+            "updated_at": "2024-07-24T23:56:02.684Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "2339",
+      "type": "card",
+      "attributes": {
+        "name": "Dark Binding",
+        "card_code": "08MT023",
+        "description": "<link=keyword.Stun><sprite name=Stunned><style=Keyword>Stun</style></link> an enemy and <link=keyword.Curse><sprite name=Curse><style=Keyword>Curse</style></link> it with <link=card.curse><style=AssociatedCard>Shackles</style></link>.",
+        "description_raw": "Stun an enemy and Curse it with Shackles.",
+        "levelup_description": "",
+        "levelup_description_raw": "",
+        "flavor_text": "\"Suffer, as you've made them suffer!\" - Morgana",
+        "artist_name": "Polar Engine",
+        "attack": 0,
+        "cost": 3,
+        "health": 0,
+        "spell_speed": "Fast",
+        "rarity": "RARE",
+        "supertype": "",
+        "card_type": "Spell",
+        "collectible": true,
+        "set": "Set8",
+        "associated_card_refs": ["08MT003T11"],
+        "regions": ["Targon"],
+        "region_refs": ["Targon"],
+        "keywords": ["Fast"],
+        "keyword_refs": ["Fast"],
+        "formats": ["Eternal", "Standard"],
+        "format_refs": [
+          "client_Formats_Eternal_name",
+          "client_Formats_Standard_name"
+        ],
+        "assets": [
+          {
+            "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set8/en_us/img/cards/08MT023.png",
+            "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set8/en_us/img/cards/08MT023-full.png"
+          }
+        ],
+        "associated_cards": [
+          {
+            "id": 2329,
+            "name": "Shackles",
+            "card_code": "08MT003T11",
+            "description": " While I'm in hand, <style=Variable>the cursed unit</style> is <link=keyword.Immobile><sprite name=Immobile><sprite name=Reckless><style=Keyword>Immobile</style></link>.",
+            "description_raw": " While I'm in hand, the cursed unit is Immobile.",
+            "levelup_description": "",
+            "levelup_description_raw": "",
+            "flavor_text": "\"Bound by truth!\" - Morgana",
+            "artist_name": "Polar Engine",
+            "attack": 0,
+            "cost": 2,
+            "health": 0,
+            "spell_speed": "Burst",
+            "rarity": "None",
+            "supertype": "",
+            "card_type": "Spell",
+            "collectible": false,
+            "set": "Set8",
+            "associated_card_refs": [],
+            "regions": ["Targon"],
+            "region_refs": ["Targon"],
+            "keywords": ["Focus", "Curse"],
+            "keyword_refs": ["Focus", "Curse"],
+            "formats": ["Eternal", "Standard"],
+            "format_refs": [
+              "client_Formats_Eternal_name",
+              "client_Formats_Standard_name"
+            ],
+            "assets": [
+              {
+                "game_absolute_path": "http://dd.b.pvp.net/5_6_0/set8/en_us/img/cards/08MT003T11.png",
+                "full_absolute_path": "http://dd.b.pvp.net/5_6_0/set8/en_us/img/cards/08MT003T11-full.png"
+              }
+            ],
+            "created_at": "2024-07-24T23:56:02.684Z",
+            "updated_at": "2024-07-24T23:56:02.684Z",
+            "associated_cards": []
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -21,11 +21,15 @@ describe("CardPage component", () => {
       .find("img")
       .should("have.attr", "src")
       .should(
-        "include",
+        "eq",
         "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020.png",
       );
     cy.getTestId("card-full").contains("Draven");
     cy.getTestId("card-cost").contains("3");
+    cy.getTestId("region-icons")
+      .find("img")
+      .should("have.attr", "src")
+      .should("eq", "/regions/icon-noxus.png");
     cy.getTestId("card-full").contains("Unit / Champion / Foundations");
     cy.getTestId("card-full").contains("Keywords: Quick Attack");
     cy.getTestId("card-full").contains(
@@ -70,12 +74,16 @@ describe("CardPage component", () => {
       .find("img")
       .should("have.attr", "src")
       .should(
-        "include",
+        "eq",
         "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020T1.png",
       );
 
     cy.getTestId("card-full").contains("Spinning Axe");
     cy.getTestId("card-cost").contains("0");
+    cy.getTestId("region-icons")
+      .find("img")
+      .should("have.attr", "src")
+      .should("eq", "/regions/icon-noxus.png");
     cy.getTestId("card-full").contains("Spell - Burst / None / Foundations");
     cy.getTestId("card-full").contains("Keywords: Burst");
     cy.getTestId("card-full").contains(
