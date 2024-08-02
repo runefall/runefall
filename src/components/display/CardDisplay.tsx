@@ -97,7 +97,7 @@ export default function CardDisplay({
       const fullElements = cards.map((card, index) => (
         <div
           key={index}
-          className="relative flex w-full flex-col items-center border-b border-border p-12"
+          className="relative flex w-full flex-col items-center border-b border-border pb-4"
         >
           <CardFull card={card.attributes} />
         </div>

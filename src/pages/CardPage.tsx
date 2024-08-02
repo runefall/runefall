@@ -25,9 +25,7 @@ export default function CardPage() {
         <p>Loading...</p>
       ) : (
         <>
-          <div className="p-6">
-            <CardFull card={card} />
-          </div>
+          <CardFull card={card} showButtons={true} />
           {card.associated_cards.length !== 0 && (
             <CardAssociated associatedCards={card.associated_cards} />
           )}
