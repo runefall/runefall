@@ -1,5 +1,6 @@
-import { useState } from "react";
 import { CardAttributes } from "@/types/interfaces";
+import { useState } from "react";
+import { Button } from "./ui/button";
 
 interface CardActionsProps {
   card: CardAttributes;
@@ -39,50 +40,55 @@ export default function CardActions({ card }: CardActionsProps) {
   };
 
   return (
-    <div className="flex flex-col gap-2 mt-4 -ml-40 pl-4">
+    <div className="flex w-full max-w-xs flex-col gap-2 px-4">
       {notification && (
-        <div className="fixed top-0 right-0 mt-4 mr-4 p-2 bg-green-500 text-white rounded shadow-md">
+        <div className="fixed right-0 top-0 mr-4 mt-4 rounded bg-green-500 p-2 text-white shadow-md">
           {notification}
         </div>
       )}
-      <button
-        className="w-full max-w-[300px] bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600"
+      <Button
         onClick={handleCopyRawText}
         data-cy="copy-raw-text"
+        variant="outline"
+        className="border-foreground"
       >
         Copy Raw Text
-      </button>
-      <button
-        className="w-full max-w-[300px] bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600"
+      </Button>
+      <Button
         onClick={handleCopyRawJson}
         data-cy="copy-raw-json"
+        variant="outline"
+        className="mb-8 border-foreground"
       >
         Copy Raw JSON
-      </button>
-      <button
-        className="w-full max-w-[300px] bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600"
+      </Button>
+      <Button
         onClick={handleViewCard}
         data-cy="view-card"
+        variant="outline"
+        className="border-foreground"
       >
         View Card on LOR.gg
-      </button>
+      </Button>
       <a
         href={card.assets[0].game_absolute_path}
         target="_blank"
         rel="noopener noreferrer"
-        className="w-full max-w-[300px] bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 text-center"
         data-cy="download-card-image"
       >
-        Download Card Image
+        <Button className="w-full border-foreground" variant="outline">
+          Download Card Image
+        </Button>
       </a>
       <a
         href={card.assets[0].full_absolute_path}
         target="_blank"
         rel="noopener noreferrer"
-        className="w-full max-w-[300px] bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 text-center"
         data-cy="download-full-art"
       >
-        Download Full Art
+        <Button className="w-full border-foreground" variant="outline">
+          Download Full Art
+        </Button>
       </a>
     </div>
   );
