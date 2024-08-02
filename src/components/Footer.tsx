@@ -42,7 +42,7 @@ export default function Footer() {
               RUNEFALL
             </h2>
             <div className="text-center md:text-end">
-              a powerful Legends of Runeterra card search
+              a powerful Legends of Runeterra search engine
             </div>
           </section>
         </section>
