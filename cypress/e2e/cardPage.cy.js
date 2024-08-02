@@ -111,22 +111,23 @@ describe("CardPage component", () => {
   });
 
   // Buttons
-it("copies raw text to clipboard", () => {
-  cy.visit(`/card/01NX020`);
+  it("copies raw text to clipboard", () => {
+    cy.visit(`/card/01NX020`);
 
-  // Make sure the clipboard API is available and stub the writeText method
-  cy.window().then((win) => {
-    // Check if navigator.clipboard is available
-    if (!win.navigator.clipboard) {
-      win.navigator.clipboard = {};
-    }
-    cy.stub(win.navigator.clipboard, 'writeText').resolves().as('writeText');
-  });
+    // Make sure the clipboard API is available and stub the writeText method
+    cy.window().then((win) => {
+      // Check if navigator.clipboard is available
+      if (!win.navigator.clipboard) {
+        win.navigator.clipboard = {};
+      }
+      cy.stub(win.navigator.clipboard, "writeText").resolves().as("writeText");
+    });
 
-  // Click the button and check if writeText was called with the correct argument
-  cy.get("[data-cy='copy-raw-text']").click();
-  cy.get('@writeText').should('have.been.calledOnceWith', 
-    `Draven
+    // Click the button and check if writeText was called with the correct argument
+    cy.get("[data-cy='copy-raw-text']").click();
+    cy.get("@writeText").should(
+      "have.been.calledOnceWith",
+      `Draven
       3
       Unit / Champion / Set1
       Quick Attack
@@ -135,9 +136,9 @@ it("copies raw text to clipboard", () => {
       Flavor Text: "You want an autograph? Get in line, pal."
       3 | 3
       Artist: SIXMOREVODKA
-      Card Code: 01NX020`
-  );
-});
+      Card Code: 01NX020`,
+    );
+  });
 
   it("copies raw JSON to clipboard", () => {
     cy.visit(`/card/01NX020`);
@@ -145,21 +146,25 @@ it("copies raw text to clipboard", () => {
       if (!win.navigator.clipboard) {
         win.navigator.clipboard = {};
       }
-      cy.stub(win.navigator.clipboard, 'writeText').resolves().as('writeText');
+      cy.stub(win.navigator.clipboard, "writeText").resolves().as("writeText");
     });
 
-      cy.get("[data-cy='copy-raw-json']").click();
-    cy.get('@writeText').should('have.been.calledOnce');
+    cy.get("[data-cy='copy-raw-json']").click();
+    cy.get("@writeText").should("have.been.calledOnce");
   });
 
   it("navigates to the LOR.gg page", () => {
     cy.visit(`/card/01NX020`);
     cy.window().then((win) => {
-      cy.stub(win, 'open').as('windowOpen');
+      cy.stub(win, "open").as("windowOpen");
     });
-    
+
     cy.get("[data-cy='view-card']").click();
-    cy.get('@windowOpen').should('have.been.calledOnceWith', 'https://lor.gg/card/01NX020', '_blank');
+    cy.get("@windowOpen").should(
+      "have.been.calledOnceWith",
+      "https://lor.gg/card/01NX020",
+      "_blank",
+    );
   });
 
   it("should open a link to download the card image in a new tab", () => {
@@ -168,16 +173,13 @@ it("copies raw text to clipboard", () => {
       .should("have.attr", "href")
       .and(
         "include",
-        "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020.png"
+        "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020.png",
       )
-      .and(
-        "match",
-        /http:\/\/dd\.b\.pvp\.net\/.*\/img\/cards\/01NX020\.png$/
-      );
+      .and("match", /http:\/\/dd\.b\.pvp\.net\/.*\/img\/cards\/01NX020\.png$/);
     cy.get("[data-cy='download-card-image']").should(
       "have.attr",
       "target",
-      "_blank"
+      "_blank",
     );
   });
 
@@ -187,16 +189,16 @@ it("copies raw text to clipboard", () => {
       .should("have.attr", "href")
       .and(
         "include",
-        "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020-full.png"
+        "http://dd.b.pvp.net/5_6_0/set1/en_us/img/cards/01NX020-full.png",
       )
       .and(
         "match",
-        /http:\/\/dd\.b\.pvp\.net\/.*\/img\/cards\/01NX020-full\.png$/
+        /http:\/\/dd\.b\.pvp\.net\/.*\/img\/cards\/01NX020-full\.png$/,
       );
     cy.get("[data-cy='download-full-art']").should(
       "have.attr",
       "target",
-      "_blank"
+      "_blank",
     );
   });
 });

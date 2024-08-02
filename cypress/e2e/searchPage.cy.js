@@ -340,4 +340,52 @@ describe("template spec", () => {
         "http://dd.b.pvp.net/5_6_0/set7/en_us/img/cards/07NX005.png",
       );
   });
+
+  // update tests to be more accurate in the future
+  it("should be able to set sorting modes through testing", () => {
+    cy.intercept("http://localhost:3000/api/v1/cards/search?query=*", {
+      method: "GET",
+      fixture: "dravenQuery.json",
+    }).as("allDravenQuery");
+    // display text happy
+    cy.visit("/");
+    cy.getTestId("home-search-bar").type("draven mode:text").type("{enter}");
+    cy.getTestId("select-mode").contains("Text Only");
+    // display text sad
+    cy.visit("/");
+    cy.getTestId("home-search-bar").type("draven mode:asdasd").type("{enter}");
+    cy.getTestId("select-mode").contains("Image Only");
+    // display attribute happy
+    cy.visit("/");
+    cy.getTestId("home-search-bar")
+      .type("draven attribute:cost")
+      .type("{enter}");
+    cy.getTestId("select-attribute").contains("Cost");
+    // display attribute sad
+    cy.visit("/");
+    cy.getTestId("home-search-bar")
+      .type("draven attribute:asdasd")
+      .type("{enter}");
+    cy.getTestId("select-attribute").contains("Name");
+    // display direction happy
+    cy.visit("/");
+    cy.getTestId("home-search-bar")
+      .type("draven direction:descending")
+      .type("{enter}");
+    cy.getTestId("select-direction").contains("Descending");
+    // display direction sad
+    cy.visit("/");
+    cy.getTestId("home-search-bar")
+      .type("draven direction:asdasd")
+      .type("{enter}");
+    cy.getTestId("select-direction").contains("Auto");
+    // display direction combined
+    cy.visit("/");
+    cy.getTestId("home-search-bar")
+      .type("draven mode:text attribute:attack direction:descending")
+      .type("{enter}");
+    cy.getTestId("select-mode").contains("Text Only");
+    cy.getTestId("select-attribute").contains("Attack");
+    cy.getTestId("select-direction").contains("Descending");
+  });
 });
