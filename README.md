@@ -12,7 +12,8 @@ Runefall is an advanced card search tool designed for the Legends of Runeterra c
 
 ## Screenshots
 
-![image](https://github.com/user-attachments/assets/c797003c-501b-4ed7-b16b-c0cbe0a1f0ee)
+![image](https://github.com/user-attachments/assets/de0a5a6f-0cb8-400b-a9e3-0df244cfd660)
+
 
 ## Features
 

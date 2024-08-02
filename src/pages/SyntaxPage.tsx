@@ -14,7 +14,8 @@ export default function SyntaxPage() {
       </h1>
       <p className="mb-8 text-center">
         Runefall includes a large set of keywords and expressions you can use to
-        filter Legends of Runeterra cards.
+        filter Legends of Runeterra cards.  Click on any of the examples below
+        to view the result of that search query.
       </p>
       <div data-test-id="syntax-entry">
         {syntaxData.map((syntaxEntry, index) => {

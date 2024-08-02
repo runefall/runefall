@@ -28,7 +28,7 @@ describe("template spec", () => {
     cy.get("footer").should("exist");
 
     cy.getTestId("home-slogan").contains(
-      "Runefall is a powerful Legends of Runeterra card search",
+      "Runefall is a powerful Legends of Runeterra search engine",
     );
 
     cy.getTestId("home-search-bar").focused().type("draven").type("{enter}");

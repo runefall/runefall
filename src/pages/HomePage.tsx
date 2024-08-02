@@ -20,7 +20,7 @@ export default function HomePage() {
         className="mb-8 text-center text-4xl text-white"
       >
         <b className="font-bold">Runefall</b> is a powerful{" "}
-        <b className="font-bold">Legends of Runeterra</b> card search
+        <b className="font-bold">Legends of Runeterra</b> search engine
       </h1>
       <div className="flex w-full flex-col items-center gap-3">
         <div className="relative w-full max-w-[600px]">

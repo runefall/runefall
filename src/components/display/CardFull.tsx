@@ -2,19 +2,26 @@ import FormatLegality from "@/components/FormatLegality";
 import { formats } from "@/data/formats";
 import { CardAttributes } from "@/types/interfaces";
 import { getSetString } from "@/utils/sets";
+import CardActions from "../CardActions";
 
-export default function CardFull({ card }: { card: CardAttributes }) {
+export default function CardFull({
+  card,
+  showButtons = false,
+}: {
+  card: CardAttributes;
+  showButtons?: boolean;
+}) {
   return (
     <div
-      className="relative flex w-full max-w-sm flex-col items-center md:left-[calc(10rem-10px)]"
+      className="relative flex w-full flex-col items-center justify-center gap-4 p-4 lg:flex-row lg:items-start lg:gap-0"
       data-test-id="card-full"
     >
       <img
         src={card.assets[0].game_absolute_path}
         alt={card.name}
-        className="h-auto w-full max-w-xs drop-shadow-2xl md:absolute md:left-[calc(-20rem+20px)] md:top-4"
+        className="h-auto w-full max-w-xs drop-shadow-2xl md:top-4"
       />
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-card py-2 shadow-md [&>*:not(:first-child)]:border-t [&>*]:w-full [&>*]:p-2 [&>*]:px-6">
+      <div className="w-full max-w-sm rounded-2xl border border-border bg-card py-2 shadow-md lg:ml-[-30px] lg:pl-[15px] [&>*:not(:first-child)]:border-t [&>*]:p-2 [&>*]:px-6">
         <div className="flex items-center justify-between">
           <p className="flex items-center gap-2">
             <span
@@ -70,6 +77,7 @@ export default function CardFull({ card }: { card: CardAttributes }) {
           </div>
         </div>
       </div>
+      {showButtons && <CardActions card={card} />}
     </div>
   );
 }
