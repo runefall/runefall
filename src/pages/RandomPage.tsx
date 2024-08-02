@@ -12,7 +12,7 @@ export default function RandomPage() {
     getRandomCard()
       .then((data: { data: Card }) => {
         const { card_code } = data.data.attributes;
-        navigate(`/card/${card_code}`);
+        navigate(`/card/${card_code}`, { replace: true });
       })
       .catch(showBoundary);
   });
