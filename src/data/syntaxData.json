@@ -75,5 +75,13 @@
     "title": "Advance Queries",
     "description": "You can search for cards which satisfy at least one of many criteria by using 'or'",
     "examples": ["region:Noxus or region:Demacia", "attack:>5 or health:>5"]
+  },
+  {
+    "title": "Display Modes",
+    "description": "You can manually set how you want the search results to be displayed using 'mode', 'attribute', and 'direction'.",
+    "examples": [
+      "region:Noxus display:text",
+      "attack:>5 attribute:attack direction:descending"
+    ]
   }
 ]
