@@ -80,7 +80,7 @@
     "title": "Display Modes",
     "description": "You can manually set how you want the search results to be displayed using 'mode', 'attribute', and 'direction'.",
     "examples": [
-      "region:Noxus display:text",
+      "region:Noxus mode:text",
       "attack:>5 attribute:attack direction:descending"
     ]
   }
