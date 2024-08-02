@@ -11,14 +11,17 @@ export default function SelectSortAttribute({
   className = "w-[180px]",
   sortAttribute,
   setFilterState,
+  disabled = false,
 }: {
   className?: string;
   sortAttribute: SortAttribute;
   setFilterState: (action: { type: string; value: string }) => void;
+  disabled?: boolean;
 }) {
   return (
     <Select
       value={sortAttribute}
+      disabled={disabled}
       onValueChange={(value: SortAttribute) =>
         setFilterState({ type: "sortAttribute", value })
       }
@@ -48,10 +51,7 @@ export default function SelectSortAttribute({
         <SelectItem data-test-id="select-attribute-rarity" value="rarity">
           Rarity
         </SelectItem>
-        <SelectItem
-          data-test-id="select-attribute-region-refs"
-          value="region_refs"
-        >
+        <SelectItem data-test-id="select-attribute-region" value="region">
           Region
         </SelectItem>
         <SelectItem

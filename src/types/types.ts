@@ -8,7 +8,7 @@ export type SortAttribute =
   | "health"
   | "set"
   | "rarity"
-  | "region_refs"
+  | "region"
   | "artist_name"
   | "card_code";
 

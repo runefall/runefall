@@ -21,3 +21,13 @@ export function getCard(code: string) {
     }
   });
 }
+
+export function getRandomCard() {
+  return fetch(`${HOST}/api/v1/cards/random`).then((res) => {
+    if (!res.ok) {
+      throw Error(`Could not get a random card from the server`);
+    } else {
+      return res.json();
+    }
+  });
+}

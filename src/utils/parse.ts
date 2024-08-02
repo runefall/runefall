@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 
 // add unit testing for this function
-export function parseString(string: string) {
+export function parseQuery(string: string) {
   return (
     string
       // split string using regex

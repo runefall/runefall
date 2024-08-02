@@ -11,14 +11,17 @@ export default function SelectSortMode({
   className = "w-[180px]",
   sortMode,
   setFilterState,
+  disabled = false,
 }: {
   className?: string;
   sortMode: SortMode;
   setFilterState: (action: { type: string; value: string }) => void;
+  disabled?: boolean;
 }) {
   return (
     <Select
       value={sortMode}
+      disabled={disabled}
       onValueChange={(value: SortMode) =>
         setFilterState({ type: "sortMode", value })
       }

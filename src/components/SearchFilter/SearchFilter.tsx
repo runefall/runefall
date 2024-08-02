@@ -8,12 +8,18 @@ import SelectSortMode from "./SelectSortMode";
 export default function SearchFilter({
   filterState,
   setFilterState,
+  disableSortMode = false,
+  disableSortAttribute = false,
+  disableSortDirection = false,
 }: {
   filterState: {
     sortMode: SortMode;
     sortAttribute: SortAttribute;
     sortDirection: SortDirection;
   };
+  disableSortMode?: boolean;
+  disableSortAttribute?: boolean;
+  disableSortDirection?: boolean;
   setFilterState: (action: { type: string; value: string }) => void;
 }) {
   const [showFilters, setShowFilters] = useState(false);
@@ -25,16 +31,19 @@ export default function SearchFilter({
         <SelectSortMode
           sortMode={filterState.sortMode}
           setFilterState={setFilterState}
+          disabled={disableSortMode}
         />
         {"filtered by"}
         <SelectSortAttribute
           sortAttribute={filterState.sortAttribute}
           setFilterState={setFilterState}
+          disabled={disableSortAttribute}
         />
         {":"}
         <SelectSortDirection
           sortDirection={filterState.sortDirection}
           setFilterState={setFilterState}
+          disabled={disableSortDirection}
         />
       </div>
       {/* mobile view */}
@@ -54,6 +63,7 @@ export default function SearchFilter({
                 className="flex-1"
                 sortMode={filterState.sortMode}
                 setFilterState={setFilterState}
+                disabled={disableSortMode}
               />
             </div>
             <div>
@@ -62,6 +72,7 @@ export default function SearchFilter({
                 className="flex-1"
                 sortAttribute={filterState.sortAttribute}
                 setFilterState={setFilterState}
+                disabled={disableSortAttribute}
               />
             </div>
             <div>
@@ -70,6 +81,7 @@ export default function SearchFilter({
                 className="flex-1"
                 sortDirection={filterState.sortDirection}
                 setFilterState={setFilterState}
+                disabled={disableSortDirection}
               />
             </div>
           </div>
